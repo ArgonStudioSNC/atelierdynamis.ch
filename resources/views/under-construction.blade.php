@@ -14,10 +14,13 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     <style>
+    body {
+        color: white;
+    }
     .fullscreen:after {
         z-index: -100;
         content: '';
-        opacity : 0.6;
+        filter: brightness(35%);
         position: fixed;
         top: 0;
         left: 0;
