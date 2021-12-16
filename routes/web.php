@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Web\AppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace('Web')->group(function () {
+    Route::get('/', function() {return view('under-construction');});
+    Route::get('/{vueroute?}', [AppController::class, 'index'])->where('vueroute', '[\/\w\.-]*')->name('app.index');
 });
