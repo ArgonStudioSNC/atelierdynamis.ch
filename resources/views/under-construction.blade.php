@@ -44,15 +44,15 @@
 <body>
     <main>
         <div class="grid-y grid-frame fullscreen">
-            <h1 class="text-center">atelier dynamis biel/bienne</h1>
+            <h1 class="text-center">atelier Dynamis biel/bienne</h1>
             <div class="grid-x align-middle align-center" style="height:100%;">
                 <div class="cell medium-5 text-center">
-                    <h2>bienvenue</h2>
+                    <h2>Bienvenue</h2>
                     <p>quelque chose se prépare ici... n'hésite pas à revenir nous rendre visite prochainement</p>
                 </div>
                 <div class="cell small-1"></div>
                 <div class="cell medium-5 text-center">
-                    <h2>willkommen</h2>
+                    <h2>Willkommen</h2>
                     <p>hier wird etwas vorbereitet... zögere nicht, uns bald wieder zu besuchen</p>
                 </div>
             </div>

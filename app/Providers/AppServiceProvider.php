@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\View;
+
+use KgBot\LaravelLocalization\Facades\ExportLocalizations as ExportLocalization;
 use URL;
 
 class AppServiceProvider extends ServiceProvider
@@ -28,5 +31,10 @@ class AppServiceProvider extends ServiceProvider
         if (App::environment(['staging', 'production'])) {
             URL::forceScheme('https');
         }
+
+        // Localization
+        View::composer( '*', function ( $view ) {
+            return $view->with( ['messages' => ExportLocalization::export()->toArray(),] );
+        } );
     }
 }

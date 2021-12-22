@@ -6,45 +6,72 @@
 */
 
 /*
-    Imports Vue and VueRouter to extend with the routes.
+Imports Vue and VueRouter to extend with the routes.
 */
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
+
 import DefaultLayout from '@js/layouts/Default.vue'
+import Home from '@js/pages/Home.vue'
+import Physio from '@js/pages/Physio.vue'
+import Cranio from '@js/pages/Cranio.vue'
+import Practice from '@js/pages/Practice.vue'
+import Courses from '@js/pages/Courses.vue'
+import Contact from '@js/pages/Contact.vue'
+import Impressum from '@js/pages/Impressum.vue'
+import NotFound from '@js/pages/404.vue'
 
-/*
-    Extends Vue to use Vue Router
-*/
-Vue.use( VueRouter )
-
-/*
-    Makes a new VueRouter that we will use to run all of the routes
-    for the app.
-    */
-export default new VueRouter({
-    mode: 'history',
-    base: '/',
-    scrollBehavior (to, from, savedPosition) {
-        if (savedPosition) {
-          return savedPosition
-        } else {
-          return { x: 0, y: 0 }
-        }
+const routes = [
+    {
+        path: '/:lang',
+        component: DefaultLayout,
+        children: [
+            {
+                path: 'home',
+                name: 'Home',
+                component: Home,
+            },
+            {
+                path: 'physio',
+                name: 'Physio',
+                component: Physio,
+            },
+            {
+                path: 'cranio',
+                name: 'Cranio',
+                component: Cranio,
+            },
+            {
+                path: 'practice',
+                name: 'Practice',
+                component: Practice,
+            },
+            {
+                path: 'courses',
+                name: 'Courses',
+                component: Courses,
+            },
+            {
+                path: 'contact',
+                name: 'Contact',
+                component: Contact,
+            },
+            {
+                path: 'impressum',
+                name: 'Impressum',
+                component: Impressum,
+            },
+            {
+                path: ':pathMatch(.*)*',
+                name: 'NotFound',
+                component: NotFound,
+            },
+        ]
     },
-    routes: [
-        {
-            path: '',
-            component: DefaultLayout,
-            children: [
-                {
-                    path: ''
-                },
-                {
-                    path: '/:pathMatch(.*)*',
-                    name: 'NotFound',
-                    component: Vue.component( 'NotFound', require( '@js/pages/404.vue' ) ).default
-                },
-            ]
-        },
-    ]
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
 });
+
+export default router;

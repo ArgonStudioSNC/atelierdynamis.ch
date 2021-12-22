@@ -3,8 +3,8 @@
 </style>
 
 <template>
-    <div class="grid-x align-center-middle text-center">
-        404 NOT FOUND
+    <div id='page-404'>
+        <h2>404 - Page not found</h2>
     </div>
 </template>
 

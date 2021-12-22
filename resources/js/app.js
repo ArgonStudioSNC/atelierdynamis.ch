@@ -2,9 +2,14 @@ require('./foundation');
 require('@fortawesome/fontawesome-free/js/solid.min');
 require('@fortawesome/fontawesome-free/js/fontawesome.min');
 
-import Vue from 'vue'
+import { createApp } from 'vue'
+import i18n from '@js/i18n.js'
 import router from '@js/routes.js'
 
-new Vue({
-    router
-}).$mount('#app')
+const app = createApp({
+
+});
+
+app.use(router);
+app.use(i18n);
+app.mount('#app');

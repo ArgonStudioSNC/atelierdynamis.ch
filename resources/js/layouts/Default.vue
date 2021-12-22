@@ -3,19 +3,21 @@
 </style>
 
 <template>
-    <div id="default-layout">
-        <div class="grid-container">
-            Hello World !
-        </div>
+    <div id='layout-default'>
+        <HeaderComponent></HeaderComponent>
         <router-view></router-view>
+        <FooterComponent></FooterComponent>
     </div>
 </template>
 
 <script>
+import HeaderComponent from '@js/components/Header';
+import FooterComponent from '@js/components/Footer';
 export default {
     components: {
+        HeaderComponent,
+        FooterComponent
     },
-
     data () {
         return {
         }

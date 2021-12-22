@@ -20,7 +20,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Favicon -->
-    
+
 </head>
 
 <body>
@@ -29,6 +29,13 @@
             <router-view></router-view>
         </div>
     </main>
+
+    <script>
+    window.locale = "{{ App::getLocale() }}";
+    window.default_locale = "{{ config('app.locale') }}";
+    window.fallback_locale = "{{ config('app.fallback_locale') }}";
+    window.messages = @json($messages);
+    </script>
 </body>
 
 </html>

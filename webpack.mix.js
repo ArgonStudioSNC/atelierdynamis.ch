@@ -24,7 +24,7 @@ mix
 .js('resources/js/app.js', 'js')
 
 .vue({
-    version: 2,
+    version: 3,
     extractStyles: true,
     globalStyles: 'resources/sass/_settings.scss'
 })
