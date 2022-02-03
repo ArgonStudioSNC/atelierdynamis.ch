@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'atelier Dynamis',
+    'title' => 'atelier dynamis',
     'subtitle' => 'Kinder Physiotherapie und Craniosacral-Therapie',
     'biel' => 'Biel/Bienne',
     'locales' => [

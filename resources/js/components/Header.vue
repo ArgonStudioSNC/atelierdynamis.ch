@@ -4,6 +4,13 @@
     max-width: 50px;
 }
 
+.top-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
 </style>
 
 <template>

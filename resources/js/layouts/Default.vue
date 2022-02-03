@@ -3,7 +3,7 @@
 </style>
 
 <template>
-    <div id='layout-default'>
+    <div id='page-layout'>
         <HeaderComponent></HeaderComponent>
         <router-view></router-view>
         <FooterComponent></FooterComponent>
