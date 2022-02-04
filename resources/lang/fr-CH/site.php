@@ -29,20 +29,28 @@ return [
         'info5-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}La prise en charge à domicile doit être spécifiée sur la prescription.'
     ],
     'cranio-page' => [
-        'name' => 'Thérapie craniosacrale'
+        'name' => 'Thérapie craniosacrale',
+        'offer-content1' => 'La thérapie craniosacrale est un travail du corps par lequel, avec le plus grand soin et par de fines impulsions manuelles, la régulation propre est préparée et ainsi l’auto-guérison du corps. La santé dans l’homme est soutenue et des ressources sont fortifiées afin que des changements positifs puissent avoir lieu. La thérapie craniosacrale peut être employée chez des êtres humains de chaque âge et dans tous les cas de troubles de fonction du corps.',
+        'offer-content2' => 'Un traitement chez moi dure une heure et coûte CHF 120.-.',
+        'offer-content3' => 'La thérapie craniosacrale peut être décomptée moyennant l’assurance complémentaire auprès de beaucoup de caisses. Je suis reconnue dans le RME (Registre de Médecine Empirique) ainsi que dans l’ASCA (Fondation suisse pour les médecines complémentaires). Dans le lien ci-après, vous pouvez vérifier si votre caisse d’assurance maladie est enregistrée. Je vous prie de vous renseigner auprès de votre caisse d’assurance maladie au sujet de la participation exacte des coûts.',
+        'links' => ' www.rme.ch{0}www.asca.ch',
     ],
     'practice-page' => [
         'name' => 'L\'atelier',
-        'portrait-sophie' => 'J’ai travaillé pendant 20 ans au Centre hospitalier Bienne en tant que physiothérapeute pédiatrique avec des enfants de 0 à 16 ans. De 2013 à 2021 j’étais responsable spécialisée en physiothérapie pédiatrique et j’ai encadré les étudiants.',
         'formation-title' => 'Formations',
-        'formation-sub1-title' => 'Neuro-développement',
-        'formation-sub1-content' => 'COPCA coach{0}NDT bébé{0}NDT enfant',
-        'formation-sub2-title' => 'Physiothérapie respiratoire ',
-        'formation-sub2-content' => 'Postiaux (stetoacoustique){0}Chevaillier (drainage autogène){0}Prise en charge de l’asthme',
-        'formation-sub3-title' => 'Orthopédie',
-        'formation-sub3-content' => 'Divers cours sur les malformations des pieds des nouveaux-nés{0}Rehabilitation musculo-squeletique chez les enfants{0}KISS syndrom',
-        'formation-sub4-title' => 'Autres formations en relation avec le développement du bébé',
-        'formation-sub4-content' => 'Dépistage et traitement précoce des troubles du neurodéveloppement du bébé{0}Kinesthetics Infant Handling{0}Stimulation orofaciale, et Early Feeding Skills Assessment{0}Traitement du torticoli congénital{0}Cours parents-bébés'
+        'sophie-portrait' => 'J’ai travaillé pendant 20 ans au Centre hospitalier Bienne en tant que physiothérapeute pédiatrique avec des enfants de 0 à 16 ans. De 2013 à 2021 j’étais responsable spécialisée en physiothérapie pédiatrique et j’ai encadré les étudiants.',
+        'sophie-formation-sub1-title' => 'Neuro-développement',
+        'sophie-formation-sub1-content' => 'COPCA coach{0}NDT bébé{0}NDT enfant',
+        'sophie-formation-sub2-title' => 'Physiothérapie respiratoire ',
+        'sophie-formation-sub2-content' => 'Postiaux (stetoacoustique){0}Chevaillier (drainage autogène){0}Prise en charge de l’asthme',
+        'sophie-formation-sub3-title' => 'Orthopédie',
+        'sophie-formation-sub3-content' => 'Divers cours sur les malformations des pieds des nouveaux-nés{0}Rehabilitation musculo-squeletique chez les enfants{0}KISS syndrom',
+        'sophie-formation-sub4-title' => 'Autres formations en relation avec le développement du bébé',
+        'sophie-formation-sub4-content' => 'Dépistage et traitement précoce des troubles du neurodéveloppement du bébé{0}Kinesthetics Infant Handling{0}Stimulation orofaciale, et Early Feeding Skills Assessment{0}Traitement du torticoli congénital{0}Cours parents-bébés',
+        'sarah-formation-sub1-title' => 'Formation / Formation continue',
+        'sarah-formation-sub1-content' => '2015-2016 	Certificat \"Fascial Fitness Trainer\", Zurzach{0}2012-2015 	Institut für Integrative Craniosacraltherapie, Evilard{0}2009-2010 	Neurodevelopmental Treatment (NDT) d’après Bobath{0}2002-2006 	Akademie Physiotherapie Thim van der Laan AG, Landquart',
+        'sarah-formation-sub2-title' => 'Expérience professionnelle',
+        'sarah-formation-sub2-content' => '2007-2015 	Physiothérapie au Centre hospitalier Bienne SA dans les domaines chirurgie, médecine interne, orthopédie, rhumatologie, pédiatrie{0}2008-2013 	Physiothérapeute responsable spécialisée en pédiatrie',
     ],
     'courses-page' => [
         'name' => 'Cours',
