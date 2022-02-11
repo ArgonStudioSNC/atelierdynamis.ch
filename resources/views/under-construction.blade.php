@@ -21,14 +21,14 @@
     </style>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#ffd100">
-    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url('/icons/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url('/icons/safari-pinned-tab.svg') }}" color="#ffd100">
+    <link rel="shortcut icon" href="{{ url('/icons/favicon.ico') }}">
     <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="msapplication-config" content="{{ url('/icons/browserconfig.xml') }}">
     <meta name="theme-color" content="#ffffff">
 
 </head>
@@ -38,7 +38,7 @@
         <div class="grid-container" style="max-width: 600px;">
             <div class="grid-y text-center grid-margin-y">
                 <div class="cell" style="padding: 0;">
-                    <object data="{{ asset('storage/logo_atelier_dynamis.svg') }}" width=100% style="max-width:450px;"></object>
+                    <img src="{{ url('storage/logo_atelier_dynamis.svg') }}" width=100% style="max-width:450px;" />
                 </div>
                 <div class="cell">
                     unsere website ist bald bereit, besuche uns im märz wieder | notre site internet est bientôt prêt, n'hésite pas à revenir en mars
@@ -64,8 +64,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 </body>
 
 </html>
