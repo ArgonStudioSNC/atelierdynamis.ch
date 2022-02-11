@@ -15,49 +15,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     <style>
     body {
-        color: white;
-    }
-    .fullscreen:after {
-        z-index: -100;
-        content: '';
-        filter: brightness(35%);
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        background: url('/storage/shutterstock_1646599021.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        -webkit-background-size :cover;
-        -moz-background-size :cover;
-        -o-background-size :cover;
-        background-size :cover;
+        color: #848585;
+        font-family: 'Roboto';
     }
     </style>
 
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#ffd100">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
     <main>
-        <div class="grid-y grid-frame fullscreen">
-            <h1 class="text-center">atelier Dynamis biel/bienne</h1>
-            <div class="grid-x align-middle align-center" style="height:100%;">
-                <div class="cell medium-5 text-center">
-                    <h2>Bienvenue</h2>
-                    <p>quelque chose se prépare ici... n'hésite pas à revenir nous rendre visite prochainement</p>
+        <div class="grid-container" style="max-width: 600px;">
+            <div class="grid-y text-center grid-margin-y">
+                <div class="cell" style="padding: 0;">
+                    <object data="{{ asset('storage/logo_atelier_dynamis.svg') }}" width=100% style="max-width:450px;"></object>
                 </div>
-                <div class="cell small-1"></div>
-                <div class="cell medium-5 text-center">
-                    <h2>Willkommen</h2>
-                    <p>hier wird etwas vorbereitet... zögere nicht, uns bald wieder zu besuchen</p>
+                <div class="cell">
+                    unsere website ist bald bereit, besuche uns im märz wieder | notre site internet est bientôt prêt, n'hésite pas à revenir en mars
+                </div>
+                <div class="cell">
+                    <div class="grid-x align-center grid-margin-x grid-margin-y grid-padding-x grid-padding-y medium-up-2">
+                        <div class="cell text-left" style="color: #ffffff; border: none; background-color: #E50695; box-shadow: 4px 4px 6px 1px #848585;">
+                            sarah meier<br />
+                            craniosacraltherapie<br />
+                            <a href="tel:+41763288990" style="color: inherit">+41 76 328 89 90</a>
+                        </div>
+                        <div class="cell text-left" style="color: #ffffff; border: none; background-color: #FFD100; box-shadow: 4px 4px 6px 1px #848585;">
+                            sophie charrière<br />
+                            physiothérapie pédiatrique<br />
+                            <a href="tel:+41774569616" style="color: inherit">+41 77 456 96 16</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <span style="font-weight: bold;">atelier dynamis</span><br />
+                    bahnhofplatz 1 | place de la gare 1<br />
+                    2502 biel/bienne<br />
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 </body>
 
 </html>
