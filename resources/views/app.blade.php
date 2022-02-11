@@ -20,14 +20,14 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('/icons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('/icons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('/icons/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ url('/icons/site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ url('/icons/safari-pinned-tab.svg') }}" color="#ffd100">
-    <link rel="shortcut icon" href="{{ url('/icons/favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('storage/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('storage/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('storage/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('storage/icons/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('storage/icons/safari-pinned-tab.svg') }}" color="#ffd100">
+    <link rel="shortcut icon" href="{{ asset('storage/icons/favicon.ico') }}">
     <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="{{ url('/icons/browserconfig.xml') }}">
+    <meta name="msapplication-config" content="{{ asset('storage/icons/browserconfig.xml') }}">
     <meta name="theme-color" content="#ffffff">
 
 </head>
