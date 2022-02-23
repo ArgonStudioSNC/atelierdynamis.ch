@@ -65,7 +65,7 @@
 // 1. Global
 // ---------
 
-$global-font-size: 0.9375rem;
+$global-font-size: 1.25rem;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.2;
 $foundation-palette: (
@@ -82,7 +82,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Graphie Book', Helvetica, Roboto, Arial, sans-serif;
 $body-safe-padding: false;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -139,8 +139,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-family: 'Como', 'Graphie', Helvetica, Roboto, Arial, sans-serif;
+$header-font-weight: 600;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
