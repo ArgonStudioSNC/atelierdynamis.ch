@@ -1,0 +1,18 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts:  https://www.linotype.com
+*/
+
+@font-face{
+    font-family:"Graphie Book";
+    src:url("/static/fonts/Graphie/5178576/2e638b22-5827-4cb3-9bf3-89bf06cf75fd.woff2") format("woff2"),
+        url("/static/fonts/Graphie/5178576/e3ac5bec-382f-4f40-887e-4063a6a319fe.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family:"Graphie Regular";
+    src:url("/static/fonts/Graphie/5219809/6fc1c574-eda4-4f2b-ad5f-8d1a13795f9e.woff2") format("woff2"),
+        url("/static/fonts/Graphie/5219809/9a29afc6-cb24-433a-bea9-58007e6b706c.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}

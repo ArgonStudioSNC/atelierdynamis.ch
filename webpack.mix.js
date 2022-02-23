@@ -23,6 +23,9 @@ mix
 
 .js('resources/js/app.js', 'js')
 
+.copyDirectory('resources/assets/fonts', 'public/static/fonts')
+.copyDirectory('resources/assets/icons', 'public/static/icons')
+
 .vue({
     version: 3,
     extractStyles: true,

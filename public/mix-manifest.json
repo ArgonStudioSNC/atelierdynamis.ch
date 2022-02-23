@@ -1,6 +1,20 @@
 {
-    "/js/app.js": "/js/app.js?id=2545802d370d259977436a8b2d6ba53b",
-    "/js/manifest.js": "/js/manifest.js?id=97388e573d6b3daf931d95331b12b2f3",
-    "/css/app.css": "/css/app.css?id=a5acca39b3eaf0caef37928ea90ea2c5",
-    "/js/vendor.js": "/js/vendor.js?id=7e8d6280b29adf191efda3aefbcce001"
+    "/js/app.js": "/js/app.js",
+    "/js/manifest.js": "/js/manifest.js",
+    "/css/app.css": "/css/app.css",
+    "/js/vendor.js": "/js/vendor.js",
+    "/static/icons/android-chrome-192x192.png": "/static/icons/android-chrome-192x192.png",
+    "/static/icons/android-chrome-512x512.png": "/static/icons/android-chrome-512x512.png",
+    "/static/icons/apple-touch-icon.png": "/static/icons/apple-touch-icon.png",
+    "/static/icons/browserconfig.xml": "/static/icons/browserconfig.xml",
+    "/static/icons/favicon-16x16.png": "/static/icons/favicon-16x16.png",
+    "/static/icons/favicon-32x32.png": "/static/icons/favicon-32x32.png",
+    "/static/icons/favicon.ico": "/static/icons/favicon.ico",
+    "/static/icons/mstile-144x144.png": "/static/icons/mstile-144x144.png",
+    "/static/icons/mstile-150x150.png": "/static/icons/mstile-150x150.png",
+    "/static/icons/mstile-310x150.png": "/static/icons/mstile-310x150.png",
+    "/static/icons/mstile-310x310.png": "/static/icons/mstile-310x310.png",
+    "/static/icons/mstile-70x70.png": "/static/icons/mstile-70x70.png",
+    "/static/icons/safari-pinned-tab.svg": "/static/icons/safari-pinned-tab.svg",
+    "/static/icons/site.webmanifest": "/static/icons/site.webmanifest"
 }

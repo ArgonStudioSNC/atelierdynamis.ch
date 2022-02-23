@@ -1,0 +1,28 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts:  https://www.linotype.com
+*/
+
+/* Como W05 Medium */
+@font-face{
+    font-family:"Como";
+    src:url("/static/fonts/Como/5326110/829caf43-a441-459e-b345-6aa0efb25f90.woff2") format("woff2"),
+        url("/static/fonts/Como/5326110/a8c399c2-f5bd-45ae-a048-26bb9dec7cf6.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+/* Como W05 SemiBold */
+@font-face{
+    font-family:"Como";
+    src:url("/static/fonts/Como/5228044/4a539d5d-b990-4b65-8ec5-7e068e483801.woff2") format("woff2"),
+        url("/static/fonts/Como/5228044/b46e99ba-8865-427b-8f9d-3e5b028e47dc.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+/* Como W05 Bold */
+@font-face{
+    font-family:"Como";
+    src:url("/static/fonts/Como/5213242/30390998-f5b4-4c67-9b32-2ce760c4da67.woff2") format("woff2"),
+        url("/static/fonts/Como/5213242/a51a1b7a-9d7f-4426-8c18-243743d7d3aa.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
