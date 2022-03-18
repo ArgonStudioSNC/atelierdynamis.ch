@@ -16,5 +16,6 @@
     "/static/icons/mstile-310x310.png": "/static/icons/mstile-310x310.png",
     "/static/icons/mstile-70x70.png": "/static/icons/mstile-70x70.png",
     "/static/icons/safari-pinned-tab.svg": "/static/icons/safari-pinned-tab.svg",
-    "/static/icons/site.webmanifest": "/static/icons/site.webmanifest"
+    "/static/icons/site.webmanifest": "/static/icons/site.webmanifest",
+    "/static/icons/vector.svg": "/static/icons/vector.svg"
 }

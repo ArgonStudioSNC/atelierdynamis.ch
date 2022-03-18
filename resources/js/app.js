@@ -12,4 +12,12 @@ const app = createApp({
 
 app.use(router);
 app.use(i18n);
+app.directive('foundation', {
+    mounted(el) {
+        $(el).foundation()
+    },
+    beforeUnmount(el) {
+        $(el).foundation.destroy()
+    }
+});
 app.mount('#app');

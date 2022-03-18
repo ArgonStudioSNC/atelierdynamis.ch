@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <symbol id="chevron" viewBox="0 0 48 26">
+        <g>
+            <path style="fill:none;stroke:inherit;stroke-linecap:round;stroke-width:4px;" d="M2,2l22.5,21.5L46,2"/>
+        </g>
+    </symbol>
+    <symbol id="hamburger" viewBox="0 0 32 24">
+        <g>
+            <path style="fill:none;stroke:inherit;stroke-linecap:round;stroke-width:4px;" d="M2.5,2.5l27,0M2.5,12l27,0M2.5,21.5l27,0"/>
+        </g>
+    </symbol>
+
+    <view id="chevron-white" viewBox="0 0 48 26"/>
+    <use href="#chevron" x='0' y='0' style="stroke:#fefefe" />
+
+    <view id="hamburger-white" viewBox="50 0 32 24"/>
+    <use href="#hamburger" x='50' y='0' />
+</svg>

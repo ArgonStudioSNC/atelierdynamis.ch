@@ -6,15 +6,15 @@ return [
     'biel' => 'Biel/Bienne',
     'address' => 'place de la gare 1{0}2502 Biel/Bienne',
     'locales' => [
-        'fr' => 'Français',
-        'de' => 'Deutsch'
+        'fr' => 'français',
+        'de' => 'deutsch'
     ],
     'homepage' => [
-        'name' => 'Acceuil',
+        'name' => 'acceuil',
         'dynamis-phylosophy' => 'dynamis : force, potentiel de ce qui n’est pas encore achevé, pas encore complètement réalisé{0}capacité à provoquer un changement{0}sortir de ses habitudes, rechercher en soi les ressources pour avancer.'
     ],
     'physio-page' => [
-        'name' => 'Physiothérapie',
+        'name' => 'physiothérapie pédiatrique',
         'offer-title' => 'Offre',
         'offer-content1' => 'Le plaisir de bouger se trouve dans chaque enfant. Je cherche à éveiller ce plaisir chez ceux dont les conditions de départ ne sont pas optimales.',
         'offer-content2' => 'L’enfant et sa famille dans son ensemble sont au centre de mes préoccupations. Dans le processus thérapeutique chacun prend part à l’analyse de la problématique, à la définition des buts et à la recherche de solutions. Je m’appliquer à favoriser la créativité des enfants et de leurs parents. Et me laisse surprendre par les solutions individuelles.',
@@ -29,14 +29,14 @@ return [
         'info5-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}La prise en charge à domicile doit être spécifiée sur la prescription.'
     ],
     'cranio-page' => [
-        'name' => 'Thérapie craniosacrale',
+        'name' => 'thérapie craniosacrale',
         'offer-content1' => 'La thérapie craniosacrale est un travail du corps par lequel, avec le plus grand soin et par de fines impulsions manuelles, la régulation propre est préparée et ainsi l’auto-guérison du corps. La santé dans l’homme est soutenue et des ressources sont fortifiées afin que des changements positifs puissent avoir lieu. La thérapie craniosacrale peut être employée chez des êtres humains de chaque âge et dans tous les cas de troubles de fonction du corps.',
         'offer-content2' => 'Un traitement chez moi dure une heure et coûte CHF 120.-.',
         'offer-content3' => 'La thérapie craniosacrale peut être décomptée moyennant l’assurance complémentaire auprès de beaucoup de caisses. Je suis reconnue dans le RME (Registre de Médecine Empirique) ainsi que dans l’ASCA (Fondation suisse pour les médecines complémentaires). Dans le lien ci-après, vous pouvez vérifier si votre caisse d’assurance maladie est enregistrée. Je vous prie de vous renseigner auprès de votre caisse d’assurance maladie au sujet de la participation exacte des coûts.',
         'links' => ' www.rme.ch{0}www.asca.ch',
     ],
     'practice-page' => [
-        'name' => 'L\'atelier',
+        'name' => 'l\'atelier',
         'formation-title' => 'Formations',
         'sophie-portrait' => 'J’ai travaillé pendant 20 ans au Centre hospitalier Bienne en tant que physiothérapeute pédiatrique avec des enfants de 0 à 16 ans. De 2013 à 2021 j’étais responsable spécialisée en physiothérapie pédiatrique et j’ai encadré les étudiants.',
         'sophie-formation-sub1-title' => 'Neuro-développement',
@@ -53,7 +53,7 @@ return [
         'sarah-formation-sub2-content' => '2007-2015 	Physiothérapie au Centre hospitalier Bienne SA dans les domaines chirurgie, médecine interne, orthopédie, rhumatologie, pédiatrie{0}2008-2013 	Physiothérapeute responsable spécialisée en pédiatrie',
     ],
     'courses-page' => [
-        'name' => 'Cours',
+        'name' => 'cours',
         'course1-title' => 'Atelier premier sourire ',
         'course1-content' => 'Un bébé est dépendant de ses parents pour toutes ses activités. Pour se développer harmonieusement il a besoin de communication, d’encouragement, de variations. Venez découvrir et développer vos capacités d’être en relation avec votre bébé.{0}L’atelier s’adresse aux bébés âgés de 2 à 4 mois accompagnés d’un parent. Les 3 séances peuvent être prises librement dans cet intervalle.{0}Horaire : lundi de 15h à 16h début possible en tout temps selon places disponibles{0}Prix : 100.- pour 3 séances ',
         'course2-title' => 'Atelier crapahuteurs',
@@ -62,7 +62,7 @@ return [
         'links-content' => 'COPCA{0}Physiopaed{0}office AI,{0}Cerebral{0}bewegterlebensstart.ch{0}cfch.ch'
     ],
     'contact-page' => [
-        'name' => 'Contact',
+        'name' => 'contact',
         'title' => 'atelier dynamis',
         'subtitle' => 'physiothérapie pédiatrique et thérapie craniosacrale',
         'address' => 'place de la gare 1{0}2502 Biel/Bienne',
