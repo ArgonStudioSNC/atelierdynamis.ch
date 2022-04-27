@@ -14,5 +14,5 @@ This CSS resource incorporates links to font software which is the valuable copy
     src:url("/static/fonts/Graphie/5219809/6fc1c574-eda4-4f2b-ad5f-8d1a13795f9e.woff2") format("woff2"),
         url("/static/fonts/Graphie/5219809/9a29afc6-cb24-433a-bea9-58007e6b706c.woff") format("woff");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
 }

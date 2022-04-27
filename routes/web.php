@@ -15,8 +15,6 @@ use App\Http\Controllers\Web\AppController;
 */
 
 Route::namespace('Web')->group(function () {
-    Route::get('/', function() {return view('under-construction');});
-
     Route::post('/contact-us', [AppController::class, 'contactUs'])->name('app.contact-us');
     Route::group(
         [

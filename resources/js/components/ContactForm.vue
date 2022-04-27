@@ -1,61 +1,89 @@
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>
 <style lang="scss">
 
-textarea {
-    resize: vertical;
+.contactForm {
+    textarea {
+        resize: vertical;
+        border-radius: 0 0 $global-radius $global-radius;
+    }
+    .multiselect {
+        .multiselect__placeholder {
+            display: none;
+        }
+        .multiselect__tags {
+            border: none;
+            border-radius: 0;
+        }
+    }
 }
 
 </style>
 
 <template>
-    <div id='contactForm'>
+    <div id='contactForm' class="contactForm">
         <form @submit.prevent="submit">
-            <input type="text" placeholder="Prénom" v-model="state.firstName">
+            <label>{{ $t('site.contact-form.contact-who') }}
+                <multiselect
+                    v-model="value"
+                    :options="options"
+                    :searchable="false"
+                    :show-labels="false"
+                    :allow-empty="false"
+                    :hide-selected="true"
+                >
+                </multiselect>
+            </label>
+            <label>{{ $t('site.contact-form.firstname') }}
+                <input type="text" v-model="state.firstName">
+            </label>
             <span v-if="v$.firstName.$error">
                 {{ v$.firstName.$errors[0].$message }}
             </span>
-            <input type="text" placeholder="Nom" v-model="state.lastName">
+            <label>{{ $t('site.contact-form.lastname') }}
+                <input type="text" v-model="state.lastName">
+            </label>
             <span v-if="v$.lastName.$error">
                 {{ v$.lastName.$errors[0].$message }}
             </span>
-            <input type="tel" placeholder="Téléphone" v-model="state.phone">
+            <label>{{ $t('site.contact-form.phone') }}
+                <input type="tel" v-model="state.phone">
+            </label>
             <span v-if="v$.phone.$error">
                 {{ v$.phone.$errors[0].$message }}
             </span>
-            <input type="email" placeholder="Adresse email" v-model="state.email">
+            <label>{{ $t('site.contact-form.email') }}
+                <input type="email" v-model="state.email">
+            </label>
             <span v-if="v$.email.$error">
                 {{ v$.email.$errors[0].$message }}
             </span>
-            <input type="text" placeholder="Âge du patient" v-model="state.age">
-            <span v-if="v$.age.$error">
-                {{ v$.age.$errors[0].$message }}
-            </span>
-            <input type="text" placeholder="Motif de consultation" v-model="state.motivation">
-            <span v-if="v$.motivation.$error">
-                {{ v$.motivation.$errors[0].$message }}
-            </span>
-            <textarea placeholder="Votre message..." v-model="state.message"></textarea>
+            <label>{{ $t('site.contact-form.message') }}
+                <textarea v-model="state.message" rows="4"></textarea>
+            </label>
             <span v-if="v$.message.$error">
                 {{ v$.message.$errors[0].$message }}
             </span>
 
-            <button ref="submit" class="button" type="submit">Envoyer</button>
+            <button ref="submit" class="button float-right" type="submit">{{ $t('site.contact-form.send') }}</button>
         </form>
     </div>
 </template>
 
 <script>
+import Multiselect from 'vue-multiselect'
 import useValidate from "@vuelidate/core";
 import { required, email, numeric, helpers } from "@vuelidate/validators";
 import { reactive, computed } from "vue";
 export default {
+    components: {
+        Multiselect
+    },
     setup() {
         const state = reactive({
             firstName: '',
             lastName: '',
             phone: '',
             email: '',
-            age: '',
-            motivation: '',
             message: '',
         });
         const rules = computed(() => {
@@ -67,8 +95,6 @@ export default {
                     required: helpers.withMessage("champ requis", required),
                     email: helpers.withMessage("email requis", email)
                 },
-                age: { numeric: helpers.withMessage("numeric requis", numeric) },
-                motivation: { required: helpers.withMessage("champ requis", required) },
                 message: { required: helpers.withMessage("champ requis", required) },
             };
         });
@@ -78,7 +104,10 @@ export default {
         return { state, v$ }
     },
     data () {
-        return {}
+        return {
+            value: null,
+            options: ['cranio', 'physio', 'courses']
+        }
     },
 
     methods: {

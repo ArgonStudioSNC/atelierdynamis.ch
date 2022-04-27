@@ -6,15 +6,25 @@
         width: 100%
     }
     .contact {
+        text-transform: lowercase;
+        font-size: 1.25em;
+        line-height: 1.4;
         color: $white;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
+        .contact-name {
+            font-family: 'Como';
+            line-height: 1.2;
+            font-size: 2rem;
+            font-weight: bold;
+        }
     }
     a {
         color: $white;
     }
+
     .footer-left {
         padding-top: 2rem;
         position: relative;
@@ -37,6 +47,7 @@
         }
     }
     .footer-middle {
+        text-transform: lowercase;
         .logo {
             max-width: 200px;
             height: auto;
@@ -59,9 +70,9 @@
                             <circle cx="50" cy="50" r="50" />
                         </svg>
                         <div class="contact">
-                            <h2><b>sarah meier</b></h2>
-                            <h3>{{ $t('site.cranio-page.name') }}<br />
-                            <a href="tel:+41763288990">t. +41 76 328 89 90</a></h3>
+                            <div class="contact-name">sarah meier</div>
+                            {{ $t('site.cranio-page.name') }}<br />
+                            <a href="tel:+41763288990">t. +41 76 328 89 90</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +80,7 @@
                     <div class="footer-middle">
                         <img class="logo" v-bind:src="logo_img">
                         <div class="title">{{ $t('site.title') }}</div>
-                        <i18n-t keypath="site.address" tag="div" class="cell">
+                        <i18n-t keypath="site.address" tag="div">
                             &nbsp;|&nbsp;
                         </i18n-t>
                     </div>
@@ -80,9 +91,9 @@
                             <circle cx="50" cy="0" r="50" />
                         </svg>
                         <div class="contact">
-                            <h2><b>sophie charrière</b></h2>
-                            <h3>{{ $t('site.physio-page.name') }}<br />
-                            <a href="tel:+41774569616">t. +41 77 456 96 16</a></h3>
+                            <div class="contact-name">sophie charrière</div>
+                            {{ $t('site.physio-page.name') }}<br />
+                            <a href="tel:+41774569616">t. +41 77 456 96 16</a>
                         </div>
                     </div>
                 </div>
