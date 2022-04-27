@@ -60,7 +60,7 @@
                                 <div>{{ $t("site.courses-page.course1-rate") }}</div>
                             </div>
                             <div class="cell margin-top-auto">
-                                <button class="button button-yellow">{{ $t("site.courses-page.register-me") }}</button>
+                                <button class="button button-yellow disabled">{{ $t("site.courses-page.register-me") }}</button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                                 <div>{{ $t("site.courses-page.course2-rate") }}</div>
                             </div>
                             <div class="cell margin-top-auto">
-                                <button class="button button-yellow">{{ $t("site.courses-page.register-me") }}</button>
+                                <button class="button button-yellow disabled">{{ $t("site.courses-page.register-me") }}</button>
                             </div>
                         </div>
                     </div>

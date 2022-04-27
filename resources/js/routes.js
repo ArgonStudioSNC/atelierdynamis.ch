@@ -60,12 +60,12 @@ const routes = [
                 name: 'Impressum',
                 component: Impressum,
             },
-            {
-                path: ':pathMatch(.*)*',
-                name: 'NotFound',
-                component: NotFound,
-            },
         ]
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: NotFound,
     },
 ];
 
