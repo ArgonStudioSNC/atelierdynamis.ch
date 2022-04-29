@@ -13,7 +13,7 @@ return [
     'know-more-btn' => "mehr erfahren",
     'homepage' => [
         'name' => 'Startseite',
-        'lead' => 'Kinderphysiotherapie und Craniosacraltherapie',
+        'lead' => 'Kinderphysiotherapie{0}Craniosacraltherapie',
         'dynamis-philosophy-title' => 'dynamis',
         'dynamis-philosophy' => 'Kraft, Vermögen eine Veränderung einzuleiten',
         'cranio-summary' => 'In der Craniosacraltherapie ist das Hauptaugenmerk auf die innewohnende Gesundheit, die Selbstheilungskräfte und die Ressourcen des Menschen gerichtet. Genesung geschieht in Zusammenarbeit von Klient·in  und Therapeut·in',
@@ -43,7 +43,7 @@ return [
         'appointment-title' => 'Terminvereinbarung',
         'reimbursement-title' => 'Rückerstattung',
         'prescription-title' => 'Verordnung',
-        'name' => 'Craniosacraletherapie',
+        'name' => 'Craniosacraltherapie',
         'offer-lead' => 'Im Zentrum meiner Arbeit steht der Mensch als Einheit von Körper, Seele und Geist',
         'offer-content' => 'Durch sanfte Berührung und feine manuelle Impulse kann der Selbstheilungsprozess eingeleitet werden. Die Gesundheit im Menschen wird unterstützt und Ressourcen gestärkt, so dass positive Veränderungen stattfinden können.{0}Mit einer Craniosacral-Behandlung schenken Sie sich eine Auszeit in der  Körper, Seele und Geist zur Ruhe kommen, neue Energie schöpfen und sich neu orientieren können.',
         'patient-care-lead' => 'Die Craniosacral Therapie kann zur Förderung des Gleichgewichts zwischen Körper, Geist, Seele und Umwelt beitragen. Sie kann sie in jeder Lebenssituation unterstützen. Ich behandle Menschen jeden Alters',
@@ -61,7 +61,7 @@ return [
     ],
     'practice-page' => [
         'name' => 'Atelier',
-        'formation-title' => 'Berufserfahrung',
+        'formation-title' => 'Ausbildungen',
         'sarah-portrait' => 'Nach meiner Ausbildung zur Physiotherapeutin habe ich 2007 im Spitalzentrum Biel AG in der Erwachsenenphysiotherapie zu arbeiten begonnen. Nach kurzer Zeit hatte ich die Möglichkeit in die Kinderphysiotherapie einzusteigen. Die Arbeit mit den Kindern und ihren Familien hat mir so gut gefallen dass ich in der Kinderphysiotherapie geblieben bin.{0}Von 2008 bis 2013 war ich Fachverantwortliche Physiotherapeutin Pädiatrie.{0}Durch die Geburt meines ersten Sohnes bin ich mit der Craniosacraltherapie in Berührung gekommen. Nach der Ausbildung zur Craniosacraltherapeutin habe ich mich 2015 selbständig gemacht.',
         'sarah-formation1' => [
             'title' => 'Physiotherapie',
@@ -76,6 +76,7 @@ return [
             'content' => 'Zertifikat Fascial Fitness Trainer{0}Fascial Fitness und Beckenboden{0}Fascial Fitness Tanz für einen kraftvollen Rücken und Bindegewebe{0}Fascial Fitness Trainer by Blackroll',
         ],
         'sophie-portrait' => 'Ich habe 1989 im Spitalzentrum Biel als Physiotherapeutin für Erwachsene angefangen. Sehr schnell hat sich die Pädiatrie als mein Lieblingsgebiet gezeigt. Ich habe 20 Jahre Erfahrung mit Kindern im Alter von 0 bis 16 Jahren gesammelt.{0}Von 2013 bis 2021 war ich Fachlverantwortliche Physiotherapeutin für die Pädiatrie und habe Studierende betreut. Seit 2022 bin ich selbstständige Kinderphysiotherapeutin.',
+        'sophie-degree' => 'Physiotherapie-Diplom',
         'sophie-formation1' => [
             'title' => 'Entwicklungneurologie',
             'content' => 'COPCA Coach{0}NDT Bobath Baby{0}NDT Bobath Kinder',

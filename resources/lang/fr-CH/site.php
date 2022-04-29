@@ -12,8 +12,8 @@ return [
     'contact-us' => 'nous contacter',
     'know-more-btn' => "en savoir +",
     'homepage' => [
-        'name' => 'acceuil',
-        'lead' => 'Physiothérapie pédiatrique et thérapie craniosacrale',
+        'name' => 'accueil',
+        'lead' => 'Physiothérapie pédiatrique{0}Thérapie craniosacrale',
         'dynamis-philosophy-title' => 'dynamis',
         'dynamis-philosophy' => 'force, capacité à initier un changement',
         'cranio-summary' => 'La thérapie craniosacrale met l’accent sur la santé intrinsèque, les forces d’autoguérison et les ressources de l’être humain. La guérison est le fruit d’une interaction entre le/la client/e et le/la thérapeute.',
@@ -61,7 +61,7 @@ return [
     ],
     'practice-page' => [
         'name' => 'l’atelier',
-        'formation-title' => 'Expérience professionnelle',
+        'formation-title' => 'Formations',
         'sarah-portrait' => 'Après ma formation de physiothérapeute, j’ai commencé à travailler en 2007 au Centre hospitalier Bienne SA dans le domaine de la physiothérapie pour adultes. Peu de temps après, j’ai eu la possibilité de me lancer dans la physiothérapie pédiatrique. Le travail avec les enfants et leurs familles m’a tellement plu que je suis restée en physiothérapie pédiatrique.{0}De 2008 à 2013, j’ai été physiothérapeute responsable de la pédiatrie.{0}C’est la naissance de mon premier fils qui m’a fait découvrir la thérapie craniosacrale. Après avoir suivi une formation de thérapeute craniosacrale, je me suis mise à mon compte en 2015.',
         'sarah-formation1' => [
             'title' => 'Physiothérapie',
@@ -76,6 +76,7 @@ return [
             'content' => 'Certificat Fascial Fitness{0}Fascial Fitness et le plancher pelvien{0}Fascial Fitness danse pour un dos et un tissu conjonctif pleins de force{0}Fascial Fitness Trainer by Blackroll',
         ],
         'sophie-portrait' => 'J’ai commencé en 1989 au Centre hospitalier Bienne, en tant que physiothérapeute pour adultes. Très vite la pédiatrie s’est révélée être mon domaine de prédilection.J’ai accumulé 20 ans d’expérience avec des enfants de 0 à 16 ans.{0}De 2013 à 2021 j’étais responsable spécialisée en physiothérapie pédiatrique et j’ai encadré les étudiants. Depuis 2022 je suis physiothérapeute pédiatrique indépendante.',
+        'sophie-degree' => 'Dipôme en physiothérapie',
         'sophie-formation1' => [
             'title' => 'Neuro-développement',
             'content' => 'COPCA coach{0}NDT bébé (Bobath Baby){0}NDT enfant (Bobath Child)',

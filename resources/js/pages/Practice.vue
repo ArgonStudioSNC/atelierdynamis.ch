@@ -135,6 +135,9 @@
                                     <div class="separator"></div>
                                     <div class="grid-x grid-margin-y">
                                         <div class="cell">
+                                            <div>{{ $t('site.practice-page.sophie-degree') }}</div>
+                                        </div>
+                                        <div class="cell">
                                             <div class="strong-text">{{ $t('site.practice-page.sophie-formation1.title') }}</div>
                                             <i18n-t keypath="site.practice-page.sophie-formation1.content" tag="div">
                                                 <br />

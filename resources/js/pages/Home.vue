@@ -5,15 +5,11 @@
     .hero-title-container {
         height: 100%;
         .hero-title {
-            width: 50%;
-            height: 100%;
+            color: $light-gray;
+            line-height: 1.3;
+            font-weight: 500;
+            margin-bottom: 2rem;
             padding-right: 2rem;
-            .hero-title-text {
-                color: $light-gray;
-                line-height: 1.3;
-                font-weight: 500;
-                margin-bottom: 2rem;
-            }
             .button {
                 position: absolute;
             }
@@ -259,13 +255,15 @@
 <template>
     <div id='homepage'>
         <div id="hero" class="hero grid-y grid-frame">
-            <div class="hero-title-container grid-container">
-                <div class="hero-title grid-x align-middle">
-                    <div class="cell">
-                        <h1 class="hero-title-text"><b>atelier dynamis</b>, {{ $t("site.homepage.lead") }}.</h1>
+            <div class="cell hero-title-container grid-container grid-x align-middle">
+                    <div class="cell small-6">
+                        <h1 class="hero-title"><b>atelier dynamis</b><br />
+                        <i18n-t keypath="site.homepage.lead">
+                            <br />
+                        </i18n-t>
+                        </h1>
                         <button @click="scrollPastHero" class="button">{{ $t("site.know-more-btn") }}</button>
                     </div>
-                </div>
             </div>
             <div class="hero-graphics-container">
                 <svg class="circle-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMid slice" x="0" y="0">
