@@ -14,12 +14,11 @@ class ContactUsFormRequest extends FormRequest
     public function rules()
     {
         return [
+            'service'       => 'required',
             'firstName'     => 'required',
             'lastName'      => 'required',
             'phone'         => 'required',
             'email'         => 'required|email',
-            'age'           => 'numeric',
-            'motivation'    => 'required',
             'message'       => 'required',
         ];
     }

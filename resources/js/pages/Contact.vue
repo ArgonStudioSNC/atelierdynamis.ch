@@ -32,7 +32,7 @@
             <div class="grid-container">
                 <div class="grid-x align-center">
                     <div class="cell small-4">
-                        <ContactFormComponent class="hide"></ContactFormComponent>
+                        <ContactFormComponent></ContactFormComponent>
                     </div>
                     <div class="cell small-1"></div>
                     <div class="cell small-5">

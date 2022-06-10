@@ -25,15 +25,6 @@
 	@include transform(rotate($deg));
 }
 
-// Transition
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-
 // Border-Radius
 @mixin border-radius ($radius) {
    -webkit-border-radius: $radius;

@@ -26,6 +26,7 @@ class ContactUsMail extends Mailable
      */
     public function __construct(ContactUsForm $form)
     {
+        $this->locale = $form->locale;
         $this->form = $form;
     }
 
@@ -36,8 +37,25 @@ class ContactUsMail extends Mailable
      */
     public function build()
     {
-        return $this->to('contact@argonstudio.ch')//->to('sophie.charriere@atelierdynamis.ch')
-                    ->subject('my subject')
-                    ->view('mailable.contactUsConfimation');
+        $recipient = 'contact@argonstudio.ch';
+        $subject = 'atelier dynamis contact form - something went wrong';
+        switch ($this->form->service) {
+            case 'cranio':
+                $recipient = 'mail@sarah-meier.ch';
+                $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.cranio').' - '.$this->form->firstName.' '.$this->form->lastName;
+                break;
+            case 'physio':
+                $recipient = 'sophie@atelierdynamis.ch';
+                $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.physio').' - '.$this->form->firstName.' '.$this->form->lastName;
+                break;
+            case 'courses':
+                $recipient = 'sophie@atelierdynamis.ch';
+                $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.courses').' - '.$this->form->firstName.' '.$this->form->lastName;
+                break;
+            default:
+        }
+        return $this->to($recipient)
+                    ->subject($subject)
+                    ->view('mailable.contactUsMail');
     }
 }

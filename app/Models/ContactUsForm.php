@@ -13,6 +13,6 @@ class ContactUsForm extends Model
      * @var array
      */
     protected $fillable = [
-        'firstName', 'lastName', 'phone', 'email', 'age', 'motivation', 'message',
+        'service', 'firstName', 'lastName', 'phone', 'email', 'message', 'locale',
     ];
 }

@@ -34,39 +34,6 @@
     }
 }
 
-.page-title {
-    position: relative;
-    height: $titlebar-height;
-    padding: $titlebar-padding;
-    color: $white;
-    .page-title-image {
-        opacity: 0.2;
-        position: absolute;
-        top:0 ;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-size: cover;
-    }
-    .page-title-content {
-        position: relative;
-        line-height: 90px;
-    }
-    &--yellow {
-        background-color: get-color(dynamis-yellow);
-    }
-    &--magenta {
-        background-color: get-color(dynamis-magenta);
-    }
-    &--gray {
-        background-color: $medium-gray;
-    }
-}
-
-.checkbox {
-    height: 1em;
-}
-
 </style>
 
 <template>

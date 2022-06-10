@@ -11,6 +11,20 @@
             background-image: url(/storage/pictures/@2400/courses-banner.jpg);
         }
     }
+    .card-picture {
+        width: 100%;
+        padding-top: 38.68%;
+        position: relative;
+        overflow: hidden;
+        .card-picture-sourir {
+            position: absolute;
+            bottom: -30%;
+        }
+        .card-picture-crapahuteurs {
+            position: absolute;
+            top: -10%;
+        }
+    }
     .card-divider {
         padding-left : 1.3rem;
         padding-right : 1.3rem;
@@ -34,9 +48,9 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="cell small-4 card card--yellow">
-                        <picture>
+                        <picture class="card-picture">
                             <source media="(min-width:1200px)" srcset="/storage/pictures/@1200/courses-sourir.jpg">
-                            <img src="/storage/pictures/@600/courses-sourir.jpg" alt="course picture">
+                            <img class="card-picture-sourir" src="/storage/pictures/@600/courses-sourir.jpg" alt="course picture" y="50px">
                         </picture>
                         <div class="card-divider align-center"><h2>{{ $t('site.courses-page.course1-title') }}</h2></div>
                         <div class="card-section text-center grid-y grid-padding-y">
@@ -60,14 +74,15 @@
                                 <div>{{ $t("site.courses-page.course1-rate") }}</div>
                             </div>
                             <div class="cell margin-top-auto">
-                                <button class="button button-yellow disabled">{{ $t("site.courses-page.register-me") }}</button>
+                                <router-link class="button button-yellow" :to="{ name: 'Contact'}">{{ $t("site.courses-page.register-me") }}</router-link>
+                                <button class="button button-yellow hide">{{ $t("site.courses-page.register-me") }}</button>
                             </div>
                         </div>
                     </div>
                     <div class="cell small-4 card card--yellow">
-                        <picture>
+                        <picture class="card-picture">
                             <source media="(min-width:1200px)" srcset="/storage/pictures/@1200/courses-crapahuteurs.jpg">
-                            <img src="/storage/pictures/@600/courses-crapahuteurs.jpg" alt="course image">
+                            <img class="card-picture-crapahuteurs" src="/storage/pictures/@600/courses-crapahuteurs.jpg" alt="course image">
                         </picture>
                         <div class="card-divider align-center"><h2>{{ $t('site.courses-page.course2-title') }}</h2></div>
                         <div class="card-section text-center grid-y grid-padding-y">
@@ -91,7 +106,8 @@
                                 <div>{{ $t("site.courses-page.course2-rate") }}</div>
                             </div>
                             <div class="cell margin-top-auto">
-                                <button class="button button-yellow disabled">{{ $t("site.courses-page.register-me") }}</button>
+                                <router-link class="button button-yellow" :to="{ name: 'Contact'}">{{ $t("site.courses-page.register-me") }}</router-link>
+                                <button class="button button-yellow hide">{{ $t("site.courses-page.register-me") }}</button>
                             </div>
                         </div>
                     </div>

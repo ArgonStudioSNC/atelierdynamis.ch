@@ -35,7 +35,7 @@ return [
         'patient-care-content2' => 'Maladresse motrice, trouble de l’équilibre;Problème orthopédique :  déficit postural et/ou rétractions musculaires, scoliose, cyphose, pieds bots, mauvais alignement des membres inférieurs, luxation de hanche, Perthes…;Traumatisme et rééducation post opératoire;Affection rhumatologique;Maladie respiratoire : mucoviscidose, asthme, bronchiolite;Surpoids',
         'appointment-content' => 'Prise de rendez-vous téléphonique. Laissez un message sur le répondeur si je ne suis pas disponible. Je vous rappellerai.{0}Merci d’annuler un rendez-vous 12 heures à l’avance. Un rendez-vous manqué non-annulé est à votre charge et vous sera directement facturé 50.-',
         'reimbursement-content' => 'La physiothérapie pédiatrique est remboursée, sur prescription médicale, par les caisses maladies ou l’assurance invalidité. Veuillez prendre avec vous la prescription médicale et la carte de caisse maladie lors du premier rendez-vous.{0}Un conseil ou une évaluation sont aussi possibles sans prescription médicale. Les coûts vous seront facturés directement. Coût 80.-',
-        'prescription-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}La prise en charge à domicile doit être spécifiée sur la prescription.'
+        'prescription-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}Une prise en charge à domicile est aussi possible. Elle doit être spécifiée sur la prescription.'
     ],
     'cranio-page' => [
         'name' => 'thérapie craniosacrale',
@@ -105,12 +105,12 @@ return [
         'course1-lead' => 'Un bébé est dépendant de ses parents pour toutes ses activités. Pour se développer harmonieusement il a besoin d’être compris donc d’entrer en communication, de faire des expériences variées, dans un environnement stimulant et rassurant.{0}Venez découvrir et développer vos capacités d’être en relation avec votre bébé, augmenter la confiance en vos gestes pour ainsi transmettre la confiance en soi à votre enfant.',
         'course1-target' => 'L’atelier s’adresse aux bébés âgés de 2 à 4 mois accompagnés d’un parent. Les 3 séances peuvent être prises librement dans cet intervalle.',
         'course1-schedule' => 'lundi de 15h à 16h{0}début possible en tout temps selon les places disponibles',
-        'course1-rate' => '90 CHF pour 3 séances',
+        'course1-rate' => '90.- pour 3 séances',
         'course2-title' => 'atelier crapahuteurs',
         'course2-lead' => 'votre bébé roule, pivote sur le ventre ou sur le dos, rampe, va à 4 pattes, grimpe, glisse sur les fesses, bref se déplace mais ne marche pas encore librement de manière sûre. Il peut venir exercer ses compétences chez les crapahuteurs, sous l’œil attentif et encourageant d’un adulte (parent, grand-parent, nounou...){0}Suivant le principe de Montessori « aide moi à faire seul » nous définissons le niveau de développement de l’enfant, son centre d’intérêt à l’instant présent et jouons avec lui à la limite de ses compétences en adaptant l’environnement.{0}Nous faisons également de la gym bébé, des massages des pieds et des mains, accompagnés de chansons et comptines.',
         'course2-target' => 'Pour les enfants entre 8 et 18 mois qui ne marche pas encore librement de manière sûre.',
         'course2-schedule' => 'vendredi 15h à 16h{0}début possible en tout temps selon les places disponibles',
-        'course2-rate' => '100 CHF pour 4 séances',
+        'course2-rate' => '100.- pour 4 séances',
     ],
     'contact-page' => [
         'name' => 'contact',
@@ -125,6 +125,11 @@ return [
         'email' => 'adresse mail',
         'phone' => 'téléphone',
         'message' => 'votre message',
+        'services' => [
+            'cranio' => 'thérapie craniosacrale',
+            'physio' => 'physiothérapie pédiatrique',
+            'courses' => 'cours',
+        ],
     ],
     'impressum-page' => [
         'name' => 'Mentions légales'

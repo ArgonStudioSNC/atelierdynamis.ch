@@ -4,69 +4,42 @@
 .navigation {
     padding-top: calc(90px + 2rem);
     padding-bottom: 2rem;
-}
-
-.separator {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 1em;
-    height: 1em;
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: $light-gray;
-        @include border-radius(2px);
-    }
-    &--strong {
-        margin-top: 1em;
-        width: 2em;
-        &::after {
-            background: $medium-gray;
-            @include border-radius(0px);
-        }
-    }
-}
-
-.menu {
-    text-transform: lowercase;
-    &--navigation {
-        font-family: 'Como';
-        font-size: 1.75em;
-        :nth-child(2) > a {
-            color: get-color(dynamis-magenta);
-            &:hover {
-                color: scale-color(get-color(dynamis-magenta), $lightness: -14%);
-            }
-        }
-        :nth-child(3) > a {
-            color: get-color(dynamis-yellow);
-            &:hover {
-                color: scale-color(get-color(dynamis-yellow), $lightness: -14%);
-            }
-        }
-    }
-    &--localization {
-        font-family: 'Como';
-        color:red;
-        font-size: 1.1em;
-        li > a {
-            line-height: $global-lineheight;
-            padding: 0;
-        }
-    }
-    &--address {
-        :nth-child(1) {
+    .menu {
+        text-transform: lowercase;
+        &--navigation {
             font-family: 'Como';
-            font-weight: 600;
+            font-size: 1.75em;
+            :nth-child(2) > a {
+                color: get-color(dynamis-magenta);
+                &:hover {
+                    color: scale-color(get-color(dynamis-magenta), $lightness: -14%);
+                }
+            }
+            :nth-child(3) > a {
+                color: get-color(dynamis-yellow);
+                &:hover {
+                    color: scale-color(get-color(dynamis-yellow), $lightness: -14%);
+                }
+            }
+        }
+        &--localization {
+            font-family: 'Como';
+            color:red;
+            font-size: 1.1em;
+            li > a {
+                line-height: $global-lineheight;
+                padding: 0;
+            }
+        }
+        &--address {
+            :nth-child(1) {
+                font-family: 'Como';
+                font-weight: 600;
+            }
         }
     }
 }
+
 </style>
 
 <template>

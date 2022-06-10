@@ -1,49 +1,56 @@
 <style lang="scss">
 @import '~@sass/_mixins';
 
-.header-padding {
-    height: $titlebar-height;
-}
-.header-fixed {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 50;
-    background-color: $topbar-background;
-    .title-bar {
+.header {
+    .header-padding {
         height: $titlebar-height;
-        .logo {
-            height: calc($titlebar-height - 2rem);
-            position: absolute;
-            top: 1rem;
-            width: auto;
-        }
-        .menu-btn {
-            position: absolute;
-            right: 50px;
-            top: 50%;
-            padding: 3px;
-            z-index: 50;
-            @include translate(0, calc(-50% + 2px));
-            cursor: pointer;
-        }
     }
-    &.header-scroll {
-        @include transition(background-color 0.2s ease);
-        .logo {
-            @include transition(height 0.2s ease);
+    .header-fixed {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 50;
+        background-color: $topbar-background;
+        .title-bar {
+            height: $titlebar-height;
+            .logo {
+                height: calc($titlebar-height - 2rem);
+                position: absolute;
+                top: 1rem;
+                width: auto;
+            }
+            .menu-btn {
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                padding: 3px;
+                z-index: 50;
+                @include translate(0, calc(-50% + 2px));
+                cursor: pointer;
+            }
         }
-        .hamburger > .bar {
-            @include transition(transform 0.2s ease, background-color 0.2s ease);
+        &.header-scroll {
+            @include transition(background-color 0.2s ease);
+            .logo {
+                @include transition(height 0.2s ease);
+            }
+            .hamburger > .bar {
+                @include transition(transform 0.2s ease, background-color 0.2s ease);
+            }
         }
-    }
-    &.transparent {
-        background-color: transparent;
-        .logo {
-            height: 250px;
-        }
-        .hamburger > .bar {
-            background-color: $white;
+        &.transparent {
+            background-color: transparent;
+            .logo {
+                @include breakpoint(medium up) {
+                    height: 180px;
+                }
+                @include breakpoint(xlarge up) {
+                    height: 250px;
+                }
+            }
+            .hamburger > .bar {
+                background-color: $white;
+            }
         }
     }
 }
@@ -135,6 +142,12 @@ export default {
     },
     mounted(){
         if (this.$route.name == 'Home') this.enableTransition();
+
+        //DEVELOPPEMENT
+        console.log(Foundation.MediaQuery.current);
+        $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+            console.log(newSize);
+        });
     },
     destroyed () {
         if (this.$route.name == 'Home') this.disableTransition();

@@ -6,8 +6,8 @@ return [
     'biel' => 'Biel/Bienne',
     'address' => 'Bahnhofplatz 1{0}2502 Biel/Bienne',
     'locales' => [
-        'fr' => 'Französich',
-        'de' => 'allemand'
+        'fr' => 'français',
+        'de' => 'Deutsch'
     ],
     'contact-us' => 'Kontakt',
     'know-more-btn' => "mehr erfahren",
@@ -35,7 +35,7 @@ return [
         'patient-care-content2' => 'Ungeschicklichkeit, Gleichgewichtsstörungen;Orthopädische Probleme: Haltungsdefizit und / oder Muskelverspannungen, Skoliose, Kyphose, Klumpfüsse, Beinachsenfehlstellung unteren Extremität, Hüftluxationen, Morbus Perthes;Nachbehandlung von Verletzungen und Operationen;Rheumatische Erkrankungen;Atemwegserkrankungen: CF, Asthma, Bronchiolitis;Übergewicht',
         'appointment-content' => 'Telefonische Terminvereinbarung. Sollte ich nicht erreichbar sein, hinterlassen Sie bitte eine Nachricht auf dem Anrufbeantworter. Ich werde Sie zurückrufen.{0}Danke dass Sie vereinbarte Termine 12h im Voraus absagen. Für verpasste oder nicht abgemeldete Termine werden Ihnen auf eigene Rechnung 50.- verrechnet.',
         'reimbursement-content' => 'Die Kinderphysiotherapie wird auf ärztliche Verordnung von den Krankenkassen oder der IV rückerstattet. Bitte nehmen Sie zum ersten Termin die ärztliche Verordnung und die Krankenkassenkarte mit.{0}Eine Beratung oder Evaluation sind auch ohne ärztliche Verordnung möglich. Die Kosten von 80.- werden Ihnen direkt verrechnet.',
-        'prescription-content' => 'In der Regel gilt die Verordnung für 9 Behandlungen mit der Möglichkeit auf 3 weitere Serien von 9 Behandlungen zu verlängern. Die erste Behandlung muss in den 5 Wochen nach der Erstellung der Verordnung stattfinden. Warten Sie deshalb nicht zu lange einen Termin zu vereinbaren!{0}Damit von den Krankenkassen eine Heimbehandlung übernommen wird, muss dies auf der Verordnung explizit ersichtlich sein.'
+        'prescription-content' => 'In der Regel gilt die Verordnung für 9 Behandlungen mit der Möglichkeit auf 3 weitere Serien von 9 Behandlungen zu verlängern. Die erste Behandlung muss in den 5 Wochen nach der Erstellung der Verordnung stattfinden. Warten Sie deshalb nicht zu lange einen Termin zu vereinbaren!{0}Eine Heimbehandlung ist ebenfalls möglich. Sie muss auf dem Rezept angegeben werden. Dies muss auf der Verordnung explizit ersichtlich sein.'
     ],
     'cranio-page' => [
         'offer-title' => 'Angebot',
@@ -101,15 +101,15 @@ return [
         'schedule' => 'Kurszeiten',
         'rate' => 'Kosten',
         'register-me' => 'ich melde mich an',
-        'course1-title' => 'Erstes Lächeln',
+        'course1-title' => 'Sociales Lächeln',
         'course1-lead' => 'Ein Baby ist für alle Aktivitäten von seinen Eltern abhängig. Um sich harmonisch entwickeln zu können muss es in einem stimulierenden und sicheren Umfeld verstanden werden, in Kommunikation treten und verschiedene Erfahrungen machen können.{0}Entdecken und Verfeinern Sie Ihre Möglichkeiten mit Ihrem Kind in Beziehung zu treten, steigern Sie Ihr Vertrauen in Ihren Umgang mit dem Kind um ihm dadurch mehr Selbstvertrauen zu vermitteln.',
         'course1-target' => 'Der Kurs wird für Kinder zwischen 2 und 4 Monaten in Begleitung eines Elternteils angeboten. Die 3 Mal können in diesem Zeitraum frei eingeteilt werden.',
-        'course1-schedule' => 'Montag von 15-16h{0}Einstieg jederzeit möglich wenn es freie Plätze gibt',
-        'course1-rate' => '90 CHF für 3 Mal',
+        'course1-schedule' => 'Montag 15-16Uhr{0}Einstieg jederzeit möglich wenn es freie Plätze gibt',
+        'course1-rate' => '90.- für 3 Mal',
         'course2-title' => 'Krabbelkurs',
         'course2-lead' => 'Ihr Kind rollt, dreht sich auf dem Bauch oder auf dem Rücken, robbt, krabbelt, klettert, rutscht auf dem Po, kurz es kommt voran, läuft aber noch nicht frei. In der Krabbelgruppe kann es sein Können weiter üben und verfeinern unter den wachsamen und ermutigenden Augen eines Erwachsenen (Eltern, Grosseltern, Hüeti…){0}Nach dem Montessori-Prinzip « hilf mir, es selbst zu tun !» definieren wir das Entwicklungsniveau des Kindes, seine momentanen Interessen und spielen mit ihm an der Grenze seiner Fähigkeiten in dem wir die Umgebung adaptieren.{0}Wir machen Babygymnastik, Fuss-oder Handmassagen, sagen Verse auf und singen Lieder.',
         'course2-target' => 'Für Kinder zwischen 8 und 18 Monaten, welche noch nicht frei gehen.',
-        'course2-schedule' => 'Freitag 15-16h{0}Einstieg jederzeit möglich, wenn es freie Plätze gibt.',
+        'course2-schedule' => 'Freitag 15-16Uhr{0}Einstieg jederzeit möglich, wenn es freie Plätze gibt.',
         'course2-rate' => '100.- für 4 Mal',
     ],
     'contact-page' => [
@@ -125,6 +125,11 @@ return [
         'email' => 'E-Mail-Adresse',
         'phone' => 'Telefon',
         'message' => 'Ihre Nachricht',
+        'services' => [
+            'cranio' => 'Craniosacraltherapie',
+            'physio' => 'Kinderphysiotherapie',
+            'courses' => 'Kurs',
+        ],
     ],
     'impressum-page' => [
         'name' => 'Impressum'

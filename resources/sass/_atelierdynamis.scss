@@ -1,3 +1,20 @@
+//  atelier dynamis stylesheet
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Section
+//   3. Card
+//   4. Button
+//   5. Page title
+//   6. Symbols
+//   7. Helper classes
+//   8. Separator
+
+// 1. Global
+// -----------
+
 body {
     width: 100%;
     height: 100%;
@@ -6,4 +23,238 @@ body {
 
 h1, h2 {
     text-transform: lowercase;
+}
+
+// 2. Section
+// -----------
+
+.section {
+    padding: 2rem 0 5rem 0;
+    @include breakpoint(large) {
+        padding: 4rem 0 9rem 0;
+    }
+    .section-lead {
+        text-transform: lowercase;
+        font-size: 2rem;
+        font-family: 'Como';
+        font-weight: 500;
+        line-height: 1.125;
+        color: $light-gray;
+        margin-bottom: 2rem;
+    }
+    .section-paragraph {
+        margin-bottom: 2rem;
+    }
+    &--bg-white {
+
+    }
+    &--bg-gray {
+        background-color: rgba($light-gray, 0.07);
+        color: $dark-gray;
+        .section-title {
+            font-weight: 600;
+            color: $light-gray;
+        }
+    }
+    &--yellow {
+        .section-title  {
+            color: get-color(dynamis-yellow);
+        }
+        .separator {
+            &::after {
+                background: get-color(dynamis-yellow);
+            }
+        }
+    }
+    &--magenta {
+        .section-title  {
+            color: get-color(dynamis-magenta);
+        }
+        .separator {
+            &::after {
+                background: get-color(dynamis-magenta);
+            }
+        }
+    }
+}
+
+// 3. Card
+// -----------
+
+.card {
+    position: relative;
+    z-index: 5;
+    .strong-text {
+        font-family: 'Graphie Regular';
+    }
+    .card-section {
+        padding : 2.2rem 3.3rem;
+        .card-section-title {
+            color: $light-gray;
+        }
+    }
+    .card-section-lead {
+        text-transform: lowercase;
+        font-size: 2rem;
+        font-family: 'Como';
+        font-weight: 500;
+        line-height: 1.125;
+        color: $light-gray;
+        margin-bottom: 1rem;
+        max-width: 1100px;
+    }
+    &--yellow {
+        .card-divider {
+            color: $white;
+            background-color: get-color(dynamis-yellow);
+        }
+        .strong-text {
+            color: get-color(dynamis-yellow);
+        }
+        .separator::after {
+            background: get-color(dynamis-yellow);
+        }
+    }
+    &--magenta {
+        .card-divider {
+            color: $white;
+            background-color: get-color(dynamis-magenta);
+        }
+        .strong-text {
+            color: get-color(dynamis-magenta);
+        }
+        .separator::after {
+            background: get-color(dynamis-magenta);
+        }
+    }
+    &--full-yellow {
+        margin-bottom: 6rem;
+        .card-section {
+            background-color: get-color(dynamis-yellow);
+            padding-bottom: 6rem;
+            .card-section-title {
+                color: $white;
+            }
+        }
+        .separator::after {
+            background: $white;
+        }
+    }
+    &--full-magenta {
+        color: $white;
+        margin-bottom: 6rem;
+        .card-section {
+            background-color: get-color(dynamis-magenta);
+            padding-bottom: 6rem;
+            .card-section-title, .card-section-lead {
+                color: $white;
+            }
+        }
+        .separator::after {
+            background: $white;
+        }
+    }
+}
+
+// 4. Button
+// -----------
+
+.button {
+    &.button-magenta {
+        background-color: get-color(dynamis-magenta);
+        &:hover {
+            background-color: scale-color(get-color(dynamis-magenta), $lightness: -15%);
+        }
+    }
+    &.button-yellow {
+        background-color: get-color(dynamis-yellow);
+        &:hover {
+            background-color: scale-color(get-color(dynamis-yellow), $lightness: -15%);
+        }
+    }
+}
+
+// 5. Page title
+// -----------
+
+.page-title {
+    position: relative;
+    height: $titlebar-height;
+    padding: $titlebar-padding;
+    color: $white;
+    .page-title-image {
+        opacity: 0.2;
+        position: absolute;
+        top:0 ;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+    }
+    .page-title-content {
+        position: relative;
+        line-height: 90px;
+    }
+    &--yellow {
+        background-color: get-color(dynamis-yellow);
+    }
+    &--magenta {
+        background-color: get-color(dynamis-magenta);
+    }
+    &--gray {
+        background-color: $medium-gray;
+    }
+}
+
+// 6. Symbols
+// -----------
+
+.chevron-symbol {
+    stroke: $white;
+    height: 2rem;
+}
+
+.checkbox {
+    height: 1em;
+}
+
+// 7. Helper classes
+// -----------
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.spacer {
+    height: 1em;
+}
+
+// 8. Separator
+// -----------
+
+.separator {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: $light-gray;
+        @include border-radius(2px);
+    }
+    &--strong {
+        margin-top: 1em;
+        width: 2em;
+        &::after {
+            background: $medium-gray;
+            @include border-radius(0px);
+        }
+    }
 }

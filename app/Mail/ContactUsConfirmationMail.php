@@ -18,6 +18,7 @@ class ContactUsConfirmationMail extends Mailable
      * @var \App\Models\ContactUsForm
      */
     public $form;
+    public $subject;
 
     /**
      * Create a new message instance.
@@ -26,6 +27,7 @@ class ContactUsConfirmationMail extends Mailable
      */
     public function __construct(ContactUsForm $form)
     {
+        $this->locale = $form->locale;
         $this->form = $form;
     }
 
@@ -36,9 +38,22 @@ class ContactUsConfirmationMail extends Mailable
      */
     public function build()
     {
+        $replyTo = ['contact@argonstudio.ch', 'Argon Studio'];
+        switch ($this->form->service) {
+            case 'cranio':
+                $replyTo = ['mail@sarah-meier.ch', 'Sarah Meier'];
+                break;
+            case 'physio':
+                $replyTo = ['sophie@atelierdynamis.ch', 'Sophie Charrière'];
+                break;
+            case 'courses':
+                $replyTo = ['sophie@atelierdynamis.ch', 'Sophie Charrière'];
+                break;
+            default:
+        }
         return $this->to($this->form->email)
                     ->replyTo('sophie.charriere@atelierdynamis.ch', 'Sophie Charriere')
-                    ->subject('my subject')
+                    ->subject(__('mailable.contact-us-confirmation-mail.subject'))
                     ->view('mailable.contactUsConfimation');
     }
 }
