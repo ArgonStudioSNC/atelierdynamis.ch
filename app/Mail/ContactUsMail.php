@@ -45,11 +45,11 @@ class ContactUsMail extends Mailable
                 $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.cranio').' - '.$this->form->firstName.' '.$this->form->lastName;
                 break;
             case 'physio':
-                $recipient = 'sophie@atelierdynamis.ch';
+                $recipient = 'sophie.charriere@atelierdynamis.ch';
                 $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.physio').' - '.$this->form->firstName.' '.$this->form->lastName;
                 break;
             case 'courses':
-                $recipient = 'sophie@atelierdynamis.ch';
+                $recipient = 'sophie.charriere@atelierdynamis.ch';
                 $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.courses').' - '.$this->form->firstName.' '.$this->form->lastName;
                 break;
             default:

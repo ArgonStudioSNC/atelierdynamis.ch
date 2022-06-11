@@ -44,15 +44,15 @@ class ContactUsConfirmationMail extends Mailable
                 $replyTo = ['mail@sarah-meier.ch', 'Sarah Meier'];
                 break;
             case 'physio':
-                $replyTo = ['sophie@atelierdynamis.ch', 'Sophie Charrière'];
+                $replyTo = ['sophie.charriere@atelierdynamis.ch', 'Sophie Charrière'];
                 break;
             case 'courses':
-                $replyTo = ['sophie@atelierdynamis.ch', 'Sophie Charrière'];
+                $replyTo = ['sophie.charriere@atelierdynamis.ch', 'Sophie Charrière'];
                 break;
             default:
         }
         return $this->to($this->form->email)
-                    ->replyTo('sophie.charriere@atelierdynamis.ch', 'Sophie Charriere')
+                    ->replyTo($replyTo[0], $replyTo[1])
                     ->subject(__('mailable.contact-us-confirmation-mail.subject'))
                     ->view('mailable.contactUsConfimation');
     }
