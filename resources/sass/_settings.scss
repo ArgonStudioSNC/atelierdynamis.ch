@@ -150,6 +150,10 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
+    'h1': ('fs': 35, 'lh': 1.1, 'mt': 0, 'mb': 0.5rem),
+    'h2': ('fs': 35, 'lh': 1.1, 'mt': 0, 'mb': 1rem),
+  ),
+  medium: (
     'h1': ('fs': 40, 'lh': 1.1, 'mt': 0, 'mb': 0.5rem),
     'h2': ('fs': 35, 'lh': 1.1, 'mt': 0, 'mb': 1rem),
   ),
@@ -512,7 +516,9 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 800px,
+  small: 100%,
+  medium: 640px,
+  large: 800px,
 );
 $offcanvas-vertical-sizes: (
   small: 250px,

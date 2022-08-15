@@ -5,12 +5,12 @@
     .header-padding {
         height: $titlebar-height;
     }
-    .header-fixed {
-        width: 100%;
+    .header-fixed-top {
         position: fixed;
         top: 0;
         z-index: 50;
         background-color: $topbar-background;
+        width: 100%;
         .title-bar {
             height: $titlebar-height;
             .logo {
@@ -53,6 +53,18 @@
             }
         }
     }
+    .mobile-fixed-bottom {
+        position: fixed;
+        bottom: 0;
+        z-index: 50;
+        background-color: $topbar-background;
+        width: 100%;
+
+        .mobile-bar {
+            height: calc($titlebar-height / 2);
+        }
+    }
+
 }
 
 .hamburger {
@@ -103,21 +115,49 @@
 
 <template>
     <div id='header' class="header">
-        <div class="header-padding" v-if="$route.name != 'Home'"></div>
-        <div class="header-fixed" ref="header">
-            <div class="grid-container">
-                <div class="title-bar">
-                    <div class="title-bar-left">
-                        <router-link :to="{ name: 'Home'}"><img class="logo" v-bind:src="logoImg"></router-link>
+        <div class="desktop">
+            <div class="header-padding" v-if="$route.name != 'Home'"></div>
+            <div class="header-fixed-top" ref="header">
+                <div class="grid-container">
+                    <div class="title-bar">
+                        <div class="title-bar-left">
+                            <router-link :to="{ name: 'Home'}"><img class="logo" v-bind:src="logoImg"></router-link>
+                        </div>
+                        <div class="title-bar-right">
+                            <button class="menu-btn" type="button" data-toggle="offCanvasRightOverlap">
+                                <div class='hamburger'>
+                                    <div class='bar'></div>
+                                    <div class='bar'></div>
+                                    <div class='bar'></div>
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                    <div class="title-bar-right">
-                        <button class="menu-btn" type="button" data-toggle="offCanvasRightOverlap">
-                            <div class='hamburger'>
-                                <div class='bar'></div>
-                                <div class='bar'></div>
-                                <div class='bar'></div>
-                            </div>
-                        </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile hide">
+            <div class="mobile-fixed-bottom">
+                <div class="grid-container full">
+                    <div class="mobile-bar grid-x align-middle text-center">
+                        <div class="cell small-3">
+                            Phone
+                        </div>
+                        <div class="cell small-3">
+                            Contact
+                        </div>
+                        <div class="cell small-3">
+                            Map
+                        </div>
+                        <div class="cell small-3">
+                            <button class="" type="button" data-toggle="offCanvasRightOverlap">
+                                <div class='hamburger'>
+                                    <div class='bar'></div>
+                                    <div class='bar'></div>
+                                    <div class='bar'></div>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -47,7 +47,7 @@
         <div class="section section--bg-gray">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
-                    <div class="cell small-4 card card--yellow">
+                    <div class="cell small-12 medium-6 xlarge-4 card card--yellow">
                         <picture class="card-picture">
                             <source media="(min-width:1200px)" srcset="/storage/pictures/@1200/courses-sourir.jpg">
                             <img class="card-picture-sourir" src="/storage/pictures/@600/courses-sourir.jpg" alt="course picture" y="50px">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell small-4 card card--yellow">
+                    <div class="cell small-12 medium-6 xlarge-4 card card--yellow">
                         <picture class="card-picture">
                             <source media="(min-width:1200px)" srcset="/storage/pictures/@1200/courses-crapahuteurs.jpg">
                             <img class="card-picture-crapahuteurs" src="/storage/pictures/@600/courses-crapahuteurs.jpg" alt="course image">

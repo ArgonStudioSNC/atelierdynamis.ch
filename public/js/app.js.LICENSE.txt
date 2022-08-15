@@ -1,17 +1,17 @@
 /*!
-  * devtools-if v9.2.0-beta.36
+  * devtools-if v9.2.2
   * (c) 2022 kazuya kawaguchi
   * Released under the MIT License.
   */
 
 /*!
-  * message-compiler v9.2.0-beta.36
+  * message-compiler v9.2.2
   * (c) 2022 kazuya kawaguchi
   * Released under the MIT License.
   */
 
 /*!
-  * shared v9.2.0-beta.36
+  * shared v9.2.2
   * (c) 2022 kazuya kawaguchi
   * Released under the MIT License.
   */

@@ -35,7 +35,10 @@ h1, h2 {
     }
     .section-lead {
         text-transform: lowercase;
-        font-size: 2rem;
+        font-size: 1.75rem;
+        @include breakpoint(medium up) {
+            font-size: 2rem;
+        }
         font-family: 'Como';
         font-weight: 500;
         line-height: 1.125;
@@ -88,14 +91,20 @@ h1, h2 {
         font-family: 'Graphie Regular';
     }
     .card-section {
-        padding : 2.2rem 3.3rem;
+        //padding : 2.2rem 3.3rem;
+        @include breakpoint(medium up) {
+            padding : 2.2rem 3.3rem;
+        }
         .card-section-title {
             color: $light-gray;
         }
     }
     .card-section-lead {
         text-transform: lowercase;
-        font-size: 2rem;
+        font-size: 1.75rem;
+        @include breakpoint(medium up) {
+            font-size: 2rem;
+        }
         font-family: 'Como';
         font-weight: 500;
         line-height: 1.125;
