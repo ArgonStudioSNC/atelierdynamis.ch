@@ -110,13 +110,13 @@
                     <div class="grid-y grid-margin-y">
                         <div class="cell contact contact--magenta">
                             <div class="contact-name">sarah meier</div>
-                            <div class="separator"></div>
+                            <div class="separator show-for-medium"></div>
                             <div>{{ $t('site.cranio-page.name') }}</div>
                             <a href="tel:+41763288990">t. +41 76 328 89 90</a>
                         </div>
                         <div class="cell contact contact--yellow">
                             <div class="contact-name">sophie charrière</div>
-                            <div class="separator"></div>
+                            <div class="separator show-for-medium"></div>
                             <div>{{ $t('site.physio-page.name') }}</div>
                             <a href="tel:+41774569616">t. +41 77 456 96 16</a>
                         </div>
