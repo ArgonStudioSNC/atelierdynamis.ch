@@ -8086,57 +8086,62 @@ h1, h2 {
   background: #666666;
   border-radius: 0px;
 }
-.header .header-padding {
+.header .desktop {
   height: 130px;
 }
-.header .header-fixed-top {
+.header .desktop .fixed-title-bar {
   position: fixed;
+  z-index: 10;
   top: 0;
-  z-index: 50;
-  background-color: #fefefe;
-  width: 100%;
-}
-.header .header-fixed-top .title-bar {
+  left: 0;
+  right: 0;
   height: 130px;
+  background-color: #fefefe;
 }
-.header .header-fixed-top .title-bar .logo {
+.header .desktop .fixed-title-bar .logo {
   height: calc(130px - 2rem);
   position: absolute;
   top: 1rem;
   width: auto;
 }
-.header .header-fixed-top .title-bar .menu-btn {
+.header .desktop .fixed-hamburger {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  height: 130px;
+}
+.header .desktop .fixed-hamburger .hamburger-button {
   position: absolute;
   right: 50px;
   top: 50%;
   padding: 3px;
-  z-index: 50;
-  transform: translate(0, calc(-50% + 2px));
+  margin-top: -10px;
   cursor: pointer;
 }
-.header .header-fixed-top.header-scroll {
+.header .desktop.header-scroll .fixed-title-bar {
   transition: background-color 0.2s ease;
 }
-.header .header-fixed-top.header-scroll .logo {
+.header .desktop.header-scroll .fixed-title-bar .logo {
   transition: height 0.2s ease;
 }
-.header .header-fixed-top.header-scroll .hamburger > .bar {
+.header .desktop.header-scroll .hamburger > .bar {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
-.header .header-fixed-top.transparent {
+.header .desktop.transparent .fixed-title-bar {
   background-color: transparent;
 }
 @media print, screen and (min-width: 40em) {
-.header .header-fixed-top.transparent .logo {
+.header .desktop.transparent .fixed-title-bar .logo {
     height: 180px;
 }
 }
 @media screen and (min-width: 75em) {
-.header .header-fixed-top.transparent .logo {
+.header .desktop.transparent .fixed-title-bar .logo {
     height: 250px;
 }
 }
-.header .header-fixed-top.transparent .hamburger > .bar {
+.header .desktop.transparent .hamburger > .bar {
   background-color: #fefefe;
 }
 .header .mobile-fixed-bottom {
@@ -8145,15 +8150,24 @@ h1, h2 {
   z-index: 50;
   background-color: #fefefe;
   width: 100%;
+  box-shadow: 3px 0 6px rgba(10, 10, 10, 0.2);
 }
 .header .mobile-fixed-bottom .mobile-bar {
   height: 65px;
+  font-size: 1.2em;
+}
+.header .mobile-fixed-bottom .mobile-bar .hamburger-button {
+  margin-top: 10px;
 }
 .hamburger {
   cursor: pointer;
   position: relative;
+  padding-top: 10px;
   height: 24px;
   width: 32px;
+}
+.hamburger:hover > .bar {
+  background: #737373;
 }
 .hamburger .bar {
   position: absolute;
@@ -8182,8 +8196,21 @@ h1, h2 {
 .off-canvas-content.is-open-right .hamburger > .bar:nth-child(3) {
   opacity: 0;
 }
+.off-canvas-content.is-open-right .hamburger:hover > .bar {
+  background: #737373 !important;
+}
 .off-canvas-content.has-transition-overlap:not(.is-open-right) .hamburger > .bar {
   transition: transform 0.2s ease, background-color 0.2s ease 0.2s;
+}
+@media print, screen and (min-width: 40em) {
+.homepage {
+    margin-top: -130px;
+}
+}
+@media print, screen and (max-width: 39.99875em) {
+.footer {
+    margin-bottom: 65px;
+}
 }
 .footer {
   padding: 2rem 0 3rem 0;
@@ -8282,15 +8309,28 @@ h1, h2 {
   font-weight: bold;
 }
 .navigation {
-  padding-top: calc(90px + 2rem);
+  padding-top: calc(30px + 2rem);
   padding-bottom: 2rem;
+}
+@media print, screen and (min-width: 40em) {
+.navigation {
+    padding-top: calc(90px + 2rem);
+}
 }
 .navigation .menu {
   text-transform: lowercase;
 }
+.navigation .menu li > a {
+  float: right;
+}
 .navigation .menu--navigation {
   font-family: "Como";
-  font-size: 1.75em;
+  font-size: 1.3em;
+}
+@media print, screen and (min-width: 40em) {
+.navigation .menu--navigation {
+    font-size: 1.75em;
+}
 }
 .navigation .menu--navigation :nth-child(2) > a {
   color: #de1883;
@@ -8307,7 +8347,11 @@ h1, h2 {
 .navigation .menu--localization {
   font-family: "Como";
   color: red;
-  font-size: 1.1em;
+}
+@media print, screen and (min-width: 40em) {
+.navigation .menu--localization {
+    font-size: 1.1em;
+}
 }
 .navigation .menu--localization li > a {
   line-height: 1.5;
@@ -8316,6 +8360,11 @@ h1, h2 {
 .navigation .menu--address :nth-child(1) {
   font-family: "Como";
   font-weight: 600;
+}
+@media print, screen and (max-width: 39.99875em) {
+.navigation .menu a {
+    padding: 1rem 0;
+}
 }
 .homepage .hero .hero-title-container {
   height: 100%;

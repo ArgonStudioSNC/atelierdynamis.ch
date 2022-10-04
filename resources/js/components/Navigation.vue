@@ -2,13 +2,22 @@
 @import '~@sass/_mixins';
 
 .navigation {
-    padding-top: calc(90px + 2rem);
+    padding-top: calc(30px + 2rem);
+    @include breakpoint(medium up) {
+        padding-top: calc(90px + 2rem);
+    }
     padding-bottom: 2rem;
     .menu {
         text-transform: lowercase;
+        li > a {
+            float: right;
+        }
         &--navigation {
             font-family: 'Como';
-            font-size: 1.75em;
+            font-size: 1.3em;
+            @include breakpoint(medium up) {
+                font-size: 1.75em;
+            }
             :nth-child(2) > a {
                 color: get-color(dynamis-magenta);
                 &:hover {
@@ -25,7 +34,9 @@
         &--localization {
             font-family: 'Como';
             color:red;
-            font-size: 1.1em;
+            @include breakpoint(medium) {
+                font-size: 1.1em;
+            }
             li > a {
                 line-height: $global-lineheight;
                 padding: 0;
@@ -37,6 +48,11 @@
                 font-weight: 600;
             }
         }
+        @include breakpoint(small only) {
+            a {
+                padding: 1rem 0;
+            }
+        }
     }
 }
 
@@ -44,10 +60,10 @@
 
 <template>
     <div id='navigation' class="navigation">
-        <div class="grid-x grid-padding-x align-center text-right">
-            <div class="cell shrink">
+        <div class="grid-x align-center text-right">
+            <div class="cell small-11 medium-shrink">
                 <div class="grid-y grid-frame">
-                    <ul class="cell vertical menu menu--navigation clearfix">
+                    <ul class="cell vertical menu menu--navigation text-right clearfix">
                         <li><router-link :to="{ name: 'Home'}" data-close>{{ $t('site.homepage.name') }}</router-link></li>
                         <li><router-link :to="{ name: 'Cranio'}" data-close>{{ $t('site.cranio-page.name') }}</router-link></li>
                         <li><router-link :to="{ name: 'Physio'}" data-close>{{ $t('site.physio-page.name') }}</router-link></li>
@@ -57,8 +73,11 @@
                     </ul>
                     <div class="cell"><div class="separator separator--strong"></div></div>
                     <ul class="cell vertical menu menu--localization clearfix">
-                        <li><a :href="$router.resolve({params: {lang : 'de'}}).href"  data-close>{{ $t('site.locales.de') }}</a></li>
-                        <li><a :href="$router.resolve({params: {lang : 'fr'}}).href"  data-close>{{ $t('site.locales.fr') }}</a></li>
+                        <li v-for="local in localization">
+                            <a v-if="local.tag != $route.params.lang" :href="$router.resolve({params: {lang : local.tag}}).href"  data-close>
+                                {{ $t(local.path) }}
+                            </a>
+                        </li>
                     </ul>
                     <div class="cell align-self-right"><div class="separator separator--strong"></div></div>
                     <div class="cell auto"></div>
@@ -70,6 +89,7 @@
                     </div>
                 </div>
             </div>
+            <div class="cell small-1 medium-shrink"></div>
         </div>
     </div>
 </template>
@@ -78,6 +98,10 @@
 export default {
     data () {
         return {
+            localization: [
+                {tag: "de", path: "site.locales.de"},
+                {tag: "fr", path: "site.locales.fr"}
+            ]
         }
     },
 }

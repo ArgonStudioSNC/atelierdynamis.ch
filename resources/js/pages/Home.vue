@@ -284,7 +284,7 @@ export default {
     methods: {
         scrollPastHero(){
             window.scrollTo({
-                top: $(".header-fixed").length > 0 ? $("#hero").height() - $(".header-fixed").height() : $("#hero").height(),
+                top: $("#header > div.desktop").is(":visible") ? $("#hero").height() - $("#header > div.desktop").height() : $("#hero").height(),
                 behavior: 'smooth',
             });
         },

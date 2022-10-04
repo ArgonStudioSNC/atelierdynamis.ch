@@ -50,7 +50,7 @@
                     <div class="cell small-12 medium-6 xlarge-4 card card--yellow">
                         <picture class="card-picture">
                             <source media="(min-width:1200px)" srcset="/storage/pictures/@1200/courses-sourir.jpg">
-                            <img class="card-picture-sourir" src="/storage/pictures/@600/courses-sourir.jpg" alt="course picture" y="50px">
+                            <img class="card-picture-sourir" src="/storage/pictures/@600/courses-sourir.jpg" alt="course picture">
                         </picture>
                         <div class="card-divider align-center"><h2>{{ $t('site.courses-page.course1-title') }}</h2></div>
                         <div class="card-section text-center grid-y grid-padding-y">
