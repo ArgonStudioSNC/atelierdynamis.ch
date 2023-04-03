@@ -30,9 +30,9 @@ return [
         'prescription-title' => 'prescription',
         'offer-lead' => 'L’enfant et sa famille dans son ensemble sont au centre de mes préoccupations',
         'offer-content' => 'Dans le processus thérapeutique chacun prend part à l’analyse de la problématique, à la définition des buts et à la recherche de solutions. Je m’appliquer à favoriser la créativité des enfants et de leurs parents. Et me laisse surprendre par les solutions individuelles.{0}L’enfant apprend en jouant. C’est à travers le jeu qu’il gagne en force, coordination, endurance, en indépendance, en assurance. La prise en charge thérapeutique est donc adaptée au stade de développement psychomoteur de l’enfant et a un aspect ludique. Elle se base sur les connaissances actuelles médicales, psychologiques et pédagogiques et requiert une excellente collaboration interdisciplinaire.',
-        'patient-care-lead' => 'Je prends en charge des enfants de 0 à 10 ans dans les situations suivantes :',
+        'patient-care-lead' => 'Je prends en charge des enfants de 0 à 10 ans dans les situations suivantes :',
         'patient-care-content1' => 'Prématurité;asymétrie de la tête;Torticolis congénital;Retard de développement, trouble du tonus;Atteinte du plexus brachial;Déficience motrice d’origine cérébrale;Symptomatologie après traitement d’une tumeur;Syndrome ou maladie génétique affectant le développement moteur global (myopathie, trisomie 21…)',
-        'patient-care-content2' => 'Maladresse motrice, trouble de l’équilibre;Problème orthopédique :  déficit postural et/ou rétractions musculaires, scoliose, cyphose, pieds bots, mauvais alignement des membres inférieurs, luxation de hanche, Perthes…;Traumatisme et rééducation post opératoire;Affection rhumatologique;Maladie respiratoire : mucoviscidose, asthme, bronchiolite;Surpoids',
+        'patient-care-content2' => 'Maladresse motrice, trouble de l’équilibre;Problème orthopédique : déficit postural et/ou rétractions musculaires, scoliose, cyphose, pieds bots, mauvais alignement des membres inférieurs, luxation de hanche, Perthes…;Traumatisme et rééducation post opératoire;Affection rhumatologique;Maladie respiratoire : mucoviscidose, asthme, bronchiolite;Surpoids',
         'appointment-content' => 'Prise de rendez-vous téléphonique. Laissez un message sur le répondeur si je ne suis pas disponible. Je vous rappellerai.{0}Merci d’annuler un rendez-vous 12 heures à l’avance. Un rendez-vous manqué non-annulé est à votre charge et vous sera directement facturé 50.-',
         'reimbursement-content' => 'La physiothérapie pédiatrique est remboursée, sur prescription médicale, par les caisses maladies ou l’assurance invalidité. Veuillez prendre avec vous la prescription médicale et la carte de caisse maladie lors du premier rendez-vous.{0}Un conseil ou une évaluation sont aussi possibles sans prescription médicale. Les coûts vous seront facturés directement. Coût 80.-',
         'prescription-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}Une prise en charge à domicile est aussi possible. Elle doit être spécifiée sur la prescription.'
@@ -48,11 +48,11 @@ return [
         'offer-content' => 'Grâce à un toucher délicat et à de fines impulsions manuelles, le processus d’autoguérison peut être engagé. La santé intrinsèque de l’être humain est soutenue et ses ressources sont renforcées, de sorte que des changements positifs peuvent avoir lieu.{0}Avec un traitement craniosacral, vous vous offrez une parenthèse pendant laquelle le corps, l’âme et l’esprit se calment, puisent une nouvelle énergie et se réorientent.',
         'patient-care-lead' => 'La thérapie craniosacrale peut contribuer à améliorer l’équilibre entre le corps, l’esprit, l’âme et l’environnement. Elle peut les soutenir dans toutes les situations de la vie. Je traite des personnes de tout âge',
         'patient-care-children' => [
-            'title' => 'chez l’enfant :',
+            'title' => 'chez l’enfant :',
             'content' => 'problèmes de digestion(coliques, reflux);pleurs inapaisables, hyperextension;problèmes de sommeil;naissance difficile;Asymétrie de la tête et torticoli;peurs, agitation;otites fréquentes;douleurs de croissances',
         ],
         'patient-care-adults' => [
-            'title' => 'chez l’adulte :',
+            'title' => 'chez l’adulte :',
             'content' => 'tensions musculaires, douleurs articulaires;douleurs aïgues ou chroniques du dos, de la nuque ou des épaules;coup du lapin;état d’épuisement;maux de tête, migraine;stress, nervosité, problèmes de sommeil;accompagnement de la grossesse et de l’accouchement',
         ],
         'appointment-content' => 'Prise de rendez-vous téléphonique ou par SMS',
@@ -65,7 +65,7 @@ return [
         'sarah-portrait' => 'Après ma formation de physiothérapeute, j’ai commencé à travailler en 2007 au Centre hospitalier Bienne SA dans le domaine de la physiothérapie pour adultes. Peu de temps après, j’ai eu la possibilité de me lancer dans la physiothérapie pédiatrique. Le travail avec les enfants et leurs familles m’a tellement plu que je suis restée en physiothérapie pédiatrique.{0}De 2008 à 2013, j’ai été physiothérapeute responsable de la pédiatrie.{0}C’est la naissance de mon premier fils qui m’a fait découvrir la thérapie craniosacrale. Après avoir suivi une formation de thérapeute craniosacrale, je me suis mise à mon compte en 2015.',
         'sarah-formation1' => [
             'title' => 'Physiothérapie',
-            'content' => 'Massage aromathérapeutique{0}FBL-Basic: Mouvement normal-analyse-traitement centré sur la problèmatique{0}Thérapie réspiratoire physiothérapeutique chez l’adulte, l’enfant et le nourrisson basé sur l’auscultation pulmonaire, Guy Postiaux{0}Airway Clearance Techniques chez le nourrisson avec CF et autres maladies obstructives{0}Introduction dans la physiothérapie pour enfants{0}Neurodevelopmental Treatment (NDT) Bobath{0}Maladie et douleurs des enfants-la naturopathie peut aider',
+            'content' => 'Massage aromathérapeutique{0}FBL-Basic : Mouvement normal-analyse-traitement centré sur la problèmatique{0}Thérapie réspiratoire physiothérapeutique chez l’adulte, l’enfant et le nourrisson basé sur l’auscultation pulmonaire, Guy Postiaux{0}Airway Clearance Techniques chez le nourrisson avec CF et autres maladies obstructives{0}Introduction dans la physiothérapie pour enfants{0}Neurodevelopmental Treatment (NDT) Bobath{0}Maladie et douleurs des enfants-la naturopathie peut aider',
         ],
         'sarah-formation2' => [
             'title' => 'Thérapie craniosacrale',
@@ -91,7 +91,7 @@ return [
         ],
         'sophie-formation4' => [
             'title' => 'Autres formations en relation avec le développement du bébé',
-            'content' => 'Tests : General Movements, IMP (Infant Motor Profile){0}Dépistage et traitement précoce des troubles du neurodéveloppement du bébé{0}Kinesthetics Infant Handling{0}Stimulation orofaciale, et Early Feeding Skills Assessment{0}Traitement du torticoli congénital{0}créer et animer un cours parents-bébés',
+            'content' => 'Tests : General Movements, IMP (Infant Motor Profile){0}Dépistage et traitement précoce des troubles du neurodéveloppement du bébé{0}Kinesthetics Infant Handling{0}Stimulation orofaciale, et Early Feeding Skills Assessment{0}Traitement du torticoli congénital{0}créer et animer un cours parents-bébés',
         ],
         'our-office' => 'Nos locaux',
     ],
