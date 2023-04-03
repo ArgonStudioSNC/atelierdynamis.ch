@@ -68,6 +68,12 @@
             bottom: 4rem;
             cursor: pointer;
         }
+        .background-cover {
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/storage/pictures/@1200/sarah-sophie-02.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     .philosophy {
@@ -91,8 +97,17 @@
             }
         }
         .sub-section {
-            padding-top: 150px;
-            margin-bottom: 100px;
+            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 80px;
+            @include breakpoint(medium) {
+                text-align: inherit;
+                padding-top: 150px;
+                margin-bottom: 100px;
+            }
+        }
+        .summary-mobile {
+            height: 180px;
         }
         .summary-relative-container {
             position: relative;
@@ -147,42 +162,51 @@
 
 <template>
     <div id='homepage' class="homepage">
-        <div id="hero" class="hero grid-y grid-frame">
-            <div class="cell hero-title-container grid-container grid-x align-middle">
-                    <div class="cell small-6">
-                        <h1 class="hero-title"><b>atelier dynamis</b><br />
-                        <i18n-t keypath="site.homepage.lead">
-                            <br />
-                        </i18n-t>
-                        </h1>
-                        <button @click="scrollPastHero" class="button">{{ $t("site.know-more-btn") }}</button>
+        <div id="hero" class="hero">
+            <div class="desktop show-for-medium">
+                <div class="grid-y grid-frame">
+                    <div class="cell hero-title-container grid-container grid-x align-middle">
+                        <div class="cell small-6">
+                            <h1 class="hero-title"><b>atelier dynamis</b><br />
+                                <i18n-t keypath="site.homepage.lead">
+                                    <br />
+                                </i18n-t>
+                            </h1>
+                            <button @click="scrollPastHero" class="button">{{ $t("site.know-more-btn") }}</button>
+                        </div>
                     </div>
-            </div>
-            <div class="hero-graphics-container grid-x">
-                <div class="cell small-6">
-                    <svg class="circle-1 float-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMid slice" x="0" y="0">
-                        <circle cx="28" cy="50" r="72" />
-                    </svg>
+                    <div class="hero-graphics-container grid-x">
+                        <div class="cell small-6">
+                            <svg class="circle-1 float-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMid slice" x="0" y="0">
+                                <circle cx="28" cy="50" r="72" />
+                            </svg>
+                        </div>
+                        <div class="cell small-6">
+                            <svg class="circle-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin meet" x="0" y="0">
+                                <circle cx="75" cy="15" r="45" />
+                            </svg>
+                            <svg class="circle-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMinYMid meet" x="0" y="0">
+                                <defs>
+                                    <clipPath id="heroMask">
+                                        <circle cx="54" cy="53" r="46" fill="#ffffff" />
+                                    </clipPath>
+                                </defs>
+                                <image width="120" href="/storage/pictures/@2400/sarah-sophie-02.jpg" clip-path="url(#heroMask)" y="-23" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button @click="scrollPastHero" class="hero-downarrow">
+                        <svg class="chevron-symbol" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26">
+                            <use href="/static/icons/vector.svg#chevron-symbol" />
+                        </svg>
+                    </button>
                 </div>
-                <div class="cell small-6">
-                    <svg class="circle-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin meet" x="0" y="0">
-                        <circle cx="75" cy="15" r="45" />
-                    </svg>
-                    <svg class="circle-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMinYMid meet" x="0" y="0">
-                        <defs>
-                            <clipPath id="hero-mask">
-                                <circle cx="54" cy="53" r="46" fill="#ffffff" />
-                            </clipPath>
-                        </defs>
-                        <image width="120" href="/storage/pictures/@2400/sarah-sophie-02.jpg" clip-path="url(#hero-mask)" y="-23" />
-                    </svg>
+            </div>
+            <div class="mobile hide-for-medium">
+                <div class="grid-y grid-frame background-cover">
+                    <img src="/storage/logo_atelier_dynamis.svg"/>
                 </div>
             </div>
-            <button @click="scrollPastHero" class="hero-downarrow">
-                <svg class="chevron-symbol" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26">
-                    <use href="/static/icons/vector.svg#chevron-symbol" />
-                </svg>
-            </button>
         </div>
         <div id='philosophy' class="section section--bg-white philosophy">
             <div class="grid-container">
@@ -196,24 +220,34 @@
                 </div>
             </div>
         </div>
-
         <div id='summary' class="section section--bg-gray summary">
             <div class="grid-container">
-                <div class="grid-x sub-section">
-                    <div class="cell small-6 summary-relative-container">
+                <div class="grid-x grid-margin-y sub-section">
+                    <div class="cell small-12 hide-for-medium">
+                        <svg class="summary-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
+                            <defs>
+                                <clipPath id="circle88" clipPathUnits="userSpaceOnUse">
+                                    <circle cx="50" cy="50" r="44" />
+                                </clipPath>
+                            </defs>
+                            <image height="88" href="/storage/pictures/@600/home-cranio.jpg" clip-path="url(#circle88)" x="-16" y="6" />
+                            <image xlink:href="/storage/circle_atelier_dynamis.svg" height="100" />
+                        </svg>
+                    </div>
+                    <div class="cell show-for-medium medium-6 summary-relative-container">
                         <svg class="summary-circle summary-circle--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
                             <circle cx="50" cy="50" r="50" />
                         </svg>
                         <svg class="summary-image summary-image--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
                             <defs>
-                                <clipPath id="circle-mask" clipPathUnits="userSpaceOnUse">
+                                <clipPath id="circle100" clipPathUnits="userSpaceOnUse">
                                     <circle cx="50" cy="50" r="50" />
                                 </clipPath>
                             </defs>
-                            <image height="100" href="/storage/pictures/@1200/home-cranio.jpg" clip-path="url(#circle-mask)" x="-22" />
+                            <image height="100" href="/storage/pictures/@1200/home-cranio.jpg" clip-path="url(#circle100)" x="-22" />
                         </svg>
                     </div>
-                    <div class="cell small-6 large-4">
+                    <div class="cell small-12 medium-6 large-4">
                         <h1 class="section-title">{{ $t("site.cranio-page.name") }}</h1>
                         <div class="separator"></div>
                         <div class="section-paragraph">{{ $t("site.homepage.cranio-summary") }}</div>
@@ -221,12 +255,18 @@
                             <router-link class="button button-magenta" :to="{ name: 'Cranio'}">{{ $t("site.know-more-btn") }}</router-link>
                         </div>
                     </div>
-                    <div class="cell small-2"></div>
+                    <div class="cell show-for-large large-2"></div>
                 </div>
-                <div class="sub-section"></div>
-                <div class="grid-x sub-section">
-                    <div class="cell small-0 large-2"></div>
-                    <div class="cell small-6 large-4">
+                <div class="sub-section show-for-medium"></div>
+                <div class="grid-x grid-margin-y sub-section">
+                    <div class="cell small-12 hide-for-medium">
+                        <svg class="summary-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
+                            <image height="88" href="/storage/pictures/@600/home-physio.jpg" clip-path="url(#circle88)" x="-19" y="6" />
+                            <image xlink:href="/storage/circle_atelier_dynamis.svg" height="100" />
+                        </svg>
+                    </div>
+                    <div class="cell show-for-large large-2"></div>
+                    <div class="cell small-12 medium-6 large-4">
                         <h1 class="section-title">{{ $t("site.physio-page.name") }}</h1>
                         <div class="separator"></div>
                         <div class="section-paragraph">{{ $t("site.homepage.physio-summary") }}</div>
@@ -234,17 +274,12 @@
                             <router-link class="button button-yellow" :to="{ name: 'Physio'}">{{ $t("site.know-more-btn") }}</router-link>
                         </div>
                     </div>
-                    <div class="cell small-6 summary-relative-container">
+                    <div class="cell show-for-medium medium-6 summary-relative-container">
                         <svg class="summary-circle summary-circle--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
                             <circle cx="50" cy="50" r="50" />
                         </svg>
                         <svg class="summary-image summary-image--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
-                            <defs>
-                                <clipPath id="circle-mask" clipPathUnits="userSpaceOnUse">
-                                    <circle cx="50" cy="50" r="50" />
-                                </clipPath>
-                            </defs>
-                            <image height="100" href="/storage/pictures/@1200/home-physio.jpg" clip-path="url(#circle-mask)" x="-25" />
+                            <image height="100" href="/storage/pictures/@1200/home-physio.jpg" clip-path="url(#circle100)" x="-25" />
                         </svg>
                     </div>
                 </div>

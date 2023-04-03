@@ -61,7 +61,8 @@
 <template>
     <div id='navigation' class="navigation">
         <div class="grid-x align-center text-right">
-            <div class="cell small-11 medium-shrink">
+            <div class="cell small-1 hide-for-medium"></div>
+            <div class="cell small-10 medium-shrink">
                 <div class="grid-y grid-frame">
                     <ul class="cell vertical menu menu--navigation text-right clearfix">
                         <li><router-link :to="{ name: 'Home'}" data-close>{{ $t('site.homepage.name') }}</router-link></li>
@@ -89,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cell small-1 medium-shrink"></div>
+            <div class="cell small-1 hide-for-medium"></div>
         </div>
     </div>
 </template>

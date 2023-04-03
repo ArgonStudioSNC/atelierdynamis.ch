@@ -30,9 +30,9 @@ return [
         'prescription-title' => 'Verordnung',
         'offer-lead' => 'Das Kind und seine Familie als Einheit stehen im Zentrum meiner Arbeit',
         'offer-content' => 'Im Therapieprozess trägt jeder seinen Teil zur Problemanalyse, der Zieldefinition und der Lösungsfindung bei. Ich lege Wert darauf die Kreativität der Kinder und der Eltern zu fördern und lasse mich gerne durch individuelle Lösungen überraschen.{0}Das Kind lernt im Spiel. Durch das Spiel gewinnt es an Kraft, Koordination, Ausdauer, Selbständigkeit und Sicherheit. Die therapeutische Begleitung ist dem psychomotorischen Entwicklungsstand des Kindes angepasst und hat immer eine spielerische Komponente. Sie ist auf aktuellem medizinischem, psychologischem und pädagogischem Wissen aufgebaut und setzt eine gute interdisziplinäre Zusammenarbeit voraus.',
-        'patient-care-lead' => 'Ich behandle Kinder von 0 bis 10 Jahren in folgenden Situationen:',
+        'patient-care-lead' => 'Ich behandle Kinder von 0 bis 10 Jahren in folgenden Situationen :',
         'patient-care-content1' => 'Frühgeburtlichkeit;Schädelasymetrie;Schiefhals;Entwicklungsrückstand, Störungen des Muskeltonus;Plexusparese;Motorische Defizite ;Symptombehandlung nach Tumorbehandlung;Genetische Krankheiten oder Syndrome welche die allgemeine Entwicklung beeinflussen (Myopathien, Trisomie 21,  ..)',
-        'patient-care-content2' => 'Ungeschicklichkeit, Gleichgewichtsstörungen;Orthopädische Probleme: Haltungsdefizit und / oder Muskelverspannungen, Skoliose, Kyphose, Klumpfüsse, Beinachsenfehlstellung unteren Extremität, Hüftluxationen, Morbus Perthes;Nachbehandlung von Verletzungen und Operationen;Rheumatische Erkrankungen;Atemwegserkrankungen: CF, Asthma, Bronchiolitis;Übergewicht',
+        'patient-care-content2' => 'Ungeschicklichkeit, Gleichgewichtsstörungen;Orthopädische Probleme : Haltungsdefizit und / oder Muskelverspannungen, Skoliose, Kyphose, Klumpfüsse, Beinachsenfehlstellung unteren Extremität, Hüftluxationen, Morbus Perthes;Nachbehandlung von Verletzungen und Operationen;Rheumatische Erkrankungen;Atemwegserkrankungen : CF, Asthma, Bronchiolitis;Übergewicht',
         'appointment-content' => 'Telefonische Terminvereinbarung. Sollte ich nicht erreichbar sein, hinterlassen Sie bitte eine Nachricht auf dem Anrufbeantworter. Ich werde Sie zurückrufen.{0}Danke dass Sie vereinbarte Termine 12h im Voraus absagen. Für verpasste oder nicht abgemeldete Termine werden Ihnen auf eigene Rechnung 50.- verrechnet.',
         'reimbursement-content' => 'Die Kinderphysiotherapie wird auf ärztliche Verordnung von den Krankenkassen oder der IV rückerstattet. Bitte nehmen Sie zum ersten Termin die ärztliche Verordnung und die Krankenkassenkarte mit.{0}Eine Beratung oder Evaluation sind auch ohne ärztliche Verordnung möglich. Die Kosten von 80.- werden Ihnen direkt verrechnet.',
         'prescription-content' => 'In der Regel gilt die Verordnung für 9 Behandlungen mit der Möglichkeit auf 3 weitere Serien von 9 Behandlungen zu verlängern. Die erste Behandlung muss in den 5 Wochen nach der Erstellung der Verordnung stattfinden. Warten Sie deshalb nicht zu lange einen Termin zu vereinbaren!{0}Eine Heimbehandlung ist ebenfalls möglich. Sie muss auf dem Rezept angegeben werden. Dies muss auf der Verordnung explizit ersichtlich sein.'
@@ -48,11 +48,11 @@ return [
         'offer-content' => 'Durch sanfte Berührung und feine manuelle Impulse kann der Selbstheilungsprozess eingeleitet werden. Die Gesundheit im Menschen wird unterstützt und Ressourcen gestärkt, so dass positive Veränderungen stattfinden können.{0}Mit einer Craniosacral-Behandlung schenken Sie sich eine Auszeit in der  Körper, Seele und Geist zur Ruhe kommen, neue Energie schöpfen und sich neu orientieren können.',
         'patient-care-lead' => 'Die Craniosacral Therapie kann zur Förderung des Gleichgewichts zwischen Körper, Geist, Seele und Umwelt beitragen. Sie kann sie in jeder Lebenssituation unterstützen. Ich behandle Menschen jeden Alters',
         'patient-care-children' => [
-            'title' => 'beim Kind:',
+            'title' => 'beim Kind :',
             'content' => 'Verdauungsprobleme (Koliken, Aufstossen);übermässiges Schreien, Überstreckung;Schlafstörungen;schwierige Geburt;Schädelassymmetrien und Schiefhals;Ängste, Unruhe;häufige Mittelohrentzündungen;Wachstumsschmerzen',
         ],
         'patient-care-adults' => [
-            'title' => 'beim Erwachsenen:',
+            'title' => 'beim Erwachsenen :',
             'content' => 'Muskelverspannungen, Gelenksbeschwerden;akute, chronische Nacken, Schulter, Rückenschmerzen;Schleudertrauma;Erschöpfungszustände;Kopfschmerzen, Migräne;Stress, Nervosität, Schlafprobleme;Schwangerschafts;Geburtsbegleitung',
         ],
         'appointment-content' => 'Terminvereinbarung bitte telefonisch oder per SMS.',
@@ -65,7 +65,7 @@ return [
         'sarah-portrait' => 'Nach meiner Ausbildung zur Physiotherapeutin habe ich 2007 im Spitalzentrum Biel AG in der Erwachsenenphysiotherapie zu arbeiten begonnen. Nach kurzer Zeit hatte ich die Möglichkeit in die Kinderphysiotherapie einzusteigen. Die Arbeit mit den Kindern und ihren Familien hat mir so gut gefallen dass ich in der Kinderphysiotherapie geblieben bin.{0}Von 2008 bis 2013 war ich Fachverantwortliche Physiotherapeutin Pädiatrie.{0}Durch die Geburt meines ersten Sohnes bin ich mit der Craniosacraltherapie in Berührung gekommen. Nach der Ausbildung zur Craniosacraltherapeutin habe ich mich 2015 selbständig gemacht.',
         'sarah-formation1' => [
             'title' => 'Physiotherapie',
-            'content' => 'Aroma Massage{0}FBL-Basic: Normale Bewegung-Analyse- problemorientierte Behandlung{0}Physiotherapeutische Atemtherapie beim Erwachsenen, Kind und Säugling- basierend auf der Lungenauskultation, Guy Postiaux{0}Airway Clearance Techniques beim Säugling mit CF und anderen obstruktiven Erkrankungen{0}Einführung in die Kinderphysiotherapie{0}Neurodevelopmental Treatment (NDT){0}Krankheit und Beschwerden von Kindern-Naturheilkunde kann helfen',
+            'content' => 'Aroma Massage{0}FBL-Basic : Normale Bewegung-Analyse- problemorientierte Behandlung{0}Physiotherapeutische Atemtherapie beim Erwachsenen, Kind und Säugling- basierend auf der Lungenauskultation, Guy Postiaux{0}Airway Clearance Techniques beim Säugling mit CF und anderen obstruktiven Erkrankungen{0}Einführung in die Kinderphysiotherapie{0}Neurodevelopmental Treatment (NDT){0}Krankheit und Beschwerden von Kindern-Naturheilkunde kann helfen',
         ],
         'sarah-formation2' => [
             'title' => 'Craniosacraltherapie',
@@ -91,7 +91,7 @@ return [
         ],
         'sophie-formation4' => [
             'title' => 'Andere Weiterbildungen im Zusammenhang mit der Entwicklung des Kindes',
-            'content' => 'Test : General Movements, IMP (Infant Motor Profile){0}Früherkennung und Behandlung von entwicklungsneurologischen Störungen von Babies{0}Kinesthetic Infant Handling{0}Orofaziale Stimulation und Early Feeding Skills Assessment{0}Behandlung von Schiefhals{0}Eltern-Baby-Kurs gestalten und leiten',
+            'content' => 'Test : General Movements, IMP (Infant Motor Profile){0}Früherkennung und Behandlung von entwicklungsneurologischen Störungen von Babies{0}Kinesthetic Infant Handling{0}Orofaziale Stimulation und Early Feeding Skills Assessment{0}Behandlung von Schiefhals{0}Eltern-Baby-Kurs gestalten und leiten',
         ],
         'our-office' => 'Unsere Praxis',
     ],

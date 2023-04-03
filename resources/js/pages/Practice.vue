@@ -1,4 +1,5 @@
 <style lang="scss">
+@import '~@sass/_mixins';
 
 .practice-page {
     .page-title-image {
@@ -12,7 +13,10 @@
         }
     }
     .portrait-image {
-        width: 190px;
+        width: 140px;
+        @include breakpoint(medium up) {
+            width: 190px;
+        }
     }
 
     .card {
@@ -38,10 +42,20 @@
     }
 
     .expandable {
-        //TODO
-        &.expanded {
-            //TODO
+        //TODO fix expandable flickering
+        @include breakpoint(small only) {
+            max-height: calc(2.4em + 30px);
+            overflow: hidden;
+            &.expanded {
+                max-height: 300vh;
+            }
+            &:not(.expanded) {
+                .ellipsis {
+                    @include ellipsis(2);
+                }
+            }
         }
+        transition: max-height .2s ease-in-out;
     }
 }
 
@@ -59,12 +73,12 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x align-center">
                     <div class="cell small-12 xlarge-6 card card--magenta">
-                        <div class="card-section">
+                        <div class="card-section" data-toggle="sarahExpandable">
                             <div class="grid-x grid-margin-y">
                                 <div class="cell">
                                     <div class="grid-x grid-margin-x align-middle">
                                         <div class="cell shrink">
-                                            <svg class="portrait-image" data-toggle="sarahPortrait sarahFormation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
+                                            <svg class="portrait-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
                                                 <defs>
                                                     <clipPath id="circle-mask" clipPathUnits="userSpaceOnUse">
                                                         <circle cx="50" cy="50" r="50" />
@@ -74,37 +88,41 @@
                                             </svg>
                                         </div>
                                         <div class="cell auto">
-                                            <h1 class="card-section-title" data-toggle="sarahPortrait sarahFormation">sarah meier</h1>
+                                            <h1 class="card-section-title">sarah meier</h1>
                                             <div class="separator"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cell expandable" id="sarahPortrait" v-foundation data-toggler=".expanded">
-                                    <i18n-t keypath="site.practice-page.sarah-portrait" tag="div" class="portrait">
-                                        <div class="spacer"></div>
-                                    </i18n-t>
-                                </div>
-                                <div class="cell expandable" id="sarahFormation" v-foundation data-toggler=".expanded">
-                                    <div class="formation-title">{{ $t('site.practice-page.formation-title') }}</div>
-                                    <div class="separator"></div>
-                                    <div class="grid-x grid-margin-y">
+                                <div class="cell">
+                                    <div id="sarahExpandable" class="grid-x grid-margin-y expandable" v-foundation data-toggler=".expanded">
                                         <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sarah-formation1.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sarah-formation1.content" tag="div">
-                                                <br />
+                                            <i18n-t keypath="site.practice-page.sarah-portrait" tag="div" class="portrait ellipsis">
+                                                <div class="spacer"></div>
                                             </i18n-t>
                                         </div>
                                         <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sarah-formation2.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sarah-formation2.content" tag="div">
-                                                <br />
-                                            </i18n-t>
-                                        </div>
-                                        <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sarah-formation3.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sarah-formation3.content" tag="div">
-                                                <br />
-                                            </i18n-t>
+                                            <div class="formation-title">{{ $t('site.practice-page.formation-title') }}</div>
+                                            <div class="separator"></div>
+                                            <div class="grid-x grid-margin-y">
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sarah-formation1.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sarah-formation1.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sarah-formation2.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sarah-formation2.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sarah-formation3.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sarah-formation3.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +130,7 @@
                         </div>
                     </div>
                     <div class="cell small-12 xlarge-6 card card--yellow">
-                        <div class="card-section">
+                        <div class="card-section" data-toggle="sophieExpandable">
                             <div class="grid-x grid-margin-y">
                                 <div class="cell">
                                     <div class="grid-x grid-margin-x align-middle">
@@ -133,40 +151,44 @@
                                     </div>
                                 </div>
                                 <div class="cell">
-                                    <i18n-t keypath="site.practice-page.sophie-portrait" tag="div" class="portrait">
-                                        <div class="spacer"></div>
-                                    </i18n-t>
-                                </div>
-                                <div class="cell">
-                                    <div class="formation-title">{{ $t('site.practice-page.formation-title') }}</div>
-                                    <div class="separator"></div>
-                                    <div class="grid-x grid-margin-y">
+                                    <div id="sophieExpandable" class="grid-x grid-margin-y expandable" v-foundation data-toggler=".expanded">
                                         <div class="cell">
-                                            <div>{{ $t('site.practice-page.sophie-degree') }}</div>
-                                        </div>
-                                        <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sophie-formation1.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sophie-formation1.content" tag="div">
-                                                <br />
+                                            <i18n-t keypath="site.practice-page.sophie-portrait" tag="div" class="portrait ellipsis">
+                                                <div class="spacer"></div>
                                             </i18n-t>
                                         </div>
                                         <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sophie-formation2.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sophie-formation2.content" tag="div">
-                                                <br />
-                                            </i18n-t>
-                                        </div>
-                                        <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sophie-formation3.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sophie-formation3.content" tag="div">
-                                                <br />
-                                            </i18n-t>
-                                        </div>
-                                        <div class="cell">
-                                            <div class="strong-text">{{ $t('site.practice-page.sophie-formation4.title') }}</div>
-                                            <i18n-t keypath="site.practice-page.sophie-formation4.content" tag="div">
-                                                <br />
-                                            </i18n-t>
+                                            <div class="formation-title">{{ $t('site.practice-page.formation-title') }}</div>
+                                            <div class="separator"></div>
+                                            <div class="grid-x grid-margin-y">
+                                                <div class="cell">
+                                                    <div>{{ $t('site.practice-page.sophie-degree') }}</div>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sophie-formation1.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sophie-formation1.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sophie-formation2.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sophie-formation2.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sophie-formation3.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sophie-formation3.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.sophie-formation4.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.sophie-formation4.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
