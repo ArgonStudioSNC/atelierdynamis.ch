@@ -179,7 +179,7 @@
                             </router-link>
                         </div>
                         <div class="cell small-3">
-                            <a href="https://goo.gl/maps/3MJqJJds5HJuY5AU9" target="_blank">
+                            <a href="https://www.google.com/maps/place/atelier+dynamis/@47.1340383,7.2418504,17z/data=!3m1!4b1!4m6!3m5!1s0x478e1984a0b7e05b:0xc12d7f5917e0890a!8m2!3d47.1340383!4d7.2418504!16s%2Fg%2F11rmwbd7jf" target="_blank">
                                 <font-awesome-icon icon="fa-solid fa-location-dot" />
                             </a>
                         </div>
