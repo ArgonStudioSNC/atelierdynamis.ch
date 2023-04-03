@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js?id=d823ac42c47a9a5d2b3ecf89534e457c",
+    "/js/app.js": "/js/app.js?id=b586689eb3e3628fb6d5712eaecd3f64",
     "/js/manifest.js": "/js/manifest.js?id=97388e573d6b3daf931d95331b12b2f3",
     "/css/app.css": "/css/app.css?id=237755bde767118a6d036980d7812e68",
     "/js/vendor.js": "/js/vendor.js?id=3a9feaa442393bdf2b41d8c7502a0a38",
@@ -17,6 +17,7 @@
     "/static/icons/android-chrome-512x512.png": "/static/icons/android-chrome-512x512.png?id=568e7ff3ca48aac07e20d0755170352a",
     "/static/icons/apple-touch-icon.png": "/static/icons/apple-touch-icon.png?id=f362687ef7f7878cc14064b98c1ad775",
     "/static/icons/browserconfig.xml": "/static/icons/browserconfig.xml?id=287419f7ecaf619dce044c60c9df248e",
+    "/static/icons/dynamis-circle.svg": "/static/icons/dynamis-circle.svg?id=d6bfaddb1ceb1b492f48fd128071288d",
     "/static/icons/favicon-16x16.png": "/static/icons/favicon-16x16.png?id=e9957ae07c4e84c5f7b2270d64ee52c7",
     "/static/icons/favicon-32x32.png": "/static/icons/favicon-32x32.png?id=dd371e06cae60f04edb15815c1e4eec5",
     "/static/icons/favicon.ico": "/static/icons/favicon.ico?id=0a00fc4533b0beffbd8235e5d3c36e5e",

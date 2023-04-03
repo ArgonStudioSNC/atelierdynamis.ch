@@ -204,7 +204,7 @@
             </div>
             <div class="mobile hide-for-medium">
                 <div class="grid-y grid-frame background-cover">
-                    <img src="/storage/logo_atelier_dynamis.svg"/>
+                    <img src="/storage/logo/atelier_dynamis.svg"/>
                 </div>
             </div>
         </div>
@@ -231,7 +231,7 @@
                                 </clipPath>
                             </defs>
                             <image height="88" href="/storage/pictures/@600/home-cranio.jpg" clip-path="url(#circle88)" x="-16" y="6" />
-                            <image xlink:href="/storage/circle_atelier_dynamis.svg" height="100" />
+                            <image xlink:href="/static/icons/dynamis-circle.svg" height="100" />
                         </svg>
                     </div>
                     <div class="cell show-for-medium medium-6 summary-relative-container">
@@ -262,7 +262,7 @@
                     <div class="cell small-12 hide-for-medium">
                         <svg class="summary-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
                             <image height="88" href="/storage/pictures/@600/home-physio.jpg" clip-path="url(#circle88)" x="-19" y="6" />
-                            <image xlink:href="/storage/circle_atelier_dynamis.svg" height="100" />
+                            <image xlink:href="/static/icons/dynamis-circle.svg" height="100" />
                         </svg>
                     </div>
                     <div class="cell show-for-large large-2"></div>

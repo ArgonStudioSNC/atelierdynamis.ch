@@ -11,7 +11,7 @@
         <div class="grid-x grid-margin-y" style="display: flex;flex-flow: row wrap;">
             <div class="cell text-center" style="flex: 0 0 auto;width: 100%;text-align: center;margin-top: 1rem;">
                 <a href="https://atelierdynamis.ch/" target="_blank" style="text-decoration: none;cursor: pointer;background-color: transparent;">
-                    <img src="{{ asset('storage/logo_atelier_dynamis.png') }}" style="max-width: 200px;display: inline-block;vertical-align: middle;height: auto;">
+                    <img src="{{ asset('storage/logo/atelier_dynamis.png') }}" style="max-width: 200px;display: inline-block;vertical-align: middle;height: auto;">
                 </a>
             </div>
             <div class="cell" style="flex: 0 0 auto;width: 100%;margin-top: 1rem;">

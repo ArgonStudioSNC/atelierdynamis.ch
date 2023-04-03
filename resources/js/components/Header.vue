@@ -203,7 +203,7 @@
 export default {
     data () {
         return {
-            logoImg: "/storage/logo_atelier_dynamis.svg",
+            logoImg: "/storage/logo/atelier_dynamis.svg",
         }
     },
     watch: {

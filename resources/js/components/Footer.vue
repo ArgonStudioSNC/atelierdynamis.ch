@@ -162,7 +162,7 @@
 export default {
     data () {
         return {
-            logo_img: "/storage/logo_atelier_dynamis.svg",
+            logo_img: "/storage/logo/atelier_dynamis.svg",
         }
     },
 }
