@@ -39,7 +39,12 @@
                     </div>
                     <div class="cell small-5">
                         <svg class="circle-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
-                            <image height="88" href="/storage/pictures/@1200/cranio.jpg" clip-path="url(/static/icons/vector.svg#circle88)" x="-11" y="6" />
+                            <defs>
+                                <clipPath id="circle88" clipPathUnits="userSpaceOnUse">
+                                    <circle cx="50" cy="50" r="44" />
+                                </clipPath>
+                            </defs>
+                            <image height="88" href="/storage/pictures/@1200/cranio.jpg" clip-path="url(#circle88)" x="-11" y="6" />
                             <image xlink:href="/static/icons/dynamis-circle.svg" height="100" />
                         </svg>
                     </div>

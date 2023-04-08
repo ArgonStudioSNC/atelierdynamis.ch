@@ -221,11 +221,21 @@
             </div>
         </div>
         <div id='summary' class="section section--bg-gray summary">
+            <svg version="1.1" height="0" width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0">
+                <defs>
+                    <clipPath id="circle100" clipPathUnits="userSpaceOnUse">
+                        <circle cx="50" cy="50" r="50" />
+                    </clipPath>
+                    <clipPath id="circle88" clipPathUnits="userSpaceOnUse">
+                        <circle cx="50" cy="50" r="44" />
+                    </clipPath>
+                </defs>
+            </svg>
             <div class="grid-container">
                 <div class="grid-x grid-margin-y sub-section">
                     <div class="cell small-12 hide-for-medium">
                         <svg class="summary-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
-                            <image height="88" href="/storage/pictures/@600/home-cranio.jpg" clip-path="url(/static/icons/vector.svg#circle88)" x="-16" y="6" />
+                            <image height="88" href="/storage/pictures/@600/home-cranio.jpg" clip-path="url(#circle88)" x="-16" y="6" />
                             <image xlink:href="/static/icons/dynamis-circle.svg" height="100" />
                         </svg>
                     </div>
@@ -233,8 +243,8 @@
                         <svg class="summary-circle summary-circle--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
                             <circle cx="50" cy="50" r="50" />
                         </svg>
-                        <svg class="summary-image summary-image--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
-                            <image height="100" href="/storage/pictures/@1200/home-cranio.jpg" clip-path="url(/static/icons/vector.svg#circle100)" x="-22" />
+                        <svg class="summary-image summary-image--left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" x="0" y="0">
+                            <image height="100" xlink:href="/storage/pictures/@1200/home-cranio.jpg" clip-path="url(#circle100)" x="-22" />
                         </svg>
                     </div>
                     <div class="cell small-12 medium-6 large-4">
@@ -251,7 +261,7 @@
                 <div class="grid-x grid-margin-y sub-section">
                     <div class="cell small-12 hide-for-medium">
                         <svg class="summary-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
-                            <image height="88" href="/storage/pictures/@600/home-physio.jpg" clip-path="url(/static/icons/vector.svg#circle88)" x="-19" y="6" />
+                            <image height="88" href="/storage/pictures/@600/home-physio.jpg" clip-path="url(#circle88)" x="-19" y="6" />
                             <image xlink:href="/static/icons/dynamis-circle.svg" height="100" />
                         </svg>
                     </div>
@@ -269,7 +279,7 @@
                             <circle cx="50" cy="50" r="50" />
                         </svg>
                         <svg class="summary-image summary-image--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
-                            <image height="100" href="/storage/pictures/@1200/home-physio.jpg" clip-path="url(/static/icons/vector.svg#circle100)" x="-25" />
+                            <image height="100" href="/storage/pictures/@1200/home-physio.jpg" clip-path="url(#circle100)" x="-25" />
                         </svg>
                     </div>
                 </div>
