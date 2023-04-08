@@ -34,3 +34,37 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          check-latest: true
+      - name: Install NPM dependencies
+        run: npm install
+      - name: Compile assets for production
+        run: npm run production
+
+
+deploy:
+
+  runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v3
+    - name: Deployment
+      uses: appleboy/ssh-action@main
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_GITHUB_USERNAME }}
+        password: ${{ secrets.SSH_GITHUB_PASSWORD }}
+        script: |
+          cd /sites/atelierdynamis.ch/
+          git checkout -f
+          git pull
