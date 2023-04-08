@@ -14,7 +14,8 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
@@ -53,7 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Deployment
+        with:
+          token: ${{ secrets.USER_TOKEN }}
+      - name: Push to deploy branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -61,11 +64,11 @@ jobs:
           git add -f public/
           git commit -m "Build front-end assets"
           git push -f origin deploy
-      - name: Deployment
+      - name: Deploy to server
         uses: appleboy/ssh-action@v0.1.9
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_GITHUB_USERNAME }}
+          host: 7g9f5.ftp.infomaniak.com
+          username: 7g9f5_github
           password: ${{ secrets.SSH_GITHUB_PASSWORD }}
           script: |
             cd ~/sites/atelierdynamis.ch/
