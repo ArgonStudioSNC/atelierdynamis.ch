@@ -53,6 +53,7 @@ jobs:
 
   deploy:
 
+    needs: [laravel-tests, build]
     runs-on: ubuntu-latest
 
     steps:
@@ -64,6 +65,6 @@ jobs:
           username: ${{ secrets.SSH_GITHUB_USERNAME }}
           password: ${{ secrets.SSH_GITHUB_PASSWORD }}
           script: |
-            cd /sites/atelierdynamis.ch/
+            cd ~/sites/atelierdynamis.ch/
             git checkout -f
             git pull
