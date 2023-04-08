@@ -34,7 +34,7 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
 
-  build-deploy:
+  build:
     needs: [laravel-tests]
     runs-on: ubuntu-latest
     steps:
@@ -58,6 +58,11 @@ jobs:
           git add -f public/
           git commit -m "Build front-end assets"
           git push -f origin deploy
+
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to server
         uses: appleboy/ssh-action@v0.1.9
         with:
