@@ -34,11 +34,13 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
 
-  build:
+  build and deploy:
     needs: [laravel-tests]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.USER_TOKEN }}
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -48,14 +50,6 @@ jobs:
         run: npm install
       - name: Compile assets for production
         run: npm run production
-
-  deploy:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.USER_TOKEN }}
       - name: Push to deploy branch
         run: |
           git config --local user.email "action@github.com"
