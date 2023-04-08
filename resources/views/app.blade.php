@@ -12,12 +12,12 @@
     <title>@yield('page-title'){{ config('app.name') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ mix('js/manifest.js') }}"></script>
-    <script src="{{ mix('js/vendor.js') }}" defer></script>
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ mix('dist/manifest.js') }}"></script>
+    <script src="{{ mix('dist/vendor.js') }}" defer></script>
+    <script src="{{ mix('dist/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ mix('dist/app.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('static/icons/apple-touch-icon.png') }}">

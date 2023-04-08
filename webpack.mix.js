@@ -18,10 +18,9 @@ mix
         '$', 'window.$', 'jQuery', 'window.jQuery'
     ]
 })
+.sass('resources/sass/app.scss', 'dist')
 
-.sass('resources/sass/app.scss', 'css')
-
-.js('resources/js/app.js', 'js')
+.js('resources/js/app.js', 'dist')
 
 .copyDirectory('resources/assets/fonts', 'public/static/fonts')
 .copyDirectory('resources/assets/icons', 'public/static/icons')
