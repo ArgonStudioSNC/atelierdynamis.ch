@@ -1,8 +1,13 @@
+/storage/
+
+### Webpack ###
 /public/dist
 /public/static
 /public/storage
-/storage/
 /public/mix-manifest.json
+
+### npm generated files ###
+package-lock.json
 
 ### PHPStorm ###
 /.idea

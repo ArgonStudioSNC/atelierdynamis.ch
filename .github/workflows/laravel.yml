@@ -69,6 +69,6 @@ jobs:
             php artisan down
             git fetch origin deploy
             git reset --hard origin/deploy
-            composer install --no-interaction --prefer-dist --optimize-
-            php artisan optimize
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+            php artisan optimize:clear
             php artisan up
