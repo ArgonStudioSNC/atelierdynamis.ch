@@ -4,7 +4,7 @@ return [
     'title' => 'atelier dynamis',
     'subtitle' => 'Physiothérapie pédiatrique et thérapie craniosacrale',
     'biel' => 'Biel/Bienne',
-    'address' => 'Place de la Gare 1{0}2502 Biel/Bienne',
+    'address' => 'Rue Neuve 14{0}2502 Biel/Bienne',
     'locales' => [
         'fr' => 'français',
         'de' => 'Deutsch'
@@ -28,12 +28,12 @@ return [
         'appointment-title' => 'prise de rendez-vous',
         'reimbursement-title' => 'remboursement',
         'prescription-title' => 'prescription',
-        'offer-lead' => 'L’enfant et sa famille dans son ensemble sont au centre de mes préoccupations',
-        'offer-content' => 'Dans le processus thérapeutique chacun prend part à l’analyse de la problématique, à la définition des buts et à la recherche de solutions. Je m’appliquer à favoriser la créativité des enfants et de leurs parents. Et me laisse surprendre par les solutions individuelles.{0}L’enfant apprend en jouant. C’est à travers le jeu qu’il gagne en force, coordination, endurance, en indépendance, en assurance. La prise en charge thérapeutique est donc adaptée au stade de développement psychomoteur de l’enfant et a un aspect ludique. Elle se base sur les connaissances actuelles médicales, psychologiques et pédagogiques et requiert une excellente collaboration interdisciplinaire.',
-        'patient-care-lead' => 'Je prends en charge des enfants de 0 à 10 ans dans les situations suivantes :',
-        'patient-care-content1' => 'Prématurité;asymétrie de la tête;Torticolis congénital;Retard de développement, trouble du tonus;Atteinte du plexus brachial;Déficience motrice d’origine cérébrale;Symptomatologie après traitement d’une tumeur;Syndrome ou maladie génétique affectant le développement moteur global (myopathie, trisomie 21…)',
-        'patient-care-content2' => 'Maladresse motrice, trouble de l’équilibre;Problème orthopédique : déficit postural et/ou rétractions musculaires, scoliose, cyphose, pieds bots, mauvais alignement des membres inférieurs, luxation de hanche, Perthes…;Traumatisme et rééducation post opératoire;Affection rhumatologique;Maladie respiratoire : mucoviscidose, asthme, bronchiolite;Surpoids',
-        'appointment-content' => 'Prise de rendez-vous téléphonique. Laissez un message sur le répondeur si je ne suis pas disponible. Je vous rappellerai.{0}Merci d’annuler un rendez-vous 12 heures à l’avance. Un rendez-vous manqué non-annulé est à votre charge et vous sera directement facturé 50.-',
+        'offer-lead' => 'L’enfant et sa famille dans son ensemble sont au centre de nos préoccupations',
+        'offer-content' => 'Dans le processus thérapeutique chacun prend part à l’analyse de la problématique, à la définition des buts et à la recherche de solutions. Nous favorisons la créativité des enfants et de leurs parents et nous laissons surprendre par les solutions individuelles.{0}L’enfant apprend en jouant. C’est à travers le jeu qu’il gagne en force, coordination, endurance, en indépendance, en assurance. La prise en charge thérapeutique est donc adaptée au stade de développement psychomoteur de l’enfant et a un aspect ludique. Elle se base sur les connaissances actuelles médicales, psychologiques et pédagogiques et requiert une excellente collaboration interdisciplinaire.',
+        'patient-care-lead' => 'Nous prenons en charge les enfants de 0 à 16 ans dans les situations suivantes :',
+        'patient-care-content1' => 'prématurité;asymétrie de la tête;torticolis congénital;retard de développement, trouble du tonus;atteinte du plexus brachial;déficience motrice d’origine cérébrale;symptomatologie après traitement d’une tumeur;syndrome ou maladie génétique affectant le développement moteur global (myopathie, trisomie 21…)',
+        'patient-care-content2' => 'maladresse motrice, trouble de l’équilibre;problème orthopédique : déficit postural et/ou rétractions musculaires, scoliose, cyphose, pieds bots, mauvais alignement des membres inférieurs, luxation de hanche, perthes…;traumatisme et rééducation post opératoire;affection rhumatologique;maladie respiratoire : mucoviscidose, asthme, bronchiolite;surpoids',
+        'appointment-content' => 'Prise de rendez-vous téléphonique.{0}Merci d’annuler un rendez-vous 12 heures à l’avance. Un rendez-vous manqué non-annulé est à votre charge et vous sera facturé 50.-',
         'reimbursement-content' => 'La physiothérapie pédiatrique est remboursée, sur prescription médicale, par les caisses maladies ou l’assurance invalidité. Veuillez prendre avec vous la prescription médicale et la carte de caisse maladie lors du premier rendez-vous.{0}Un conseil ou une évaluation sont aussi possibles sans prescription médicale. Les coûts vous seront facturés directement. Coût 80.-',
         'prescription-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}Une prise en charge à domicile est aussi possible. Elle doit être spécifiée sur la prescription.'
     ],
@@ -46,17 +46,17 @@ return [
         'prescription-title' => 'prescription',
         'offer-lead' => 'L’être humain comme unité de corps, d’âme et d’esprit est au centre de mon travail',
         'offer-content' => 'Grâce à un toucher délicat et à de fines impulsions manuelles, le processus d’autoguérison peut être engagé. La santé intrinsèque de l’être humain est soutenue et ses ressources sont renforcées, de sorte que des changements positifs peuvent avoir lieu.{0}Avec un traitement craniosacral, vous vous offrez une parenthèse pendant laquelle le corps, l’âme et l’esprit se calment, puisent une nouvelle énergie et se réorientent.',
-        'patient-care-lead' => 'La thérapie craniosacrale peut contribuer à améliorer l’équilibre entre le corps, l’esprit, l’âme et l’environnement. Elle peut les soutenir dans toutes les situations de la vie. Je traite des personnes de tout âge',
+        'patient-care-lead' => 'La thérapie craniosacrale peut contribuer à améliorer l’équilibre entre le corps, l’esprit, l’âme et l’environnement. Elle peut les soutenir dans toutes les situations de la vie. Elle s’adresse à des personnes de tout âge',
         'patient-care-children' => [
             'title' => 'chez l’enfant :',
-            'content' => 'problèmes de digestion(coliques, reflux);pleurs inapaisables, hyperextension;problèmes de sommeil;naissance difficile;Asymétrie de la tête et torticoli;peurs, agitation;otites fréquentes;douleurs de croissances',
+            'content' => 'problèmes de digestion(coliques, reflux);pleurs inapaisables, hyperextension;problèmes de sommeil;naissance difficile;asymétrie de la tête et torticoli;peurs, agitation;otites fréquentes;douleurs de croissances',
         ],
         'patient-care-adults' => [
             'title' => 'chez l’adulte :',
             'content' => 'tensions musculaires, douleurs articulaires;douleurs aïgues ou chroniques du dos, de la nuque ou des épaules;coup du lapin;état d’épuisement;maux de tête, migraine;stress, nervosité, problèmes de sommeil;accompagnement de la grossesse et de l’accouchement',
         ],
         'appointment-content' => 'Prise de rendez-vous téléphonique ou par SMS',
-        'reimbursement-content' => 'La thérapie craniosacrale est une méthode de thérapie de la thérapie complémentaire et est prise en charge par l’assurance complémentaire de nombreuses caisses. Je suis reconnue par le RME, l’ASCA et la Visana. Veuillez vous renseigner auprès de votre assurance maladie sur la participation exacte aux coûts.{0}Un traitement dure normalement 60 minutes et coute 120.-',
+        'reimbursement-content' => 'La thérapie craniosacrale est une méthode de thérapie de la thérapie complémentaire et est prise en charge par l’assurance complémentaire de nombreuses caisses. Sarah Meier est reconnue par le RME, l’ASCA et la Visana. Veuillez vous renseigner auprès de votre assurance maladie sur la participation exacte aux coûts.{0}Un traitement dure normalement 60 minutes et coute 120.-',
         'prescription-content' => 'La thérapie crâniosacrale étant prise en charge par l’assurance complémentaire, vous n’avez pas besoin de prescription médicale.',
     ],
     'practice-page' => [
@@ -93,6 +93,22 @@ return [
             'title' => 'Autres formations en relation avec le développement du bébé',
             'content' => 'Tests : General Movements, IMP (Infant Motor Profile){0}Dépistage et traitement précoce des troubles du neurodéveloppement du bébé{0}Kinesthetics Infant Handling{0}Stimulation orofaciale, et Early Feeding Skills Assessment{0}Traitement du torticoli congénital{0}créer et animer un cours parents-bébés',
         ],
+        'dagmar-portrait' => '',
+        'dagmar-degree' => '',
+        'dagmar-formation1' => [
+            'title' => '',
+            'content' => '',
+        ],
+        'dagmar-formation2' => [
+            'title' => '',
+            'content' => '',
+        ],
+        'anja-portrait' => '',
+        'anja-degree' => '',
+        'anja-formation1' => [
+            'title' => '',
+            'content' => '',
+        ],
         'our-office' => 'Nos locaux',
     ],
     'courses-page' => [
@@ -107,7 +123,7 @@ return [
         'course1-schedule' => 'lundi de 16h à 17h{0}début possible en tout temps selon les places disponibles',
         'course1-rate' => '90.- pour 3 séances',
         'course2-title' => 'atelier crapahuteurs',
-        'course2-lead' => 'votre bébé roule, pivote sur le ventre ou sur le dos, rampe, va à 4 pattes, grimpe, glisse sur les fesses, bref se déplace mais ne marche pas encore librement de manière sûre. Il peut venir exercer ses compétences chez les crapahuteurs, sous l’œil attentif et encourageant d’un adulte (parent, grand-parent, nounou...){0}Suivant le principe de Montessori « aide moi à faire seul » nous définissons le niveau de développement de l’enfant, son centre d’intérêt à l’instant présent et jouons avec lui à la limite de ses compétences en adaptant l’environnement.{0}Nous faisons également de la gym bébé, des massages des pieds et des mains, accompagnés de chansons et comptines.',
+        'course2-lead' => 'Votre bébé roule, pivote sur le ventre ou sur le dos, rampe, va à 4 pattes, grimpe, glisse sur les fesses, bref se déplace mais ne marche pas encore librement de manière sûre. Il peut venir exercer ses compétences chez les crapahuteurs, sous l’œil attentif et encourageant d’un adulte (parent, grand-parent, nounou...){0}Suivant le principe de Montessori « aide moi à faire seul » nous définissons le niveau de développement de l’enfant, son centre d’intérêt à l’instant présent et jouons avec lui à la limite de ses compétences en adaptant l’environnement.{0}Nous faisons également de la gym bébé, des massages des pieds et des mains, accompagnés de chansons et comptines.',
         'course2-target' => 'Pour les enfants entre 8 et 18 mois qui ne marche pas encore librement de manière sûre.',
         'course2-schedule' => 'vendredi 16h à 17h{0}début possible en tout temps selon les places disponibles',
         'course2-rate' => '100.- pour 4 séances',
@@ -115,7 +131,8 @@ return [
     'contact-page' => [
         'name' => 'contact',
         'access' => 'accessibilité',
-        'access-content' => 'L’atelier est facilement accessible en voiture et en transports publiques. Il se trouve au 4ème étage avec ascenseur',
+        'access-content' => 'Entrer par le passage couvert sur le côté droit de l’immeuble.{0}Situé à 9 minutes de la gare ou à 5 minutes de la place Centrale. En voiture, parquer à la rue de l’Hôpital, au parking Manor ou au parking Musées
+',
     ],
     'contact-form' => [
         'contact-who' => 'Quel service souhaitez-vous contacter?',

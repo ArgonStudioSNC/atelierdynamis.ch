@@ -93,6 +93,22 @@ return [
             'title' => 'Andere Weiterbildungen im Zusammenhang mit der Entwicklung des Kindes',
             'content' => 'Test : General Movements, IMP (Infant Motor Profile){0}Früherkennung und Behandlung von entwicklungsneurologischen Störungen von Babies{0}Kinesthetic Infant Handling{0}Orofaziale Stimulation und Early Feeding Skills Assessment{0}Behandlung von Schiefhals{0}Eltern-Baby-Kurs gestalten und leiten',
         ],
+        'dagmar-portrait' => 'Schon während meiner Ausbildung zur Physiotherapeutin in Berlin entwickelte sich mein Interesse für die Kinderphysiotherapie.{0}Nach dem Abschluss meiner Ausbildung 1991 arbeitete ich für sechs Jahre im Sozialpädiatrischen Zentrum des Charité Virchow- Klinikums in Berlin im Bereich der Neurorehabilitation für Kinder.{0}Im Jahr 2000 kam ich nach Biel und sammelte im Z.E.N. Zentrum für Entwicklungsförderung und pädiatrische Neurorehabilitation für weitere vier Jahre Erfahrungen als Kinderphysiotherapeutin. Im Jahr 2005 begann ich meine Tätigkeit als Kinderphysiotherapeutin in der Praxis Bernhard & Höfel & Smeets in Biel und arbeitete zusätzlich mit einem Teilzeitpensum als Physiotherapeutin im Schulungs- und Wohnheim Rossfeld in Bern mit Jugendlichen und Erwachsenen mit besonderen Bedürfnissen.{0}Neben meiner Praxistätigkeit arbeite ich seit 2010 als Kinderphysiotherapeutin an der Heilpädagogischen Tagesschule in Biel und seit Februar 2024 als selbständige Kinderphysiotherapeutin im atelier dynamis.',
+        'dagmar-degree' => 'Diplom Physiotherapeutin{0}Tanzpädagogin',
+        'dagmar-formation1' => [
+            'title' => 'Physiotherapeutische Weiterbildungen',
+            'content' => 'Entwicklungsneurologische Therapie NDT- Bobath Kinder{0}Entwicklungsneurologische Therapie NDT- Bobath Baby{0}COPCA (Coping and Caring for infants with special needs, a family centered early intervention program){0}Infant Motorprofile (IMP){0}Movement Assessment Battery for Children M-ABC-2{0}Movement Assessment of Children (MAC){0}Rehabilitationskonzepte und Orthesenversorgung nach A. Ferrari für Kinder mit Spina bifida, Muskelerkrankungen und Zerebralparese{0}«Therapie mit Kindern Beobachtung als Basis» bei Monika Aly Pikler Institut für Fortbildungen Berlin{0}«Die Bedeutung der selbständigen Aktivität für die Entwicklung der Persönlichkeit» bei Anna Tardos Piklerinstitut Budapest{0}Weiterbildungskurs Kinderorthopädie, Schwerpunkt Wirbelsäule und untere Extremitäten{0}Kinaesthetics in der Pflege Grund- und Aufbaukurs{0}Grundkurs Basale Stimulation in Pädagogik und Therapie',
+        ],
+        'dagmar-formation2' => [
+            'title' => 'Sonstige Weiterbildungen',
+            'content' => 'Fortlaufende Kurse bei Marianne Haag basierend auf der Arbeit von Elsa Gindler und Heinrich Jacoby',
+        ],
+        'anja-portrait' => '',
+        'anja-degree' => '',
+        'anja-formation1' => [
+            'title' => '',
+            'content' => '',
+        ],
         'our-office' => 'Unsere Praxis',
     ],
     'courses-page' => [

@@ -195,6 +195,102 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cell small-12 xlarge-6 card card--magenta">
+                        <div class="card-section" data-toggle="dagmarExpandable">
+                            <div class="grid-x grid-margin-y">
+                                <div class="cell">
+                                    <div class="grid-x grid-margin-x align-middle">
+                                        <div class="cell shrink">
+                                            <svg class="portrait-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
+                                                <defs>
+                                                    <clipPath id="circle-mask" clipPathUnits="userSpaceOnUse">
+                                                        <circle cx="50" cy="50" r="50" />
+                                                    </clipPath>
+                                                </defs>
+                                                <image width="100" href="/storage/pictures/@600/portrait-dagmar.jpg" clip-path="url(#circle-mask)" y="-10" />
+                                            </svg>
+                                        </div>
+                                        <div class="cell auto">
+                                            <h1 class="card-section-title">dagmar hopf</h1>
+                                            <div class="separator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div id="dagmarExpandable" class="grid-x grid-margin-y expandable" v-foundation data-toggler=".expanded">
+                                        <div class="cell">
+                                            <i18n-t keypath="site.practice-page.dagmar-portrait" tag="div" class="portrait ellipsis">
+                                                <div class="spacer"></div>
+                                            </i18n-t>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="formation-title">{{ $t('site.practice-page.formation-title') }}</div>
+                                            <div class="separator"></div>
+                                            <div class="grid-x grid-margin-y">
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.dagmar-formation1.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.dagmar-formation1.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.dagmar-formation2.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.dagmar-formation2.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 xlarge-6 card card--magenta">
+                        <div class="card-section" data-toggle="anjaExpandable">
+                            <div class="grid-x grid-margin-y">
+                                <div class="cell">
+                                    <div class="grid-x grid-margin-x align-middle">
+                                        <div class="cell shrink">
+                                            <svg class="portrait-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0">
+                                                <defs>
+                                                    <clipPath id="circle-mask" clipPathUnits="userSpaceOnUse">
+                                                        <circle cx="50" cy="50" r="50" />
+                                                    </clipPath>
+                                                </defs>
+                                                <image width="100" href="/storage/pictures/@600/portrait-anja.jpg" clip-path="url(#circle-mask)" y="-10" />
+                                            </svg>
+                                        </div>
+                                        <div class="cell auto">
+                                            <h1 class="card-section-title">anja eggimann</h1>
+                                            <div class="separator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div id="anjaExpandable" class="grid-x grid-margin-y expandable" v-foundation data-toggler=".expanded">
+                                        <div class="cell">
+                                            <i18n-t keypath="site.practice-page.anja-portrait" tag="div" class="portrait ellipsis">
+                                                <div class="spacer"></div>
+                                            </i18n-t>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="formation-title">{{ $t('site.practice-page.formation-title') }}</div>
+                                            <div class="separator"></div>
+                                            <div class="grid-x grid-margin-y">
+                                                <div class="cell">
+                                                    <div class="strong-text">{{ $t('site.practice-page.anja-formation1.title') }}</div>
+                                                    <i18n-t keypath="site.practice-page.anja-formation1.content" tag="div">
+                                                        <br />
+                                                    </i18n-t>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

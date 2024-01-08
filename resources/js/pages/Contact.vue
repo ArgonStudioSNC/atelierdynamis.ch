@@ -47,10 +47,12 @@
                             <div class="cell">
                                 <div class="strong text-lowercase">{{ $t('site.contact-page.access') }}</div>
                                 <div class="separator"></div>
-                                <div>{{ $t('site.contact-page.access-content') }}</div>
+                                <i18n-t keypath="site.contact-page.access-content" tag="div">
+                                    <div class="spacer"></div>
+                                </i18n-t>
                             </div>
                             <div class="cell">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2714.2135053637858!2d7.2396564157609085!3d47.13408302849203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e1950365508ab%3A0xa493c70904e4b54a!2sPl.%20de%20la%20Gare%201%2C%202502%20Bienne!5e0!3m2!1sfr!2sch!4v1641890906232!5m2!1sfr!2sch"
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2217.2764243025695!2d7.24385034955967!3d47.13699171499327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e195204d44eeb%3A0x9e960f5b38ff7f0c!2sRue%20Neuve%2014%2C%202502%20Bienne!5e0!3m2!1sfr!2sch!4v1704729361768!5m2!1sfr!2sch"
                                     width="100%"
                                     height="450"
                                     style="border:0;"
