@@ -33,7 +33,7 @@ return [
         'patient-care-lead' => 'Nous prenons en charge les enfants de 0 à 16 ans dans les situations suivantes :',
         'patient-care-content1' => 'prématurité;asymétrie de la tête;torticolis congénital;retard de développement, trouble du tonus;atteinte du plexus brachial;déficience motrice d’origine cérébrale;symptomatologie après traitement d’une tumeur;syndrome ou maladie génétique affectant le développement moteur global (myopathie, trisomie 21…)',
         'patient-care-content2' => 'maladresse motrice, trouble de l’équilibre;problème orthopédique : déficit postural et/ou rétractions musculaires, scoliose, cyphose, pieds bots, mauvais alignement des membres inférieurs, luxation de hanche, perthes…;traumatisme et rééducation post opératoire;affection rhumatologique;maladie respiratoire : mucoviscidose, asthme, bronchiolite;surpoids',
-        'appointment-content' => 'Prise de rendez-vous téléphonique.{0}Merci d’annuler un rendez-vous 12 heures à l’avance. Un rendez-vous manqué non-annulé est à votre charge et vous sera facturé 50.-',
+        'appointment-content' => 'Prise de rendez-vous téléphonique.{0}Merci d’annuler un rendez-vous 12 heures à l’avance. Un rendez-vous manqué non-annulé est à votre charge et vous sera directement facturé 50.-',
         'reimbursement-content' => 'La physiothérapie pédiatrique est remboursée, sur prescription médicale, par les caisses maladies ou l’assurance invalidité. Veuillez prendre avec vous la prescription médicale et la carte de caisse maladie lors du premier rendez-vous.{0}Un conseil ou une évaluation sont aussi possibles sans prescription médicale. Les coûts vous seront facturés directement. Coût 80.-',
         'prescription-content' => 'La prescription se fait en général pour 9 séances avec possibilité de prolonger pour 3 autres séries de 9 séances. Elle doit être datée au maximum de 5 semaines lors de la première séance. N’attendez donc pas pour prendre rendez-vous !{0}Une prise en charge à domicile est aussi possible. Elle doit être spécifiée sur la prescription.'
     ],
@@ -44,7 +44,7 @@ return [
         'appointment-title' => 'prise de rendez-vous',
         'reimbursement-title' => 'remboursement',
         'prescription-title' => 'prescription',
-        'offer-lead' => 'L’être humain comme unité de corps, d’âme et d’esprit est au centre de mon travail',
+        'offer-lead' => 'L’être humain comme unité de corps, d’âme et d’esprit est au centre de notre travail',
         'offer-content' => 'Grâce à un toucher délicat et à de fines impulsions manuelles, le processus d’autoguérison peut être engagé. La santé intrinsèque de l’être humain est soutenue et ses ressources sont renforcées, de sorte que des changements positifs peuvent avoir lieu.{0}Avec un traitement craniosacral, vous vous offrez une parenthèse pendant laquelle le corps, l’âme et l’esprit se calment, puisent une nouvelle énergie et se réorientent.',
         'patient-care-lead' => 'La thérapie craniosacrale peut contribuer à améliorer l’équilibre entre le corps, l’esprit, l’âme et l’environnement. Elle peut les soutenir dans toutes les situations de la vie. Elle s’adresse à des personnes de tout âge',
         'patient-care-children' => [

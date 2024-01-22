@@ -97,7 +97,7 @@
 <template>
     <div id='footer' class='footer'>
         <div class='grid-container'>
-            <div class="hide-for-large grid-x grid-margin-y">
+            <div class="grid-x grid-margin-y">
                 <div class="cell small-12 medium-6">
                     <div class="atelier">
                         <div class="title">{{ $t('site.title') }}</div>
@@ -107,23 +107,37 @@
                     </div>
                 </div>
                 <div class="cell small-12 medium-6">
-                    <div class="grid-y grid-margin-y">
-                        <div class="cell contact contact--magenta">
+                    <div class="grid-x grid-margin-y">
+                        <div class="cell medium-6 contact contact--magenta">
                             <div class="contact-name">sarah meier</div>
                             <div class="separator show-for-medium"></div>
+                            <div>{{ $t('site.physio-page.name') }}</div>
                             <div>{{ $t('site.cranio-page.name') }}</div>
                             <a href="tel:+41763288990">t. +41 76 328 89 90</a>
                         </div>
-                        <div class="cell contact contact--yellow">
+                        <div class="cell medium-6 contact contact--yellow">
                             <div class="contact-name">sophie charrière</div>
                             <div class="separator show-for-medium"></div>
                             <div>{{ $t('site.physio-page.name') }}</div>
                             <a href="tel:+41774569616">t. +41 77 456 96 16</a>
                         </div>
+                        <div class="cell medium-6 contact">
+                            <div class="contact-name">anja eggimann</div>
+                            <div class="separator show-for-medium"></div>
+                            <div>{{ $t('site.physio-page.name') }}</div>
+                            <div>{{ $t('site.cranio-page.name') }}</div>
+                            <a href="tel:+41799318338">t. +41 79 931 83 38</a>
+                        </div>
+                        <div class="cell medium-6 contact">
+                            <div class="contact-name">dagmar hopf</div>
+                            <div class="separator show-for-medium"></div>
+                            <div>{{ $t('site.physio-page.name') }}</div>
+                            <a href="tel:+41798018678">t. +41 79 801 86 78</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="show-for-large grid-x text-center">
+            <div class="hide grid-x text-center">
                 <div class="cell large-4 footer-left">
                     <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="0" y="0" preserveAspectRatio="xMidYMin slice" >
                         <circle cx="50" cy="50" r="50" />

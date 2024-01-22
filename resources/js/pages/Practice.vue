@@ -195,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell small-12 xlarge-6 card card--magenta">
+                    <div class="cell hide small-12 xlarge-6 card card--magenta">
                         <div class="card-section" data-toggle="dagmarExpandable">
                             <div class="grid-x grid-margin-y">
                                 <div class="cell">
@@ -246,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell small-12 xlarge-6 card card--magenta">
+                    <div class="cell hide small-12 xlarge-6 card card--magenta">
                         <div class="card-section" data-toggle="anjaExpandable">
                             <div class="grid-x grid-margin-y">
                                 <div class="cell">

@@ -4,7 +4,7 @@ return [
     'title' => 'atelier dynamis',
     'subtitle' => 'Kinderphysiotherapie und Craniosacraltherapie',
     'biel' => 'Biel/Bienne',
-    'address' => 'Bahnhofplatz 1{0}2502 Biel/Bienne',
+    'address' => 'Neuengasse 14{0}2502 Biel/Bienne',
     'locales' => [
         'fr' => 'français',
         'de' => 'Deutsch'
@@ -28,12 +28,12 @@ return [
         'appointment-title' => 'Terminvereinbarung',
         'reimbursement-title' => 'Rückerstattung',
         'prescription-title' => 'Verordnung',
-        'offer-lead' => 'Das Kind und seine Familie als Einheit stehen im Zentrum meiner Arbeit',
-        'offer-content' => 'Im Therapieprozess trägt jeder seinen Teil zur Problemanalyse, der Zieldefinition und der Lösungsfindung bei. Ich lege Wert darauf die Kreativität der Kinder und der Eltern zu fördern und lasse mich gerne durch individuelle Lösungen überraschen.{0}Das Kind lernt im Spiel. Durch das Spiel gewinnt es an Kraft, Koordination, Ausdauer, Selbständigkeit und Sicherheit. Die therapeutische Begleitung ist dem psychomotorischen Entwicklungsstand des Kindes angepasst und hat immer eine spielerische Komponente. Sie ist auf aktuellem medizinischem, psychologischem und pädagogischem Wissen aufgebaut und setzt eine gute interdisziplinäre Zusammenarbeit voraus.',
-        'patient-care-lead' => 'Ich behandle Kinder von 0 bis 10 Jahren in folgenden Situationen :',
+        'offer-lead' => 'Das Kind und seine Familie als Einheit stehen im Zentrum unserer Arbeit',
+        'offer-content' => 'Im Therapieprozess trägt jeder seinen Teil zur Problemanalyse, der Zieldefinition und der Lösungsfindung bei. Wir legen Wert darauf die Kreativität der Kinder und der Eltern zu fördern und lassen uns gerne durch individuelle Lösungen überraschen.{0}Das Kind lernt im Spiel. Durch das Spiel gewinnt es an Kraft, Koordination, Ausdauer, Selbständigkeit und Sicherheit. Die therapeutische Begleitung ist dem psychomotorischen Entwicklungsstand des Kindes angepasst und hat immer eine spielerische Komponente. Sie ist auf aktuellem medizinischem, psychologischem und pädagogischem Wissen aufgebaut und setzt eine gute interdisziplinäre Zusammenarbeit voraus.',
+        'patient-care-lead' => 'Wir behandlen Kinder von 0 bis 16 Jahren in folgenden Situationen :',
         'patient-care-content1' => 'Frühgeburtlichkeit;Schädelasymetrie;Schiefhals;Entwicklungsrückstand, Störungen des Muskeltonus;Plexusparese;Motorische Defizite ;Symptombehandlung nach Tumorbehandlung;Genetische Krankheiten oder Syndrome welche die allgemeine Entwicklung beeinflussen (Myopathien, Trisomie 21,  ..)',
         'patient-care-content2' => 'Ungeschicklichkeit, Gleichgewichtsstörungen;Orthopädische Probleme : Haltungsdefizit und / oder Muskelverspannungen, Skoliose, Kyphose, Klumpfüsse, Beinachsenfehlstellung unteren Extremität, Hüftluxationen, Morbus Perthes;Nachbehandlung von Verletzungen und Operationen;Rheumatische Erkrankungen;Atemwegserkrankungen : CF, Asthma, Bronchiolitis;Übergewicht',
-        'appointment-content' => 'Telefonische Terminvereinbarung. Sollte ich nicht erreichbar sein, hinterlassen Sie bitte eine Nachricht auf dem Anrufbeantworter. Ich werde Sie zurückrufen.{0}Danke dass Sie vereinbarte Termine 12h im Voraus absagen. Für verpasste oder nicht abgemeldete Termine werden Ihnen auf eigene Rechnung 50.- verrechnet.',
+        'appointment-content' => 'Telefonische Terminvereinbarung.{0}Danke dass Sie vereinbarte Termine 12h im Voraus absagen. Für verpasste oder nicht abgemeldete Termine werden Ihnen auf eigene Rechnung 50.- verrechnet.',
         'reimbursement-content' => 'Die Kinderphysiotherapie wird auf ärztliche Verordnung von den Krankenkassen oder der IV rückerstattet. Bitte nehmen Sie zum ersten Termin die ärztliche Verordnung und die Krankenkassenkarte mit.{0}Eine Beratung oder Evaluation sind auch ohne ärztliche Verordnung möglich. Die Kosten von 80.- werden Ihnen direkt verrechnet.',
         'prescription-content' => 'In der Regel gilt die Verordnung für 9 Behandlungen mit der Möglichkeit auf 3 weitere Serien von 9 Behandlungen zu verlängern. Die erste Behandlung muss in den 5 Wochen nach der Erstellung der Verordnung stattfinden. Warten Sie deshalb nicht zu lange einen Termin zu vereinbaren!{0}Eine Heimbehandlung ist ebenfalls möglich. Sie muss auf dem Rezept angegeben werden. Dies muss auf der Verordnung explizit ersichtlich sein.'
     ],
@@ -44,9 +44,9 @@ return [
         'reimbursement-title' => 'Rückerstattung',
         'prescription-title' => 'Verordnung',
         'name' => 'Craniosacraltherapie',
-        'offer-lead' => 'Im Zentrum meiner Arbeit steht der Mensch als Einheit von Körper, Seele und Geist',
+        'offer-lead' => 'Im Zentrum unserer Arbeit steht der Mensch als Einheit von Körper, Seele und Geist',
         'offer-content' => 'Durch sanfte Berührung und feine manuelle Impulse kann der Selbstheilungsprozess eingeleitet werden. Die Gesundheit im Menschen wird unterstützt und Ressourcen gestärkt, so dass positive Veränderungen stattfinden können.{0}Mit einer Craniosacral-Behandlung schenken Sie sich eine Auszeit in der  Körper, Seele und Geist zur Ruhe kommen, neue Energie schöpfen und sich neu orientieren können.',
-        'patient-care-lead' => 'Die Craniosacral Therapie kann zur Förderung des Gleichgewichts zwischen Körper, Geist, Seele und Umwelt beitragen. Sie kann sie in jeder Lebenssituation unterstützen. Ich behandle Menschen jeden Alters',
+        'patient-care-lead' => 'Die Craniosacral Therapie kann zur Förderung des Gleichgewichts zwischen Körper, Geist, Seele und Umwelt beitragen. Sie kann sie in jeder Lebenssituation unterstützen, une richtet sich an Menschen jeden Alters',
         'patient-care-children' => [
             'title' => 'beim Kind :',
             'content' => 'Verdauungsprobleme (Koliken, Aufstossen);übermässiges Schreien, Überstreckung;Schlafstörungen;schwierige Geburt;Schädelassymmetrien und Schiefhals;Ängste, Unruhe;häufige Mittelohrentzündungen;Wachstumsschmerzen',
@@ -56,7 +56,7 @@ return [
             'content' => 'Muskelverspannungen, Gelenksbeschwerden;akute, chronische Nacken, Schulter, Rückenschmerzen;Schleudertrauma;Erschöpfungszustände;Kopfschmerzen, Migräne;Stress, Nervosität, Schlafprobleme;Schwangerschafts;Geburtsbegleitung',
         ],
         'appointment-content' => 'Terminvereinbarung bitte telefonisch oder per SMS.',
-        'reimbursement-content' => 'Die Craniosacraltherapie ist eine Therapiemethode aus der Komplementärtherapie und wird über die Zusatzversicherung abgerechnet. Ich bin beim EMR, der ASCA und der Visana anerkannt. Bitte erkundigen Sie sich bei Ihrer Krankenkasse über die genaue Kostenbeteiligung.{0}Eine Behandlung dauert in der Regel 60 Minuten und Kostet 120.-',
+        'reimbursement-content' => 'Die Craniosacraltherapie ist eine Therapiemethode aus der Komplementärtherapie und wird über die Zusatzversicherung abgerechnet. Sarah Meier ist beim EMR, der ASCA und der Visana anerkannt. Bitte erkundigen Sie sich bei Ihrer Krankenkasse über die genaue Kostenbeteiligung.{0}Eine Behandlung dauert in der Regel 60 Minuten und Kostet 120.-',
         'prescription-content' => 'Da die Craniosacraltherapie von der Zusatzversicherung übernommen wird brauchen Sie keine Verordnung vom Arzt.',
     ],
     'practice-page' => [
@@ -131,7 +131,7 @@ return [
     'contact-page' => [
         'name' => 'Kontakt',
         'access' => 'Erreichbarkeit',
-        'access-content' => 'Das Atelier ist sowohl mit dem Auto als auch mit den öffentlichen Verkehrsmitteln gut erreichbar. Es befindet sich im 4. Stock mit Lift',
+        'access-content' => 'Eingang durch den überdachten Gehweg rechts vom Gebäude.{0}9 Minuten vom Bahnhof oder 5 Minuten vom Zentralplatz entfernt. Mit dem Auto Parken an der Spitalstrasse, im Manor Parking oder im Museums Parking',
     ],
     'contact-form' => [
         'contact-who' => 'Wen möchten Sie kontaktieren?',
