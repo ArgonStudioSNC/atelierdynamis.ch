@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ContactUsForm extends Model
 {
+
     /**
      * The attributes that are mass assignable.
      *
@@ -16,3 +17,4 @@ class ContactUsForm extends Model
         'service', 'firstName', 'lastName', 'phone', 'email', 'message', 'locale',
     ];
 }
+

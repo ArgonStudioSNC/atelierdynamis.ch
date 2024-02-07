@@ -115,4 +115,31 @@ return [
         ],
     ],
 
+    'dynamis-recipients' => [
+        'sophie' => [
+            'name' => 'Sophie Charrière',
+            'email' => 'sophie.charriere@atelierdynamis.ch',
+            'services' => ['physio'],
+        ],
+        'sarah' => [
+            'name' => 'Sarah Meier',
+            'email' => 'sarah.meier@atelierdynamis.ch',
+            'services' => ['cranio','physio'],
+        ],
+        'anja' => [
+            'name' => 'Anja Eggimann',
+            'email' => 'anja.eggimann@atelierdynamis.ch',
+            'services' => ['cranio','physio'],
+        ],
+        'dagmar' => [
+            'name' => 'Dagmar Hopf',
+            'email' => 'dagmar.hopf@atelierdynamis.ch',
+            'services' => ['physio'],
+        ],
+        'courses' => [
+            'name' => 'Sophie Charrière',
+            'email' => 'sophie.charriere@atelierdynamis.ch',
+            'services' => ['courses'],
+        ],
+    ],
 ];

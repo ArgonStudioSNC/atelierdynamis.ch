@@ -141,9 +141,16 @@ return [
         'email' => 'E-Mail-Adresse',
         'phone' => 'Telefon',
         'message' => 'Ihre Nachricht',
-        'services' => [
+        'services' => [ // unused
             'cranio' => 'Craniosacraltherapie',
             'physio' => 'Kinderphysiotherapie',
+            'courses' => 'Kurs',
+        ],
+        'recipients' => [
+            'sarah' => 'Sarah Meier',
+            'sophie' => 'Sophie Charrière',
+            'anja' => 'Anja Eggimann',
+            'dagmar' => 'Dagmar Hopf',
             'courses' => 'Kurs',
         ],
     ],

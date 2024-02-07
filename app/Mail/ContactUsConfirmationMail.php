@@ -3,6 +3,7 @@
 namespace App\Mail;
 
 use App\Models\ContactUsForm;
+use http\Message\Body;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -38,22 +39,15 @@ class ContactUsConfirmationMail extends Mailable
      */
     public function build()
     {
-        $replyTo = ['contact@argonstudio.ch', 'Argon Studio'];
-        switch ($this->form->service) {
-            case 'cranio':
-                $replyTo = ['mail@sarah-meier.ch', 'Sarah Meier'];
-                break;
-            case 'physio':
-                $replyTo = ['sophie.charriere@atelierdynamis.ch', 'Sophie Charrière'];
-                break;
-            case 'courses':
-                $replyTo = ['sophie.charriere@atelierdynamis.ch', 'Sophie Charrière'];
-                break;
-            default:
+        if (in_array($this->form->service, array_keys(config('mail.dynamis-recipients')))) {
+            $replyTo = [config('mail.dynamis-recipients')[$this->form->service]['email'], config('mail.dynamis-recipients')[$this->form->service]['name']];
+        } else {
+            $replyTo = ['contact@argonstudio.ch', 'Argon Studio'];
         }
+
         return $this->to($this->form->email)
-                    ->replyTo($replyTo[0], $replyTo[1])
-                    ->subject(__('mailable.contact-us-confirmation-mail.subject'))
-                    ->view('mailable.contactUsConfimation');
+            ->replyTo($replyTo[0], $replyTo[1])
+            ->subject(__('mailable.contact-us-confirmation-mail.subject'))
+            ->view('mailable.contactUsConfimation');
     }
 }

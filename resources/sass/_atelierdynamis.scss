@@ -12,6 +12,8 @@
 //   7. Helper classes
 //   8. Separator
 
+@import 'settings';
+
 // 1. Global
 // -----------
 
@@ -168,17 +170,11 @@ h1, h2 {
 // 4. Button
 // -----------
 
-.button {
-    &.button-magenta {
-        background-color: get-color(dynamis-magenta);
+@each $key, $color in $dynamis-palette {
+    .button-#{$key} {
+        background-color: $color;
         &:hover {
-            background-color: scale-color(get-color(dynamis-magenta), $lightness: -15%);
-        }
-    }
-    &.button-yellow {
-        background-color: get-color(dynamis-yellow);
-        &:hover {
-            background-color: scale-color(get-color(dynamis-yellow), $lightness: -15%);
+            background-color: scale-color($color, $lightness: -15%);
         }
     }
 }

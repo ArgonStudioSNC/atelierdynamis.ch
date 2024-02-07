@@ -23,6 +23,7 @@
         cursor: pointer;
         margin-bottom: $form-spacing;
         color: $medium-gray;
+        text-transform: lowercase;
         @include transition($input-transition);
         .multiselect__placeholder {
             display: none;
@@ -71,6 +72,7 @@
                         font-size: $input-font-size;
                         line-height: $global-lineheight;
                         padding: 0.4rem;
+                        text-transform: lowercase;
                         &--highlight {
                             color: inherit;
                             background-color: inherit;
@@ -81,14 +83,11 @@
         }
     }
 
-    &--magenta {
-        .multiselect__tags {
-            background-color: get-color(dynamis-magenta) !important;
-        }
-    }
-    &--yellow {
-        .multiselect__tags {
-            background-color: get-color(dynamis-yellow) !important;
+    @each $key, $color in $dynamis-palette {
+        &--#{$key} {
+            .multiselect__tags {
+                background-color: $color !important;
+            }
         }
     }
 }
@@ -109,14 +108,14 @@
                     :hide-selected="true"
                 >
                 <template v-slot:singleLabel="{ option }">
-            		{{ $t('site.contact-form.services.' + option) }}
+            		{{ $t('site.contact-form.recipients.' + option) }}
             	</template>
                 <template v-slot:option="{ option }">
-                    <span>{{ $t('site.contact-form.services.' + option) }}</span>
+                    <span>{{ $t('site.contact-form.recipients.' + option) }}</span>
                 </template>
                 <template v-slot:caret="{ toggle }">
             		<div class="multiselect__myselect" @mousedown.prevent.stop="toggle">
-                        <svg class="chevron-symbol" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26">
+                        <svg class="chevron-symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26">
                             <use href="/static/icons/vector.svg#chevron-symbol" />
                         </svg>
             		</div>
@@ -158,7 +157,7 @@ export default {
     },
     data () {
         return {
-            options: ['cranio', 'physio', 'courses'],
+            options: ['sarah', 'sophie', 'anja', 'dagmar', 'courses'],
             formData: {
                 service: '',
                 firstName: '',
@@ -182,20 +181,15 @@ export default {
         }
     },
     watch: {
-        'formData.service': function(newService,oldService) {
-            $(this.$refs.contactForm).removeClass("contact-form--yellow contact-form--magenta");
-            $(this.$refs.submit).removeClass("button-yellow button-magenta");
-            switch (newService) {
-                case 'cranio':
-                    $(this.$refs.contactForm).addClass("contact-form--magenta");
-                    $(this.$refs.submit).addClass("button-magenta");
-                    break;
-                case 'physio':
-                    $(this.$refs.contactForm).addClass("contact-form--yellow");
-                    $(this.$refs.submit).addClass("button-yellow");
-                    break;
-                default:
-            }
+        'formData.service': function (newService, oldService) {
+            $(this.$refs.contactForm).removeClass(function (index, css) {
+                return (css.match(/(^|\s)contact-form--\S+/g) || []).join(' ');
+            });
+            $(this.$refs.submit).removeClass(function (index, css) {
+                return (css.match(/(^|\s)button-\S+/g) || []).join(' ');
+            });
+            $(this.$refs.contactForm).addClass("contact-form--" + newService);
+            $(this.$refs.submit).addClass("button-" + newService);
         }
     },
     methods: {

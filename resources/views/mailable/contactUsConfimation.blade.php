@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 </head>
 <body style="font-size: 18px;font-family: Helvetica;width: 100%;height: 100%;overflow-x: hidden;margin: 0;padding: 0;font-weight: normal;line-height: 1.5;background: rgba(134, 134, 134, 0.07);color: #404040;">
@@ -16,13 +17,21 @@
             </div>
             <div class="cell" style="flex: 0 0 auto;width: 100%;margin-top: 1rem;">
                 <div class="card card--yellow" style="display: flex;flex-direction: column;flex-grow: 1;margin-bottom: 1rem;border: none;border-radius: 0 0 1.6rem 1.6rem;background: #fefefe;box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);overflow: hidden;color: #666666;position: relative;z-index: 5;">
-@if ($form->service == 'cranio')
+@if ($form->service == 'sarah')
     <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #de1883;color: #fefefe;">
+@elseif ($form->service == 'anja')
+    <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #fab216;color: #fefefe;">
+@elseif ($form->service == 'dagmar')
+    <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #e64662;color: #fefefe;">
 @else
     <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #ffd100;color: #fefefe;">
 @endif
-                        <div style="font-size: 30px;text-transform: lowercase;">
-                            {{ __('mailable.services.'.$form->service) }}
+                        <div style="font-size: 30px;text-transform: lowercase; text-align: center;">
+                            @php
+                            foreach (config('mail.dynamis-recipients')[$form->service]['services'] as $service){
+                                echo __('mailable.services.' . $service) . "<br/>";
+                            }
+                            @endphp
                         </div>
                     </div>
                     <div class="card-section" style="flex: 1 0 auto;padding: 2.2rem 3.3rem;">

@@ -135,16 +135,23 @@ return [
 ',
     ],
     'contact-form' => [
-        'contact-who' => 'Quel service souhaitez-vous contacter?',
+        'contact-who' => 'Quelle personne souhaitez-vous contacter?',
         'send' => 'envoyer',
         'firstname' => 'prénom',
         'lastname' => 'nom',
         'email' => 'adresse mail',
         'phone' => 'téléphone',
         'message' => 'votre message',
-        'services' => [
+        'services' => [ // unused
             'cranio' => 'thérapie craniosacrale',
             'physio' => 'physiothérapie pédiatrique',
+            'courses' => 'cours',
+        ],
+        'recipients' => [
+            'sarah' => 'Sarah Meier',
+            'sophie' => 'Sophie Charrière',
+            'anja' => 'Anja Eggimann',
+            'dagmar' => 'Dagmar Hopf',
             'courses' => 'cours',
         ],
     ],

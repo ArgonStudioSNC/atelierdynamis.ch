@@ -37,25 +37,17 @@ class ContactUsMail extends Mailable
      */
     public function build()
     {
-        $recipient = 'contact@argonstudio.ch';
-        $subject = 'atelier dynamis contact form - something went wrong';
-        switch ($this->form->service) {
-            case 'cranio':
-                $recipient = 'mail@sarah-meier.ch';
-                $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.cranio').' - '.$this->form->firstName.' '.$this->form->lastName;
-                break;
-            case 'physio':
-                $recipient = 'sophie.charriere@atelierdynamis.ch';
-                $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.physio').' - '.$this->form->firstName.' '.$this->form->lastName;
-                break;
-            case 'courses':
-                $recipient = 'sophie.charriere@atelierdynamis.ch';
-                $subject = __('mailable.contact-us-mail.contact-form').' - '.__('mailable.services.courses').' - '.$this->form->firstName.' '.$this->form->lastName;
-                break;
-            default:
+        if (in_array($this->form->service, array_keys(config('mail.dynamis-recipients')))) {
+            $recipient = config('mail.dynamis-recipients')[$this->form->service]['email'];
+            $subject = __('mailable.contact-us-mail.contact-form') . ' - ' . $this->form->firstName . ' ' . $this->form->lastName;
+        } else {
+            $recipient = 'contact@argonstudio.ch';
+            $subject = 'atelier dynamis contact form - something went wrong';
         }
+
         return $this->to($recipient)
-                    ->subject($subject)
-                    ->view('mailable.contactUsMail');
+            ->replyTo($this->form->email, $this->form->firstName . ' ' . $this->form->lastName)
+            ->subject($subject)
+            ->view('mailable.contactUsMail');
     }
 }
