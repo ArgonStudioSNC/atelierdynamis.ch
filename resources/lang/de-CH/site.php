@@ -4,7 +4,7 @@ return [
     'title' => 'atelier dynamis',
     'subtitle' => 'Kinderphysiotherapie und Craniosacraltherapie',
     'biel' => 'Biel/Bienne',
-    'address' => 'Neuengasse 14{0}2502 Biel/Bienne',
+    'address' => 'Neuengasse 14{0}2502 Biel/Bienne',
     'locales' => [
         'fr' => 'français',
         'de' => 'Deutsch'

@@ -28,8 +28,8 @@
 @endif
                         <div style="font-size: 30px;text-transform: lowercase; text-align: center;">
                             @php
-                            foreach (config('mail.dynamis-recipients')[$form->service]['services'] as $service){
-                                echo __('mailable.services.' . $service) . "<br/>";
+                            foreach (config('mail.dynamis-recipients')[$form->service]['activities'] as $activity){
+                                echo __('mailable.activities.' . $activity) . "<br/>";
                             }
                             @endphp
                         </div>

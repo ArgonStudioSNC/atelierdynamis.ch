@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'services' => [
+    'activities' => [
         'cranio' => 'Craniosacraltherapie',
         'physio' => 'Kinderphysiotherapie',
         'courses' => 'Kurs',

@@ -4,7 +4,7 @@ return [
     'title' => 'atelier dynamis',
     'subtitle' => 'Physiothérapie pédiatrique et thérapie craniosacrale',
     'biel' => 'Biel/Bienne',
-    'address' => 'Rue Neuve 14{0}2502 Biel/Bienne',
+    'address' => 'Rue Neuve 14{0}2502 Biel/Bienne',
     'locales' => [
         'fr' => 'français',
         'de' => 'Deutsch'
