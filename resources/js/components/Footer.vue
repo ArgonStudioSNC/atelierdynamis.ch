@@ -16,8 +16,12 @@
         text-transform: lowercase;
 
         .contact-name {
-            font-family: 'Como';
-            font-weight: bold;
+            font-family: $header-font-family;
+            font-weight: $header-font-weight;
+            @include breakpoint(large) {
+                font-size: 35px;
+                line-height: $header-lineheight
+            }
         }
 
         @each $colorname, $color in $dynamis-palette {
@@ -31,7 +35,6 @@
 
     .atelier {
         text-transform: lowercase;
-        text-wrap: none;
         @include breakpoint(large) {
             padding: 0 $global-padding;
             margin-bottom: $global-margin;
@@ -43,8 +46,8 @@
         }
 
         .title {
-            font-family: 'Como';
-            font-weight: bold;
+            font-family: $header-font-family;
+            font-weight: $header-font-weight;
         }
     }
 }
@@ -89,7 +92,7 @@
                         <img class="logo" v-bind:src="logo_img">
                         <div class="title">{{ $t('site.title') }}</div>
                         <i18n-t keypath="site.address" tag="div">
-                            &nbsp;|&nbsp;
+                            <br/>
                         </i18n-t>
                     </div>
                 </div>

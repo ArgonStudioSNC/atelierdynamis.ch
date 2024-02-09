@@ -17,61 +17,57 @@
         white-space: nowrap;
     }
 
-    h2 {
-        margin: 0;
-    }
-
     &--sophie {
-        top: -64px;
-        left: -30px;
+        top: -59px;
+        left: -44px;
 
         &.footer-circle-bg {
-            clip-path: circle(29%);
+            clip-path: circle(34%);
             background: get-color(sophie);
         }
 
         .text-pos {
             top: 50%;
             left: 50%;
-            transform: translate(-35%, -55%);
+            transform: translate(-29%, -55%);
         }
     }
 
     &--anja {
-        bottom: -5px;
-        right: -50px;
+        bottom: -19px;
+        right: -66px;
 
         &.footer-circle-bg {
-            clip-path: circle(23%);
+            clip-path: circle(27%);
             background: get-color(anja);
         }
 
         .text-pos {
             top: 50%;
             left: 50%;
-            transform: translate(-59%, -10%);
+            transform: translate(-72%, -27%);
         }
     }
 
     &--dagmar {
-        top: -94px;
-        left: -10px;
+        top: -92px;
+        left: -66px;
 
         &.footer-circle-bg {
-            clip-path: circle(27%);
+            clip-path: circle(25%);
             background: get-color(dagmar);
         }
 
         .text-pos {
             top: 50%;
             left: 50%;
-            transform: translate(-56%, -25%);
+            transform: translate(-28%, -25%);
         }
     }
 
     &--sarah {
-        bottom: -67px;
-        right: 30px;
+        bottom: -70px;
+        right: -40px;
 
         &.footer-circle-bg {
             clip-path: circle(35%);
@@ -81,7 +77,7 @@
         .text-pos {
             top: 50%;
             left: 50%;
-            transform: translate(-37%, -60%);
+            transform: translate(-69%, -65%);
         }
     }
 }
@@ -91,7 +87,7 @@
 <template>
     <div :class="'footer-circle footer-circle--' + person.tag">
         <div class="contact text-pos">
-            <h2 class="contact-name">{{ person.name }}</h2>
+            <div class="contact-name">{{ person.name }}</div>
             <span v-for="activity in person.activities">{{ $t('site.' + activity + '-page.name') }}<br/></span>
             <a :href="'tel:'+person.phone.replaceAll(' ','')">t. {{ person.phone }}</a>
         </div>
@@ -99,7 +95,7 @@
     <div
         :class="'footer-circle footer-circle--' + person.tag + ' ' + 'footer-circle-bg'">
         <div class="contact text-pos">
-            <h2 class="contact-name">{{ person.name }}</h2>
+            <div class="contact-name">{{ person.name }}</div>
             <span v-for="activity in person.activities">{{ $t('site.' + activity + '-page.name') }}<br/></span>
             <a :href="'tel:'+person.phone.replaceAll(' ','')">t. {{ person.phone }}</a>
         </div>
