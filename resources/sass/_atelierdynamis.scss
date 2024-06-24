@@ -114,30 +114,22 @@ h1, h2 {
         margin-bottom: 1rem;
         max-width: 1100px;
     }
-    &--yellow {
-        .card-divider {
-            color: $white;
-            background-color: get-color(dynamis-yellow);
-        }
-        .strong-text {
-            color: get-color(dynamis-yellow);
-        }
-        .separator::after {
-            background: get-color(dynamis-yellow);
-        }
-    }
-    &--magenta {
-        .card-divider {
-            color: $white;
-            background-color: get-color(dynamis-magenta);
-        }
-        .strong-text {
-            color: get-color(dynamis-magenta);
-        }
-        .separator::after {
-            background: get-color(dynamis-magenta);
+
+    @each $key, $color in $dynamis-palette {
+        &--#{$key} {
+            .card-divider {
+                color: $white;
+                background-color: $color !important;
+            }
+            .strong-text {
+                color: $color !important;
+            }
+            .separator::after {
+                background: $color !important;
+            }
         }
     }
+
     &--full-yellow {
         margin-bottom: 6rem;
         .card-section {

@@ -69,9 +69,9 @@
             cursor: pointer;
         }
         .background-cover {
-            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/storage/pictures/@1200/sarah-sophie-02.jpg);
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/storage/pictures/@1200/team-dynamis-00.jpg);
+            background-size: 128vh;
+            background-position: left 58% bottom;
             background-repeat: no-repeat;
         }
     }
@@ -191,12 +191,12 @@
                                         <circle cx="54" cy="53" r="46" fill="#ffffff" />
                                     </clipPath>
                                 </defs>
-                                <image width="120" href="/storage/pictures/@2400/sarah-sophie-02.jpg" clip-path="url(#heroMask)" y="-23" />
+                                <image width="157" href="/storage/pictures/@2400/team-dynamis-00.jpg" clip-path="url(#heroMask)" x="-33" y="-4" />
                             </svg>
                         </div>
                     </div>
                     <button @click="scrollPastHero" class="hero-downarrow">
-                        <svg class="chevron-symbol" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26">
+                        <svg class="chevron-symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26">
                             <use href="/static/icons/vector.svg#chevron-symbol" />
                         </svg>
                     </button>
@@ -285,7 +285,7 @@
                 </div>
                 <div class="grid-x align-center grid-margin-x sub-section">
                     <div class="cell small-12 medium-10 large-6 xlarge-5 flex-container">
-                        <div class="card card--magenta">
+                        <div class="card card--dynamis-magenta">
                             <div class="card-divider"></div>
                             <div class="card-section text-center grid-y">
                                 <h2 class="card-section-title">{{ $t("site.practice-page.name") }}</h2>
@@ -297,7 +297,7 @@
                         </div>
                     </div>
                     <div class="cell small-12 medium-10 large-6 xlarge-5 flex-container">
-                        <div class="card card--yellow">
+                        <div class="card card--dynamis-yellow">
                             <div class="card-divider"></div>
                             <div class="card-section text-center grid-y">
                                 <h2 class="card-section-title">{{ $t("site.courses-page.name") }}</h2>

@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div class="cell" style="flex: 0 0 auto;width: 100%;margin-top: 1rem;">
-                <div class="card card--yellow" style="display: flex;flex-direction: column;flex-grow: 1;margin-bottom: 1rem;border: none;border-radius: 0 0 1.6rem 1.6rem;background: #fefefe;box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);overflow: hidden;color: #666666;position: relative;z-index: 5;">
+                <div class="card card--dynamis-yellow" style="display: flex;flex-direction: column;flex-grow: 1;margin-bottom: 1rem;border: none;border-radius: 0 0 1.6rem 1.6rem;background: #fefefe;box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);overflow: hidden;color: #666666;position: relative;z-index: 5;">
 @if ($form->service == 'sarah')
     <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #de1883;color: #fefefe;">
 @elseif ($form->service == 'anja')
