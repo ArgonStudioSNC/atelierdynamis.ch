@@ -272,6 +272,12 @@
                                             <div class="separator"></div>
                                             <div class="grid-x grid-margin-y">
                                                 <div class="cell">
+                                                    <i18n-t keypath="site.practice-page.dagmar-degree"
+                                                            tag="div">
+                                                        <br/>
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
                                                     <div class="strong-text">
                                                         {{ $t('site.practice-page.dagmar-formation1.title') }}
                                                     </div>
@@ -328,7 +334,7 @@
                                                 <div class="spacer"></div>
                                             </i18n-t>
                                         </div>
-                                        <div class="cell hide">
+                                        <div class="cell">
                                             <div class="formation-title">{{
                                                     $t('site.practice-page.formation-title')
                                                 }}
@@ -336,10 +342,22 @@
                                             <div class="separator"></div>
                                             <div class="grid-x grid-margin-y">
                                                 <div class="cell">
+                                                    <div>{{ $t('site.practice-page.anja-degree') }}</div>
+                                                </div>
+                                                <div class="cell">
                                                     <div class="strong-text">
                                                         {{ $t('site.practice-page.anja-formation1.title') }}
                                                     </div>
                                                     <i18n-t keypath="site.practice-page.anja-formation1.content"
+                                                            tag="div">
+                                                        <br/>
+                                                    </i18n-t>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">
+                                                        {{ $t('site.practice-page.anja-formation2.title') }}
+                                                    </div>
+                                                    <i18n-t keypath="site.practice-page.anja-formation2.content"
                                                             tag="div">
                                                         <br/>
                                                     </i18n-t>
