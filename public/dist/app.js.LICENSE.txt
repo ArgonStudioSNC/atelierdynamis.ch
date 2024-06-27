@@ -1,0 +1,52 @@
+/*!
+  * shared v9.13.1
+  * (c) 2024 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
+  * vue-i18n v9.13.1
+  * (c) 2024 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*! #__NO_SIDE_EFFECTS__ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+* @vue/compiler-core v3.4.14
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/reactivity v3.4.14
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/runtime-core v3.4.14
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/runtime-dom v3.4.14
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/shared v3.4.14
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
