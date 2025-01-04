@@ -56,7 +56,7 @@ return [
             'content' => 'tensions musculaires, douleurs articulaires;douleurs aïgues ou chroniques du dos, de la nuque ou des épaules;coup du lapin;état d’épuisement;maux de tête, migraine;stress, nervosité, problèmes de sommeil;accompagnement de la grossesse et de l’accouchement',
         ],
         'appointment-content' => 'Prise de rendez-vous téléphonique ou par SMS',
-        'reimbursement-content' => 'La thérapie craniosacrale est une méthode de thérapie de la thérapie complémentaire et est prise en charge par l’assurance complémentaire de nombreuses caisses. Sarah Meier est reconnue par le RME, l’ASCA et la Visana. Veuillez vous renseigner auprès de votre assurance maladie sur la participation exacte aux coûts.{0}Un traitement dure normalement 60 minutes et coute 120.-',
+        'reimbursement-content' => 'La thérapie craniosacrale est une méthode de thérapie de la thérapie complémentaire et est prise en charge par l’assurance complémentaire de nombreuses caisses. Sarah Meier est reconnue par le RME, l’ASCA et la Visana. Veuillez vous renseigner auprès de votre assurance maladie sur la participation exacte aux coûts.{0}Un traitement dure normalement 60 minutes et coute 132.-',
         'prescription-content' => 'La thérapie crâniosacrale étant prise en charge par l’assurance complémentaire, vous n’avez pas besoin de prescription médicale.',
     ],
     'practice-page' => [

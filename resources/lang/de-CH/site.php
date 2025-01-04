@@ -56,7 +56,7 @@ return [
             'content' => 'Muskelverspannungen, Gelenksbeschwerden;akute, chronische Nacken, Schulter, Rückenschmerzen;Schleudertrauma;Erschöpfungszustände;Kopfschmerzen, Migräne;Stress, Nervosität, Schlafprobleme;Schwangerschafts;Geburtsbegleitung',
         ],
         'appointment-content' => 'Terminvereinbarung bitte telefonisch oder per SMS.',
-        'reimbursement-content' => 'Die Craniosacraltherapie ist eine Therapiemethode aus der Komplementärtherapie und wird über die Zusatzversicherung abgerechnet. Sarah Meier ist beim EMR, der ASCA und der Visana anerkannt. Bitte erkundigen Sie sich bei Ihrer Krankenkasse über die genaue Kostenbeteiligung.{0}Eine Behandlung dauert in der Regel 60 Minuten und Kostet 120.-',
+        'reimbursement-content' => 'Die Craniosacraltherapie ist eine Therapiemethode aus der Komplementärtherapie und wird über die Zusatzversicherung abgerechnet. Sarah Meier ist beim EMR, der ASCA und der Visana anerkannt. Bitte erkundigen Sie sich bei Ihrer Krankenkasse über die genaue Kostenbeteiligung.{0}Eine Behandlung dauert in der Regel 60 Minuten und Kostet 132.-',
         'prescription-content' => 'Da die Craniosacraltherapie von der Zusatzversicherung übernommen wird brauchen Sie keine Verordnung vom Arzt.',
     ],
     'practice-page' => [
