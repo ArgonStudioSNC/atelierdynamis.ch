@@ -157,7 +157,7 @@ export default {
     },
     data () {
         return {
-            options: ['sarah', 'sophie', 'anja', 'dagmar', 'courses'],
+            options: ['sarah', 'sophie', 'dagmar', 'courses'],
             formData: {
                 service: '',
                 firstName: '',
