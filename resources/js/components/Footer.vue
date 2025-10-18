@@ -31,6 +31,10 @@
                 }
             }
         }
+
+        &--anja > a {
+            display: none; // Hide phone number for Anja
+        }
     }
 
     .atelier {

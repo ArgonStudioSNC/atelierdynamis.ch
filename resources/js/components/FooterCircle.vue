@@ -48,7 +48,7 @@
             transform: translate(-72%, -27%);
 
             a {
-                display: none;
+                display: none; // Hide phone number for Anja
             }
         }
     }
