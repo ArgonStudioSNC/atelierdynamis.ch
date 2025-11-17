@@ -32,8 +32,8 @@
             }
         }
 
-        &--anja > a {
-            display: none; // Hide phone number for Anja
+        &--anja {
+            display: none; // Hide Anja
         }
     }
 
@@ -138,10 +138,10 @@ export default {
                 },
                 anja: {
                     tag: 'anja',
-                    name: 'Anja Eggimann',
-                    email: 'anja.eggimann@atelierdynamis.ch',
-                    phone: '+41 79 931 83 38',
-                    activities: ['cranio', 'physio'],
+                    name: '',
+                    email: '',
+                    phone: '',
+                    activities: [],
                 },
                 dagmar: {
                     tag: 'dagmar',

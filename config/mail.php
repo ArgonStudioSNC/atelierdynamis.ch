@@ -126,11 +126,6 @@ return [
             'email' => 'sarah.meier@atelierdynamis.ch',
             'activities' => ['cranio','physio'],
         ],
-        'anja' => [
-            'name' => 'Anja Eggimann',
-            'email' => 'anja.eggimann@atelierdynamis.ch',
-            'activities' => ['cranio','physio'],
-        ],
         'dagmar' => [
             'name' => 'Dagmar Hopf',
             'email' => 'dagmar.hopf@atelierdynamis.ch',

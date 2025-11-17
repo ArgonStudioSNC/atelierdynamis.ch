@@ -103,16 +103,6 @@ return [
             'title' => 'Sonstige Weiterbildungen',
             'content' => 'Fortlaufende Kurse bei Marianne Haag basierend auf der Arbeit von Elsa Gindler und Heinrich Jacoby',
         ],
-        'anja-portrait' => 'In meinem letzten Praktikum des Studiums im Spitalzentrum Biel habe ich in der Kinderphysiotherapie meine Leidenschaft gefunden. Nach meinem Abschluss im Jahr 2020 konnte ich weiterhin in der Kinderphysiotherapie Abteilung des Spitalzentrums arbeiten.{0}Ein halbes Jahr später habe ich die Ausbildung zur Craniosacraltherapeutin begonnen. Denn bereits während meines Physiotherapie Studiums habe ich gemerkt, dass mir in der Physiotherapie der Blick auf physische und psychische Zusammenhänge fehlt und der Körper aus meiner Sicht nicht in einzelne Gelenke und Körper-Regionen aufgeteilt werden kann. Auch konnte ich bei den Säuglingen und Kindern nach einer Craniosacraltherapie Sitzung deutliche Verbesserungen erkennen und so freue ich mich nun, in meiner Selbstständigkeit beide Therapieformen anbieten zu können.{0}In meine Selbstständigkeit bin ich im Frühjahr 2024 gestartet habe im Sommer 2024 meine Craniosacraltherapie Ausbildung abgeschlossen.',
-        'anja-degree' => 'BSc Physiotherapie an der Berner Fachhochschule',
-        'anja-formation1' => [
-            'title' => 'Physiotherapie',
-            'content' => 'Motorische Entwicklung des Kindes{0}CAS Klinische Expertise in pädiatrischer Physiotherapie{0}Craniomandibuläre Dysfunktionen CMD',
-        ],
-        'anja-formation2' => [
-            'title' => 'Craniosacraltherapie',
-            'content' => 'Branchenzertifikat OdA Komplementärtherapie',
-        ],
         'our-office' => 'Unsere Praxis',
     ],
     'courses-page' => [
@@ -153,7 +143,6 @@ return [
         'recipients' => [
             'sarah' => 'Sarah Meier',
             'sophie' => 'Sophie Charrière',
-            'anja' => 'Anja Eggimann',
             'dagmar' => 'Dagmar Hopf',
             'courses' => 'Kurs',
         ],

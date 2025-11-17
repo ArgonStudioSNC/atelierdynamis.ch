@@ -43,13 +43,10 @@
         }
 
         .text-pos {
+            display: none; // Hide for Anja
             top: 50%;
             left: 50%;
             transform: translate(-72%, -27%);
-
-            a {
-                display: none; // Hide phone number for Anja
-            }
         }
     }
 
