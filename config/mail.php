@@ -126,6 +126,11 @@ return [
             'email' => 'sarah.meier@atelierdynamis.ch',
             'activities' => ['cranio','physio'],
         ],
+        'jenifer' => [
+            'name' => 'Jenifer Fritzsche',
+            'email' => 'jenifer.fritzsche@atelierdynamis.ch',
+            'activities' => ['physio'],
+        ],
         'dagmar' => [
             'name' => 'Dagmar Hopf',
             'email' => 'dagmar.hopf@atelierdynamis.ch',

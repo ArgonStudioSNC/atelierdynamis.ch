@@ -12,13 +12,16 @@
         <div class="grid-x grid-margin-y" style="display: flex;flex-flow: row wrap;">
             <div class="cell text-center" style="flex: 0 0 auto;width: 100%;text-align: center;margin-top: 1rem;">
                 <a href="https://atelierdynamis.ch/" target="_blank" style="text-decoration: none;cursor: pointer;background-color: transparent;">
-                    <img src="{{ asset('storage/logo/atelier_dynamis.png') }}" style="max-width: 200px;display: inline-block;vertical-align: middle;height: auto;">
+                    <img src="{{ asset('storage/logo/atelier_dynamis.png') }}" width="200" alt="atelier dynamis Logo"
+                         style="width: 200px;max-width: 100%;display: inline-block;vertical-align: middle;height: auto;border: 0;">
                 </a>
             </div>
             <div class="cell" style="flex: 0 0 auto;width: 100%;margin-top: 1rem;">
                 <div class="card card--dynamis-yellow" style="display: flex;flex-direction: column;flex-grow: 1;margin-bottom: 1rem;border: none;border-radius: 0 0 1.6rem 1.6rem;background: #fefefe;box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);overflow: hidden;color: #666666;position: relative;z-index: 5;">
 @if ($form->service == 'sarah')
     <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #de1883;color: #fefefe;">
+@elseif ($form->service == 'jenifer')
+    <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #fab216;color: #fefefe;">
 @elseif ($form->service == 'dagmar')
     <div class="card-divider align-center" style="justify-content: center;display: flex;flex: 0 1 auto;padding: 1rem;background: #e64662;color: #fefefe;">
 @else

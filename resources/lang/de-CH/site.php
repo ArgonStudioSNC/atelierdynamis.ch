@@ -103,6 +103,10 @@ return [
             'title' => 'Sonstige Weiterbildungen',
             'content' => 'Fortlaufende Kurse bei Marianne Haag basierend auf der Arbeit von Elsa Gindler und Heinrich Jacoby',
         ],
+        'jenifer-portrait' => '',
+        'jenifer-degree' => '',
+        'jenifer-formation1' => [
+        ],
         'our-office' => 'Unsere Praxis',
     ],
     'courses-page' => [

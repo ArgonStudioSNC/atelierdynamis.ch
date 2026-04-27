@@ -31,10 +31,6 @@
                 }
             }
         }
-
-        &--anja {
-            display: none; // Hide Anja
-        }
     }
 
     .atelier {
@@ -89,7 +85,7 @@
                     <FooterCircleComponent :person=persons.sophie />
                 </div>
                 <div class="cell auto" style="position: relative;">
-                    <FooterCircleComponent :person=persons.anja />
+                    <FooterCircleComponent :person=persons.jenifer />
                 </div>
                 <div class="cell large-3 align-self-middle">
                     <div class="atelier">
@@ -136,12 +132,12 @@ export default {
                     phone: '+41 76 328 89 90',
                     activities: ['cranio', 'physio'],
                 },
-                anja: {
-                    tag: 'anja',
-                    name: '',
-                    email: '',
-                    phone: '',
-                    activities: [],
+                jenifer: {
+                    tag: 'jenifer',
+                    name: 'Jenifer Fritzsche',
+                    email: 'jenifer.fritzsche@atelierdynamis.ch',
+                    phone: '+41 77 487 44 65',
+                    activities: ['physio'],
                 },
                 dagmar: {
                     tag: 'dagmar',

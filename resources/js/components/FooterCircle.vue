@@ -33,17 +33,16 @@
         }
     }
 
-    &--anja {
+    &--jenifer {
         bottom: -19px;
         right: -66px;
 
         &.footer-circle-bg {
             clip-path: circle(27%);
-            background: get-color(anja);
+            background: get-color(jenifer);
         }
 
         .text-pos {
-            display: none; // Hide for Anja
             top: 50%;
             left: 50%;
             transform: translate(-72%, -27%);

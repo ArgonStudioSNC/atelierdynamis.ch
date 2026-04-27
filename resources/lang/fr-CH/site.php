@@ -103,6 +103,10 @@ return [
             'title' => 'Autres formations',
             'content' => 'Formation continue chez Marianne Haag basée sur le travail d’Elsa Gindler et de Heinrich Jacoby',
         ],
+        'jenifer-portrait' => '',
+        'jenifer-degree' => '',
+        'jenifer-formation1' => [
+        ],
         'our-office' => 'Nos locaux',
     ],
     'courses-page' => [
@@ -144,6 +148,7 @@ return [
         'recipients' => [
             'sarah' => 'Sarah Meier',
             'sophie' => 'Sophie Charrière',
+            'jenifer' => 'Jenifer Fritzsche',
             'dagmar' => 'Dagmar Hopf',
             'courses' => 'cours',
         ],

@@ -302,6 +302,64 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cell small-12 xlarge-6 card card--jenifer hide">
+                        <div class="card-section" data-toggle="jeniferExpandable">
+                            <div class="grid-x grid-margin-y">
+                                <div class="cell">
+                                    <div class="grid-x grid-margin-x align-middle">
+                                        <div class="cell shrink">
+                                            <svg class="portrait-image" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 100 100" x="0" y="0">
+                                                <defs>
+                                                    <clipPath id="circle-mask" clipPathUnits="userSpaceOnUse">
+                                                        <circle cx="50" cy="50" r="50"/>
+                                                    </clipPath>
+                                                </defs>
+                                                <image width="104" href="/storage/pictures/@600/portrait-jenifer.jpg"
+                                                       clip-path="url(#circle-mask)" y="-25"/>
+                                            </svg>
+                                        </div>
+                                        <div class="cell auto">
+                                            <h1 class="card-section-title">jenifer fritzsche</h1>
+                                            <div class="separator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div id="jeniferExpandable" class="grid-x grid-margin-y expandable" v-foundation
+                                         data-toggler=".expanded">
+                                        <div class="cell">
+                                            <i18n-t keypath="site.practice-page.jenifer-portrait" tag="div"
+                                                    class="portrait ellipsis">
+                                                <div class="spacer"></div>
+                                            </i18n-t>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="formation-title">{{
+                                                    $t('site.practice-page.formation-title')
+                                                }}
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="grid-x grid-margin-y">
+                                                <div class="cell">
+                                                    <div>{{ $t('site.practice-page.jenifer-degree') }}</div>
+                                                </div>
+                                                <div class="cell">
+                                                    <div class="strong-text">
+                                                        {{ $t('site.practice-page.jenifer-formation1.title') }}
+                                                    </div>
+                                                    <i18n-t keypath="site.practice-page.jenifer-formation1.content"
+                                                            tag="div">
+                                                        <br/>
+                                                    </i18n-t>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
