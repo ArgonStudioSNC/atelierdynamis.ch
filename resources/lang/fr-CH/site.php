@@ -115,6 +115,7 @@ return [
         'schedule' => 'horaire',
         'rate' => 'tarif',
         'register-me' => 'je m’inscris',
+        'registration-closed' => 'Les inscriptions sont momentanément suspendues : aucun cours n’est organisé actuellement, faute de temps.',
         'course1-title' => 'atelier premier sourire',
         'course1-lead' => 'Un bébé est dépendant de ses parents pour toutes ses activités. Pour se développer harmonieusement il a besoin d’être compris donc d’entrer en communication, de faire des expériences variées, dans un environnement stimulant et rassurant.{0}Venez découvrir et développer vos capacités d’être en relation avec votre bébé, augmenter la confiance en vos gestes pour ainsi transmettre la confiance en soi à votre enfant.',
         'course1-target' => 'L’atelier s’adresse aux bébés âgés de 2 à 4 mois accompagnés d’un parent. Les 3 séances peuvent être prises librement dans cet intervalle.',

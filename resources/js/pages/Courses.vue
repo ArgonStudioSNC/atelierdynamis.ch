@@ -32,6 +32,16 @@
     .card-section {
         padding: 1.3rem;
     }
+    .button[disabled] {
+        cursor: not-allowed;
+        &:hover, &:focus {
+            background-color: get-color(dynamis-yellow);
+        }
+    }
+    .registration-notice {
+        font-style: italic;
+        font-size: 0.9rem;
+    }
 }
 
 </style>
@@ -74,8 +84,9 @@
                                 <div>{{ $t("site.courses-page.course1-rate") }}</div>
                             </div>
                             <div class="cell margin-top-auto">
-                                <router-link class="button button-yellow" :to="{ name: 'Contact'}">{{ $t("site.courses-page.register-me") }}</router-link>
-                                <button class="button button-yellow hide">{{ $t("site.courses-page.register-me") }}</button>
+                                <router-link class="button button-yellow hide" :to="{ name: 'Contact'}">{{ $t("site.courses-page.register-me") }}</router-link>
+                                <button class="button button-yellow" disabled>{{ $t("site.courses-page.register-me") }}</button>
+                                <div class="registration-notice">{{ $t("site.courses-page.registration-closed") }}</div>
                             </div>
                         </div>
                     </div>
@@ -106,8 +117,9 @@
                                 <div>{{ $t("site.courses-page.course2-rate") }}</div>
                             </div>
                             <div class="cell margin-top-auto">
-                                <router-link class="button button-yellow" :to="{ name: 'Contact'}">{{ $t("site.courses-page.register-me") }}</router-link>
-                                <button class="button button-yellow hide">{{ $t("site.courses-page.register-me") }}</button>
+                                <router-link class="button button-yellow hide" :to="{ name: 'Contact'}">{{ $t("site.courses-page.register-me") }}</router-link>
+                                <button class="button button-yellow" disabled>{{ $t("site.courses-page.register-me") }}</button>
+                                <div class="registration-notice">{{ $t("site.courses-page.registration-closed") }}</div>
                             </div>
                         </div>
                     </div>

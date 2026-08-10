@@ -115,6 +115,7 @@ return [
         'schedule' => 'Kurszeiten',
         'rate' => 'Kosten',
         'register-me' => 'ich melde mich an',
+        'registration-closed' => 'Die Anmeldungen sind derzeit ausgesetzt: Aus Zeitgründen finden momentan keine Kurse statt.',
         'course1-title' => 'Sociales Lächeln',
         'course1-lead' => 'Ein Baby ist für alle Aktivitäten von seinen Eltern abhängig. Um sich harmonisch entwickeln zu können muss es in einem stimulierenden und sicheren Umfeld verstanden werden, in Kommunikation treten und verschiedene Erfahrungen machen können.{0}Entdecken und Verfeinern Sie Ihre Möglichkeiten mit Ihrem Kind in Beziehung zu treten, steigern Sie Ihr Vertrauen in Ihren Umgang mit dem Kind um ihm dadurch mehr Selbstvertrauen zu vermitteln.',
         'course1-target' => 'Der Kurs wird für Kinder zwischen 2 und 4 Monaten in Begleitung eines Elternteils angeboten. Die 3 Mal können in diesem Zeitraum frei eingeteilt werden.',
